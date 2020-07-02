@@ -30,7 +30,7 @@ class NavBar extends Component {
   render() {
     return (
       <div style={{ paddingBottom: '94px' }}>
-        <Menu fixed="top" inverted color="blue" icon="labeled">
+        <Menu fixed="top" inverted color="teal" icon="labeled">
           
           <Menu.Item
             id="home"
