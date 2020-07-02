@@ -17,25 +17,27 @@ class ActFor extends Component {
 
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
+      <div style={{ paddingLeft: '24px' }} >
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
 
-          <Route path="/about">
-            <About />
-          </Route>
+            <Route path="/about">
+              <About />
+            </Route>
 
-          <Route path="/contact">
-            <Contact />
-          </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
 
-          <Route path="*">
-              <Redirect to="/" />
-          </Route>
-        </Switch>
-      </Router>
+            <Route path="*">
+                <Redirect to="/" />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     );
   }
 

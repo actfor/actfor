@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
+// components
+import NavBar from './../components/navbar';
+
 class Contact extends Component {
     render() {
         return (
             <div>
-                Contact
+              <NavBar />
+              Contact
             </div>
         );
     }
