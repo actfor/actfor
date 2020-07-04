@@ -33,7 +33,7 @@ class ActFor extends Component {
             </Route>
 
             <Route path="*">
-                <Redirect to="/" />
+              <Home />
             </Route>
           </Switch>
         </Router>
