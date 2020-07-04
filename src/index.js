@@ -12,9 +12,7 @@ import './styles/App.css';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ActFor />
-  </React.StrictMode>,
+  <ActFor />,
   document.getElementById('root')
 );
 

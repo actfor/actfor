@@ -5,6 +5,7 @@ import { Menu } from 'semantic-ui-react';
 
 // components
 import NavBar from './../components/navbar';
+import HomeDropdown from './../components/home/HomeDropdown';
 import PageSwitches from './../components/home/PageSwitches';
 
 class Home extends Component {
@@ -13,6 +14,7 @@ class Home extends Component {
             <div>
               <NavBar />
               Home
+              <HomeDropdown />
               <PageSwitches />
             </div>
         );
