@@ -3,7 +3,13 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 // semantic-ui
-import { Dropdown } from 'semantic-ui-react';
+import {
+  Dropdown,
+  Image
+} from 'semantic-ui-react';
+
+// images
+import * as title from './../../images/ActForHome.png'
 
 class HomeDropdown extends Component {
   onChange = (e, { value }) => {
@@ -25,11 +31,14 @@ class HomeDropdown extends Component {
     ]
 
     return (
-      <div>
+      <div style={{ backgroundColor: '#2185d0', textAlign: 'center', padding: '24px', marginRight: '24px' }}>
+        <Image centered src={title} size="medium" />
         <Dropdown
+          fluid
+          selection
+          search
           placeholder='Choose one'
           onChange={this.onChange}
-          selection
           options={options}
         />
       </div>

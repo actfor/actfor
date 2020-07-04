@@ -5,6 +5,9 @@ import { withRouter } from 'react-router-dom';
 // semantic-ui
 import { Menu, Icon, Image } from 'semantic-ui-react';
 
+// images
+import * as logo from './../../images/ActFor.png'
+
 class NavBar extends Component {
   handleClick = (e, { id }) => {
     const { history } = this.props
@@ -30,7 +33,14 @@ class NavBar extends Component {
   render() {
     return (
       <div style={{ paddingBottom: '94px' }}>
-        <Menu fixed="top" inverted color="teal" icon="labeled">
+        <Menu fixed="top" inverted color="blue" icon="labeled">
+
+          <Menu.Item
+            header
+            // fitted="vertically"
+          >
+            <Image src={logo} size="small" />
+          </Menu.Item>
           
           <Menu.Item
             id="home"

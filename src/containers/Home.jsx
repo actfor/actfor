@@ -13,7 +13,6 @@ class Home extends Component {
         return (
             <div>
               <NavBar />
-              Home
               <HomeDropdown />
               <PageSwitches />
             </div>
