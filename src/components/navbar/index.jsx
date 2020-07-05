@@ -3,34 +3,94 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 // semantic-ui
-import { Menu, Icon, Image } from 'semantic-ui-react';
+import {
+  Dropdown,
+  Icon,
+  Image,
+  Menu,
+} from 'semantic-ui-react';
 
 // images
 import * as logo from './../../images/logo.png'
 
 class NavBar extends Component {
-  handleClick = (e, { id }) => {
-    const { history } = this.props
-    
-    switch (id) {
-      case "home":
-        history.push('/')
-        break;
-      
-      case "about":
-        history.push('/about')
-        break;
-
-      case "contact":
-        history.push('/contact')
-        break;
-      
-      default:
-        break;
-    }
+  constructor(props) {
+    super(props);
+    this.state = {}
   }
 
+  handleBtnClick = (e, { path }) => {
+    const { history } = this.props
+    if (!path) {
+      history.push('/');
+    }
+    history.push(path);
+  }
+
+  handleDropClick = (e, { id }) => {
+    this.setState({
+      [id]: true,
+    })
+  }
+
+  handleDropClose = (e, { id }) => {
+    this.setState({
+      [id]: false,
+    })
+  }
+
+  renderMenu = (menu) => (
+    menu.map(item => {
+      if (item.dropdown) {
+        return (
+          <Menu.Item
+            id={item.id}
+            onClick={this.handleDropClick}
+          >
+            <Icon name={item.icon} />
+            {item.content}
+            <Dropdown
+              inline
+              text={null}
+              id={item.id}
+              open={this.state[item.id]}
+              onClick={this.handleDropClick}
+              onClose={this.handleDropClose}
+            >
+              <Dropdown.Menu>
+                {item.dropdown.map(drop => (
+                  <Dropdown.Item
+                    as="a"
+                    id={drop.path}
+                    text={drop.text}
+                    path={drop.path}
+                    onClick={this.handleBtnClick}
+                  />
+                ))}
+              </Dropdown.Menu>
+            </Dropdown>
+          </Menu.Item>
+        );
+      } else {
+        return (
+        <Menu.Item
+          as='a'
+          id={item.id}
+          path={item.path}
+          onClick={this.handleBtnClick}
+        >
+          <Icon name={item.icon} />
+          {item.content}
+        </Menu.Item>
+        );
+      }
+    })
+  )
+
   render() {
+
+    const { rightMenu } = this.props;
+
     return (
       <div style={{ paddingBottom: '94px' }}>
         <Menu fixed="top" inverted color="blue" icon="labeled">
@@ -44,6 +104,7 @@ class NavBar extends Component {
           
           <Menu.Item
             id="home"
+            path="/"
             as='a'
             onClick={this.handleClick}
           >
@@ -53,6 +114,7 @@ class NavBar extends Component {
 
           <Menu.Item
             id="about"
+            path="/about"
             as='a'
             onClick={this.handleClick}
           >
@@ -62,12 +124,19 @@ class NavBar extends Component {
 
           <Menu.Item
             id="contact"
+            path="/contact"
             as='a'
             onClick={this.handleClick}
           >
             <Icon name="phone" />
             Contact Us
           </Menu.Item>
+
+          {rightMenu &&
+            <Menu.Menu position="right">
+              {this.renderMenu(rightMenu)}
+            </Menu.Menu>
+          }
 
         </Menu>
       </div>
