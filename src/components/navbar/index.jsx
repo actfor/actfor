@@ -21,6 +21,8 @@ class NavBar extends Component {
 
   handleBtnClick = (e, { path }) => {
     const { history } = this.props
+    console.log('here');
+    
     if (!path) {
       history.push('/');
     }
@@ -106,7 +108,7 @@ class NavBar extends Component {
             id="home"
             path="/"
             as='a'
-            onClick={this.handleClick}
+            onClick={this.handleBtnClick}
           >
             <Icon name="home" />
             Home
@@ -116,7 +118,7 @@ class NavBar extends Component {
             id="about"
             path="/about"
             as='a'
-            onClick={this.handleClick}
+            onClick={this.handleBtnClick}
           >
             <Icon name="globe" />
             About Us
@@ -126,7 +128,7 @@ class NavBar extends Component {
             id="contact"
             path="/contact"
             as='a'
-            onClick={this.handleClick}
+            onClick={this.handleBtnClick}
           >
             <Icon name="phone" />
             Contact Us
