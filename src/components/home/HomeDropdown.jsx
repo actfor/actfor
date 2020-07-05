@@ -30,8 +30,16 @@ class HomeDropdown extends Component {
       },
     ]
 
+    const style = {
+      backgroundColor: '#2185d0',
+      textAlign: 'center',
+      padding: '24px',
+      marginRight: '24px',
+      borderRadius: '24px'
+    };
+
     return (
-      <div style={{ backgroundColor: '#2185d0', textAlign: 'center', padding: '24px', marginRight: '24px' }}>
+      <div style={style}>
         <Image centered src={title} size="medium" />
         <Dropdown
           fluid
