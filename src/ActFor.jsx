@@ -9,9 +9,11 @@ import {
 } from "react-router-dom";
 
 // containers
-import Home from './containers/Home';
 import About from './containers/About';
+import BLM from './containers/BLM';
 import Contact from './containers/Contact';
+import Home from './containers/Home';
+import Yemen from './containers/Yemen';
 
 class ActFor extends Component {
 
@@ -32,8 +34,16 @@ class ActFor extends Component {
               <Contact />
             </Route>
 
+            <Route path="/yemen">
+              <Yemen />
+            </Route>
+
+            <Route path="/blm">
+              <BLM />
+            </Route>
+
             <Route path="*">
-              <Home />
+              <Redirect to="/" />
             </Route>
           </Switch>
         </Router>

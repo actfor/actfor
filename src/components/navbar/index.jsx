@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 import { Menu, Icon, Image } from 'semantic-ui-react';
 
 // images
-import * as logo from './../../images/ActFor.png'
+import * as logo from './../../images/logo.png'
 
 class NavBar extends Component {
   handleClick = (e, { id }) => {

@@ -9,7 +9,7 @@ import {
 } from 'semantic-ui-react';
 
 // images
-import * as title from './../../images/ActForHome.png'
+import * as title from './../../images/title.png'
 
 class HomeDropdown extends Component {
   onChange = (e, { value }) => {
