@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-import { Segment, Menu } from 'semantic-ui-react';
-
 // components
 import NavBar from './../components/navbar';
+import YemenPages from './../components/yemen/YemenPages';
 
 class Yemen extends Component {
   render() {
@@ -54,6 +53,7 @@ class Yemen extends Component {
       <div>
         <NavBar rightMenu={rightMenu} />
         Yemen
+        <YemenPages />
       </div>
     );
   }
