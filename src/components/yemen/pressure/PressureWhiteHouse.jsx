@@ -44,46 +44,53 @@ class PressureWhiteHouse extends Component {
       case 'step 1':
         return (
           <div>
-            <Segment>
-            <Header as='h2'>
-              Step 1
-              <Header.Subheader>
-                Add a name and your local information for your generated message (optional)
-              </Header.Subheader>
-            </Header>
-              <Input
-                id="name"
-                placeholder="Your Name"
-                value={name}
-                onChange={this.handleTextChange}
-              />
-              <br />
-              <br />
-              <Input
-                id="location"
-                placeholder="State, Zipcode"
-                value={location}
-                onChange={this.handleTextChange}
-              />
-            </Segment>
+            <Segment.Group>
+              <Segment>
+                <Header as='h2'>
+                  Step 1
+                  <Header.Subheader>
+                    Add a name and your local information for your generated message (optional)
+                  </Header.Subheader>
+                </Header>
+              </Segment>
+              <Segment>
+                <Input
+                  id="name"
+                  placeholder="Your Name"
+                  value={name}
+                  onChange={this.handleTextChange}
+                />
+                <br />
+                <br />
+                <Input
+                  id="location"
+                  placeholder="State, Zipcode"
+                  value={location}
+                  onChange={this.handleTextChange}
+                />
+              </Segment>
+            </Segment.Group>
           </div>
         )
         break;
       
       case 'step 2':
         return (
-          <Segment>
-            <Header as='h2'>
-              Step 2
-              <Header.Subheader>
-                Read our generated script for your message, and then copy it by clicking the button! 
-              </Header.Subheader>
-            </Header>
-            <CopyMessage id="whiteHouseMessage" message={whiteHouseMessage(name, location)}/>
-            <Divider />
-            {whiteHouseMessage(name, location)}
-          </Segment>
-
+          <Segment.Group>
+            <Segment>
+              <Header as='h2'>
+                Step 2
+                <Header.Subheader>
+                  Read our generated script for your message, and then copy it by clicking the button! 
+                </Header.Subheader>
+              </Header>
+            </Segment>
+            <Segment>
+              <CopyMessage id="whiteHouseMessage" message={whiteHouseMessage(name, location)}/>
+              <Divider />
+              {whiteHouseMessage(name, location)}
+            </Segment>
+          </Segment.Group>
         )
         break;
 
