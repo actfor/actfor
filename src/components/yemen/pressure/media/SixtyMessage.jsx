@@ -159,7 +159,6 @@ class SixtyMessage extends Component {
 
   render() {
     const { activeItem, name, location } = this.state;
-    console.log('test', reactElementToJSXString(mediaMess60(name, location)) );
     return (
       <Grid>
         <Grid.Column width={4}>
