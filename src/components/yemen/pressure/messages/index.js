@@ -1,6 +1,6 @@
 import React from 'react';
 
-const mediaMessage = (name, location) => (
+const whiteHouseMessage = (name, location) => (
   <div>
     <p>
       Dear President Trump,
@@ -35,5 +35,5 @@ const mediaMessage = (name, location) => (
 )
 
 export {
-  mediaMessage,
+  whiteHouseMessage,
 };

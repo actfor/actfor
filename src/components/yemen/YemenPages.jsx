@@ -7,6 +7,7 @@ import {
 
 // pages
 import PressureMedia from './pressure/PressureMedia';
+import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 
 class YemenPages extends Component {
   render() {
@@ -27,11 +28,11 @@ class YemenPages extends Component {
           </Route>
 
           <Route path="/yemen/pressure/whitehouse">
-            Pressure White House
+            <PressureWhiteHouse />
           </Route>
 
-          <Route path="/yemen/pressure/Congress">
-            Pressure Media
+          <Route path="/yemen/pressure/Congress">Pressure White House
+            Pressure Congress
           </Route>
 
           <Route path="/yemen/donate">
