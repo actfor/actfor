@@ -12,7 +12,16 @@ class Yemen extends Component {
         id: 'education',
         content: 'Education',
         icon: 'pencil',
-        path: '/yemen/education',
+        dropdown: [
+          {
+            text: 'World\'s Worst Crisis',
+            path: '/yemen/education/jahood'
+          },
+          {
+            text: 'Other Resources',
+            path: '/yemen/education/resources'
+          }
+        ],
       },
       {
         id: 'public',

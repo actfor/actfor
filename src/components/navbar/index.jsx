@@ -20,8 +20,7 @@ class NavBar extends Component {
   }
 
   handleBtnClick = (e, { path }) => {
-    const { history } = this.props
-    console.log('here');
+    const { history } = this.props;
     
     if (!path) {
       history.push('/');
