@@ -25,7 +25,7 @@ class Yemen extends Component {
       {
         id: 'public',
         content: 'Public Pressure',
-        icon: 'university',
+        icon: 'bullhorn',
         dropdown: [
           {
             text: 'Pressure Media',
