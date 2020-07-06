@@ -10,6 +10,7 @@ import {
 
 // components
 import TimeMessage from './media/TimeMessage';
+import SixtyMessage from './media/SixtyMessage';
 
 // images
 import * as time from './../../../images/time.png';
@@ -38,6 +39,12 @@ class PressureMedia extends Component {
       <div >
         <Accordion fluid styled>
 
+          <Accordion.Title>
+            <Header as="h1">
+              Portrayal of Muhammad Bin Salman
+            </Header>
+          </Accordion.Title>
+
           {/* Time Magazine */}
           <Accordion.Title
             active={activeIndex === 0}
@@ -45,7 +52,7 @@ class PressureMedia extends Component {
             onClick={this.handleClick}
           >
             <Icon name="dropdown" />
-            <Header style={{ display: 'inline' }} as="h1">
+            <Header style={{ display: 'inline' }} as="h3">
               <Image src={time} size="medium" />
               Time Magazine
             </Header>
@@ -61,14 +68,13 @@ class PressureMedia extends Component {
             onClick={this.handleClick}
           >
             <Icon name="dropdown" />
-            <Header style={{ display: 'inline' }} as="h1">
+            <Header style={{ display: 'inline' }} as="h3">
               <Image src={sixty} size="medium" />
               60 Minutes
             </Header>
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 1}>
-            {/* <WorkCards /> */}
-            test
+            <SixtyMessage />
           </Accordion.Content>
         </Accordion>
       </div>
