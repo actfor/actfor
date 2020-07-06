@@ -31,7 +31,7 @@ class YemenPages extends Component {
             <PressureWhiteHouse />
           </Route>
 
-          <Route path="/yemen/pressure/Congress">Pressure White House
+          <Route path="/yemen/pressure/Congress">
             Pressure Congress
           </Route>
 
