@@ -34,7 +34,7 @@ const whiteHouseMessage = (name, location) => (
   </div>
 )
 
-const mediaMessTIME = (name, location) => (
+const mediaMessTime = (name, location) => (
   <div>
     <p>
       Dear TIME Magazine,
@@ -218,7 +218,7 @@ const congressHJ56 = (repName, name, location) => (
 
 export {
   whiteHouseMessage,
-  mediaMessTIME,
+  mediaMessTime,
   mediaMess60,
   congressS398,
   congressHR910,

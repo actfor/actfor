@@ -8,6 +8,9 @@ import {
   Image,
 } from 'semantic-ui-react';
 
+// components
+import TimeMessage from './media/TimeMessage';
+
 // images
 import * as time from './../../../images/time.png';
 import * as sixty from './../../../images/60minutes.jpg';
@@ -48,7 +51,7 @@ class PressureMedia extends Component {
             </Header>
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 0}>
-            {/* <WorkCards /> */} test
+            <TimeMessage />
           </Accordion.Content>
 
           {/* 60 Minutes */}
