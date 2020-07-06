@@ -23,7 +23,6 @@ class YemenPages extends Component {
           </Route>
 
           <Route path="/yemen/pressure/media">
-            Pressure Media
             <PressureMedia />
           </Route>
 
