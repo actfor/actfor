@@ -22,7 +22,7 @@ class CopyMessage extends Component {
       top: '-10000px'
     }
     return (
-      <div style={{ marginRight: '12px' }}>
+      <div>
         <Popup
           on="click"
           content="Copied Successfully!"

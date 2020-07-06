@@ -158,7 +158,7 @@ class PressureWhiteHouse extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <Grid style={{ marginRight: '12px', marginBottom: '24px' }}>
+      <Grid>
         <Grid.Column width={4}>
           <Menu fluid vertical tabular>
             <Menu.Item

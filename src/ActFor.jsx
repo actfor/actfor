@@ -19,7 +19,7 @@ class ActFor extends Component {
 
   render() {
     return (
-      <div style={{ paddingLeft: '24px' }} >
+      <div style={{ margin: '24px' }} >
         <Router>
           <Switch>
             <Route exact path="/">

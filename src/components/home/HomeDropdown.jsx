@@ -34,7 +34,6 @@ class HomeDropdown extends Component {
       backgroundColor: '#2185d0',
       textAlign: 'center',
       padding: '24px',
-      marginRight: '24px',
       borderRadius: '24px'
     };
 
