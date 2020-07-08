@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 // pages
+import PressureCongress from './pressure/PressureCongress';
 import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 
@@ -31,7 +32,7 @@ class YemenPages extends Component {
           </Route>
 
           <Route path="/yemen/pressure/congress">
-            Pressure Congress
+            <PressureCongress />
           </Route>
 
           <Route path="/yemen/donate">

@@ -158,7 +158,7 @@ class SixtyMessage extends Component {
   }
 
   render() {
-    const { activeItem, name, location } = this.state;
+    const { activeItem } = this.state;
     return (
       <Grid>
         <Grid.Column width={4}>
