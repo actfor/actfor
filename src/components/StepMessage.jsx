@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
-  Button,
   Divider,
+  Form,
   Grid,
   Header,
-  Icon,
   Input,
-  List,
   Menu,
-  Segment
+  Segment,
+  TextArea
 } from 'semantic-ui-react';
 
 import reactElementToJSXString from 'react-element-to-jsx-string';
@@ -26,6 +25,7 @@ class StepMessage extends Component {
       name: '',
       repName: '',
       location: '',
+      custom: '',
       activeItem: props.steps[0].name,
     }
   }
@@ -40,7 +40,7 @@ class StepMessage extends Component {
 
   renderSegment = () => {
     const { steps, congress } = this.props;
-    const { activeItem, name, location, repName } = this.state;
+    const { activeItem, name, location, repName, custom } = this.state;
 
     const currentStep = steps.filter(step => step.name == activeItem)[0] || {}
 
@@ -76,13 +76,27 @@ class StepMessage extends Component {
                   <div>
                     <br />
                     <Input
-                    id="repName"
-                    placeholder="Name of Congress Rep"
-                    value={repName}
-                    onChange={this.handleTextChange}
-                  />
+                      id="repName"
+                      placeholder="Name of Congress Rep"
+                      value={repName}
+                      onChange={this.handleTextChange}
+                    />
                   </div>
                 }
+                <Divider />
+                <Header>
+                  <Header.Subheader>
+                    Add your own custom message to the script to avoid it getting automatically filtered out.
+                  </Header.Subheader>
+                </Header>
+                <Form>
+                  <TextArea
+                    id="custom"
+                    placeholder="Custom Message"
+                    value={custom}
+                    onChange={this.handleTextChange}
+                  />
+                </Form>
               </Segment>
             </Segment.Group>
           </div>
@@ -90,7 +104,7 @@ class StepMessage extends Component {
       break;
 
       case 'message':
-        const message = congress ? currentStep.message(repName, name, location) : currentStep.message(name, location)
+        const message = congress ? currentStep.message(repName, name, location, custom) : currentStep.message(name, location, custom)
 
         return (
           <Segment.Group>

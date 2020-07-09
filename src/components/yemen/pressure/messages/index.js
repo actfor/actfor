@@ -1,11 +1,12 @@
 import React from 'react';
 
-const whiteHouseMessage = (name, location) => (
+const whiteHouseMessage = (name, location, custom) => (
   <div>
     <p>
       Dear President Trump,
     </p>
     <br />
+    { custom && <p>{custom}</p> }
     <p>
       <b>I am writing to urge you to stop United States funding and support of the Saudi Arabia led coalition for their violence in Yemen. I strongly oppose your veto of S.J.Res. 7: A joint resolution to direct the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress. </b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
     </p>
@@ -34,12 +35,13 @@ const whiteHouseMessage = (name, location) => (
   </div>
 )
 
-const mediaMessTime = (name, location) => (
+const mediaMessTime = (name, location, custom) => (
   <div>
     <p>
       Dear TIME Magazine,
     </p>
     <br />
+    { custom && <p>{custom}</p> }
     <p>
       I’m writing because your feature with Muhmmad Bin Salman (MBS) on TIME Magazine is unacceptable. MBS is a serial human rights abuser. In addition to being the architect of Saudi Arabia's involvement in Yemen’s catastrophic war, MBS has a history of arresting and murdering political rivals, dissenters, and reporters who otherwise would have been able to provide real information on Yemen to the international community. MBS is responsible for the humanitarian crisis in Yemen. He should not be viewed favorably in our press. 
     </p>
@@ -68,12 +70,13 @@ const mediaMessTime = (name, location) => (
   </div>
 )
 
-const mediaMess60 = (name, location) => (
+const mediaMess60 = (name, location, custom) => (
   <div>
     <p>
       Dear 60 Minutes,
     </p>
     <br />
+    { custom && <p>{custom}</p> }
     <p>
       I’m writing because your feature with Muhmmad Bin Salman (MBS) on 60 Minutes is unacceptable. MBS is a serial human rights abuser. In addition to being the architect of Saudi Arabia's involvement in Yemen’s catastrophic war, MBS has a history of arresting and murdering political rivals, dissenters, and reporters who otherwise would have been able to provide real information on Yemen to the international community. MBS is responsible for the humanitarian crisis in Yemen. He should not be viewed favorably in our press. 
     </p>
@@ -102,12 +105,13 @@ const mediaMess60 = (name, location) => (
   </div>
 )
 
-const congressS398 = (repName, name, location) => (
+const congressS398 = (repName, name, location, custom) => (
   <div>
     <p>
       Dear {repName || '[INSERT SENATOR]'},
     </p>
     <br />
+    { custom && <p>{custom}</p> }
     <p>
       <b>I am writing to urge you to vote for S. 398, the Saudi Arabia Accountability and Yemen Act of 2019.</b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
     </p>
@@ -140,12 +144,13 @@ const congressS398 = (repName, name, location) => (
   </div>
 )
 
-const congressHR910 = (repName, name, location) => (
+const congressHR910 = (repName, name, location, custom) => (
   <div>
     <p>
       Dear {repName || '[INSERT HOUSE REP NAME]'},
     </p>
     <br />
+    { custom && <p>{custom}</p> }
     <p>
       <b>I am writing to urge you to cosponsor, vote for, and pass H.R. 910, the Yemen Refueling Prohibition Act.</b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
     </p>
@@ -178,12 +183,13 @@ const congressHR910 = (repName, name, location) => (
   </div>
 )
 
-const congressHJ56 = (repName, name, location) => (
+const congressHJ56 = (repName, name, location, custom) => (
   <div>
     <p>
       Dear {repName || '[INSERT HOUSE REP NAME]'},
     </p>
     <br />
+    { custom && <p>{custom}</p> }
     <p>
       <b>I’m contacting you to urge you to cosponsor, vote for, and pass H.J.Res. 56: Directing the President to terminate the use of the United States Armed Forces with respect to the military intervention led by Saudi Arabia in the Republic of Yemen.</b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
     </p>
