@@ -6,10 +6,12 @@ import {
   Form,
   Grid,
   Header,
+  Icon,
   Input,
   Menu,
   Segment,
-  TextArea
+  TextArea,
+  Button
 } from 'semantic-ui-react';
 
 import reactElementToJSXString from 'react-element-to-jsx-string';
@@ -120,6 +122,46 @@ class StepMessage extends Component {
               <CopyMessage id="mediaMess60" message={message}/>
               <Divider />
               {message}
+            </Segment>
+          </Segment.Group>
+        );
+      break;
+
+      case 'email':
+        return (
+          <Segment.Group>
+            <Segment>
+              <Header as='h2'>
+                {currentStep.name}
+                <Header.Subheader>
+                  {currentStep.subheader}
+                </Header.Subheader>
+              </Header>
+            </Segment>
+
+            <Segment placeholder>
+              <Grid columns={2} relaxed='very' stackable>
+
+                <Grid.Column>
+                  {currentStep.leftSegment}
+                </Grid.Column>
+
+                <Grid.Column textAlign='center' verticalAlign='middle'>
+                  <Header icon>
+                    <Icon name='mail'/>
+                    Send to {currentStep.sendTo}
+                  </Header>
+                  <MailTo
+                    email={currentStep.email}
+                    subject={currentStep.subject}
+                    body={reactElementToJSXString(currentStep.message(name, location))}
+                  >
+                    <Button primary>Send email to {currentStep.email}</Button>
+                  </MailTo>
+                </Grid.Column>
+
+              </Grid>
+              <Divider vertical>Or</Divider>
             </Segment>
           </Segment.Group>
         );
