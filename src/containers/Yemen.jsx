@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+// semantic-ui
+import {
+  Divider,
+  Header,
+} from 'semantic-ui-react';
+
 // components
 import NavBar from './../components/navbar';
 import YemenPages from './../components/yemen/YemenPages';
@@ -52,7 +58,10 @@ class Yemen extends Component {
     return (
       <div>
         <NavBar rightMenu={rightMenu} />
-        Yemen
+        <Header as="h1">
+          Yemen
+        </Header>
+        <Divider />
         <YemenPages />
       </div>
     );
