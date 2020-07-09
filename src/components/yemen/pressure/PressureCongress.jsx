@@ -10,6 +10,8 @@ import {
 
 // components
 import S398Message from './congress/S398Message';
+import HR910Message from './congress/HR910Message';
+import HJ56Message from './congress/HJ56Message';
 
 class PressureCongress extends Component {
   constructor(props) {
@@ -72,7 +74,7 @@ class PressureCongress extends Component {
             </Header>
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 1}>
-            Content Here
+            <HR910Message />
           </Accordion.Content>
 
           {/* HJ 56 */}
@@ -90,7 +92,7 @@ class PressureCongress extends Component {
             </Header>
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 2}>
-            Content Here
+            <HJ56Message />
           </Accordion.Content>
 
         </Accordion>

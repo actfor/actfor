@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import StepMessage from './../../../StepMessage';
 
 // messages
-import { congressS398 } from './../messages';
+import { congressHR910 } from './../messages';
 
 // segments
 import {
@@ -12,7 +12,7 @@ import {
   renderStep3Segment
 } from './renderSegments';
 
-class S398Message extends Component {
+class HR910Message extends Component {
   render() {
     const steps = [
       {
@@ -22,7 +22,7 @@ class S398Message extends Component {
       {
         type: 'message',
         name: 'Step 2',
-        message: congressS398,
+        message: congressHR910,
       },
       {
         type: 'other',
@@ -34,7 +34,7 @@ class S398Message extends Component {
         type: 'other',
         name: 'GovTrack',
         subheader: 'Follow and track this bill on the govtrack site!',
-        segment: renderGovTrackSegment("https://www.govtrack.us/congress/bills/116/s398"),
+        segment: renderGovTrackSegment("https://www.govtrack.us/congress/bills/116/hr910"),
       }
     ]
     return (
@@ -48,4 +48,4 @@ class S398Message extends Component {
   }
 }
 
-export default S398Message;
+export default HR910Message;

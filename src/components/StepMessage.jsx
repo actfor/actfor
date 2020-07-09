@@ -39,7 +39,7 @@ class StepMessage extends Component {
   }
 
   renderSegment = () => {
-    const { steps } = this.props;
+    const { steps, congress } = this.props;
     const { activeItem, name, location, repName } = this.state;
 
     const currentStep = steps.filter(step => step.name == activeItem)[0] || {}
@@ -72,13 +72,16 @@ class StepMessage extends Component {
                   value={location}
                   onChange={this.handleTextChange}
                 />
-                {currentStep.hasRepName &&
-                  <Input
+                {congress &&
+                  <div>
+                    <br />
+                    <Input
                     id="repName"
-                    placeholder="Name of Representative"
+                    placeholder="Name of Congress Rep"
                     value={repName}
                     onChange={this.handleTextChange}
                   />
+                  </div>
                 }
               </Segment>
             </Segment.Group>
@@ -87,7 +90,7 @@ class StepMessage extends Component {
       break;
 
       case 'message':
-        const message = currentStep.repName ? currentStep.message(repName, name, location) : currentStep.message(name, location)
+        const message = congress ? currentStep.message(repName, name, location) : currentStep.message(name, location)
 
         return (
           <Segment.Group>
@@ -105,6 +108,25 @@ class StepMessage extends Component {
               {message}
             </Segment>
           </Segment.Group>
+        );
+      break;
+
+      case 'other':
+        return (
+          <div>
+            <Segment.Group>
+              <Segment>
+                <Header as='h2'>
+                  {currentStep.name}
+                  <Header.Subheader>
+                    {currentStep.subheader}
+                  </Header.Subheader>
+                </Header>
+              </Segment>
+
+              {currentStep.segment}
+            </Segment.Group>
+          </div>
         );
       break;
 
