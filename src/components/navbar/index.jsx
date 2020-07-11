@@ -100,9 +100,8 @@ class NavBar extends Component {
 
           <Menu.Item
             header
-            // fitted="vertically"
           >
-            <Image src={logo} size="small" />
+            <Image src={logo} size="mini" />
           </Menu.Item>
           
           <Menu.Item
