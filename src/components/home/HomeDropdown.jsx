@@ -31,7 +31,7 @@ class HomeDropdown extends Component {
     ]
 
     const style = {
-      backgroundColor: '#2185d0',
+      backgroundColor: '#88060d',
       textAlign: 'center',
       padding: '24px',
       borderRadius: '24px'
