@@ -20,7 +20,7 @@ class Yemen extends Component {
         dropdown: [
           {
             text: 'World\'s Worst Crisis',
-            path: '/yemen/education/jahood'
+            path: '/yemen/education/juhood'
           },
           {
             text: 'Other Resources',

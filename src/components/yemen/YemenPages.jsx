@@ -9,14 +9,15 @@ import {
 import PressureCongress from './pressure/PressureCongress';
 import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
+import MayaArticle from './education/juhood';
 
 class YemenPages extends Component {
   render() {
     return (
       <div>
         <Switch>
-          <Route path="/yemen/education/jahood">
-            Maya Article
+          <Route path="/yemen/education/juhood">
+            <MayaArticle />
           </Route>
 
           <Route path="/yemen/education/resources">
