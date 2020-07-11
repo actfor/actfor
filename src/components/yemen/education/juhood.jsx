@@ -1,7 +1,14 @@
 import React, { Component } from "react";
-import { Document, Page } from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf";
+import article from './Yemen.pdf';
 
 export default class MayaArticle extends Component {
+
+  constructor(props){
+        super(props);
+        pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+    }
+
   state = { numPages: null, pageNumber: 1 };
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -9,7 +16,7 @@ export default class MayaArticle extends Component {
   };
 
   goToPrevPage = () =>
-    this.setState(state => ({ pageNumber: state.pageNumber - 1 }));
+    this.setState(state => ({ pageNumber: state.pageNumber - 1 }))
   goToNextPage = () =>
     this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
 
@@ -25,7 +32,7 @@ export default class MayaArticle extends Component {
 
         <div style={{ width: 600 }}>
           <Document
-            file='/example.pdf'
+            file={article}
             onLoadSuccess={this.onDocumentLoadSuccess}
           >
             <Page pageNumber={pageNumber} width={600} />
