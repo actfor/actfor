@@ -40,6 +40,8 @@ class HomeDropdown extends Component {
     return (
       <div style={style}>
         <Image centered src={title} size="medium" />
+        <br />
+        <br />
         <Dropdown
           fluid
           selection
