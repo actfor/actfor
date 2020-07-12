@@ -10,6 +10,7 @@ import PressureCongress from './pressure/PressureCongress';
 import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 import MayaArticle from './education/juhood';
+import Resources from './education/resources';
 
 class YemenPages extends Component {
   render() {
@@ -21,7 +22,7 @@ class YemenPages extends Component {
           </Route>
 
           <Route path="/yemen/education/resources">
-            Other Resources List
+            <Resources />
           </Route>
 
           <Route path="/yemen/pressure/media">

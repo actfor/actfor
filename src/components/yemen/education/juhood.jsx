@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import article from './Yemen.pdf';
+import "react-pdf/dist/Page/AnnotationLayer.css";
 
-export default class MayaArticle extends Component {
+export default class Article extends Component {
 
   constructor(props){
         super(props);
