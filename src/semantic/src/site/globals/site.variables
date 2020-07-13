@@ -1,0 +1,16 @@
+/*******************************
+     User Global Variables
+*******************************/
+@primaryColor: @monarch;
+@secondaryColor: @fuel-yellow;
+@pageBackground: @citrine-white;
+
+
+/**
+Color Pallette 
+**/
+@citrine-white: #f8ebcd;
+@monarch: #88060d;
+@fuel-yellow: #ee9b2e;
+@persian-red: #cc3531;
+@tony-pink: #e5917e;

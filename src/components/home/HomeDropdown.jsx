@@ -20,7 +20,7 @@ class HomeDropdown extends Component {
     const options = [
       {
         key: 'yemen',
-        value: 'yemen',
+        value: 'yemen/education/crisis',
         text: 'Yemen'
       },
       {
@@ -31,7 +31,7 @@ class HomeDropdown extends Component {
     ]
 
     const style = {
-      backgroundColor: '#2185d0',
+      backgroundColor: '#88060d',
       textAlign: 'center',
       padding: '24px',
       borderRadius: '24px'
@@ -40,6 +40,8 @@ class HomeDropdown extends Component {
     return (
       <div style={style}>
         <Image centered src={title} size="medium" />
+        <br />
+        <br />
         <Dropdown
           fluid
           selection

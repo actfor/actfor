@@ -48,7 +48,8 @@ class NavBar extends Component {
             id={item.id}
             onClick={this.handleDropClick}
           >
-            <Icon name={item.icon} />
+            <Icon name={item.icon} size="big" />
+          <br />
             {item.content}
             <Dropdown
               inline
@@ -80,7 +81,8 @@ class NavBar extends Component {
           path={item.path}
           onClick={this.handleBtnClick}
         >
-          <Icon name={item.icon} />
+          <Icon name={item.icon} size="big"/>
+          <br />
           {item.content}
         </Menu.Item>
         );
@@ -94,13 +96,12 @@ class NavBar extends Component {
 
     return (
       <div style={{ paddingBottom: '94px' }}>
-        <Menu fixed="top" inverted color="blue" icon="labeled">
+        <Menu fixed="top" inverted color="primary" icon="labeled">
 
           <Menu.Item
             header
-            // fitted="vertically"
           >
-            <Image src={logo} size="small" />
+            <Image src={logo} size="mini" />
           </Menu.Item>
           
           <Menu.Item

@@ -6,8 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "antd": "^4.4.2",
-    "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
+    "heroku-ssl-redirect": "^0.0.4",
+    "path": "^0.12.7",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.1",
     "react-dom": "^16.13.1",
@@ -19,9 +20,12 @@
     "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
+    "build-semantic": "cd src/semantic && gulp build-css build-assets",
+    "watch-semantic": "cd src/semantic && yarn run build-semantic && gulp watch",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "bstart": "yarn run build-semantic && react-scripts start",
+    "build": "yarn run build-semantic && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "fomantic-ui": "^2.8.6",
+    "gulp": "^4.0.2"
   }
 }
