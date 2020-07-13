@@ -9,7 +9,7 @@ import {
 import PressureCongress from './pressure/PressureCongress';
 import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
-import MayaArticle from './education/juhood';
+import MayaArticle from './education/juhood.js';
 import Resources from './education/resources';
 
 class YemenPages extends Component {
