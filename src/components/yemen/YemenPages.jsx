@@ -15,7 +15,7 @@ class YemenPages extends Component {
     return (
       <div>
         <Switch>
-          <Route path="/yemen/education/jahood">
+          <Route path="/yemen/education/crisis">
             Maya Article
           </Route>
 

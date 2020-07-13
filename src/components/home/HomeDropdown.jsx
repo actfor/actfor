@@ -20,7 +20,7 @@ class HomeDropdown extends Component {
     const options = [
       {
         key: 'yemen',
-        value: 'yemen',
+        value: 'yemen/education/crisis',
         text: 'Yemen'
       },
       {

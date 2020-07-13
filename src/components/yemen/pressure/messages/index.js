@@ -105,10 +105,10 @@ const mediaMess60 = (name, location, custom) => (
   </div>
 )
 
-const congressS398 = (repName, name, location, custom) => (
+const congressS398 = (name, location, custom) => (
   <div>
     <p>
-      Dear {repName || '[INSERT SENATOR]'},
+      Dear Senator,
     </p>
     <br />
     { custom && <p>{custom}</p> }
@@ -144,10 +144,10 @@ const congressS398 = (repName, name, location, custom) => (
   </div>
 )
 
-const congressHR910 = (repName, name, location, custom) => (
+const congressHR910 = (name, location, custom) => (
   <div>
     <p>
-      Dear {repName || '[INSERT HOUSE REP NAME]'},
+      Dear Representative,
     </p>
     <br />
     { custom && <p>{custom}</p> }
@@ -183,10 +183,10 @@ const congressHR910 = (repName, name, location, custom) => (
   </div>
 )
 
-const congressHJ56 = (repName, name, location, custom) => (
+const congressHJ56 = (name, location, custom) => (
   <div>
     <p>
-      Dear {repName || '[INSERT HOUSE REP NAME]'},
+      Dear Representative,
     </p>
     <br />
     { custom && <p>{custom}</p> }

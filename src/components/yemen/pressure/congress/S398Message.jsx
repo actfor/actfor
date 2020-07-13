@@ -41,7 +41,6 @@ class S398Message extends Component {
       <div>
         <StepMessage
           steps={steps}
-          congress
         />
       </div>
     );

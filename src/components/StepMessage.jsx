@@ -25,7 +25,6 @@ class StepMessage extends Component {
     super(props);
     this.state = {
       name: '',
-      repName: '',
       location: '',
       custom: '',
       activeItem: props.steps[0].name,
@@ -41,8 +40,8 @@ class StepMessage extends Component {
   }
 
   renderSegment = () => {
-    const { steps, congress } = this.props;
-    const { activeItem, name, location, repName, custom } = this.state;
+    const { steps } = this.props;
+    const { activeItem, name, location, custom } = this.state;
 
     const currentStep = steps.filter(step => step.name == activeItem)[0] || {}
 
@@ -74,17 +73,6 @@ class StepMessage extends Component {
                   value={location}
                   onChange={this.handleTextChange}
                 />
-                {congress &&
-                  <div>
-                    <br />
-                    <Input
-                      id="repName"
-                      placeholder="Name of Congress Rep"
-                      value={repName}
-                      onChange={this.handleTextChange}
-                    />
-                  </div>
-                }
                 <Divider />
                 <Header>
                   <Header.Subheader>
@@ -106,7 +94,7 @@ class StepMessage extends Component {
       break;
 
       case 'message':
-        const message = congress ? currentStep.message(repName, name, location, custom) : currentStep.message(name, location, custom)
+        const message = currentStep.message(name, location, custom)
 
         return (
           <Segment.Group>

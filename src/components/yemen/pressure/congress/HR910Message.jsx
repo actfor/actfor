@@ -41,7 +41,6 @@ class HR910Message extends Component {
       <div>
         <StepMessage
           steps={steps}
-          congress
         />
       </div>
     );
