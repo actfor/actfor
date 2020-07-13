@@ -16,6 +16,12 @@ class HJ56Message extends Component {
   render() {
     const steps = [
       {
+        type: 'other',
+        name: 'GovTrack',
+        subheader: 'Follow and track this bill on the govtrack site!',
+        segment: renderGovTrackSegment("https://www.govtrack.us/congress/bills/116/hjres56"),
+      },
+      {
         type: 'name',
         name: 'Step 1',
       },
@@ -30,12 +36,6 @@ class HJ56Message extends Component {
         subheader: 'Find your congress representative, and paste your message!',
         segment: renderStep3Segment(),
       },
-      {
-        type: 'other',
-        name: 'GovTrack',
-        subheader: 'Follow and track this bill on the govtrack site!',
-        segment: renderGovTrackSegment("https://www.govtrack.us/congress/bills/116/hjres56"),
-      }
     ]
     return (
       <div>
