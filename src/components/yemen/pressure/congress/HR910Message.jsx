@@ -17,7 +17,7 @@ class HR910Message extends Component {
     const steps = [
       {
         type: 'other',
-        name: 'GovTrack',
+        name: 'Track The Bill',
         subheader: 'Follow and track this bill on the govtrack site!',
         segment: renderGovTrackSegment("https://www.govtrack.us/congress/bills/116/hr910"),
       },

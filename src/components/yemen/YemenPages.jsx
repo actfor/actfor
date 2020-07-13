@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import {
   Switch,
+  Redirect,
   Route,
 } from 'react-router-dom';
 
@@ -9,6 +10,8 @@ import {
 import PressureCongress from './pressure/PressureCongress';
 import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
+
+import Donate from './donate';
 
 class YemenPages extends Component {
   render() {
@@ -36,7 +39,11 @@ class YemenPages extends Component {
           </Route>
 
           <Route path="/yemen/donate">
-            Donate
+            <Donate />
+          </Route>
+
+          <Route path="/yemen/*">
+            <Redirect to="/yemen/education/crisis" />
           </Route>
         </Switch>
       </div>
