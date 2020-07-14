@@ -101,7 +101,9 @@ class NavBar extends Component {
           <Menu.Item
             header
           >
-            <Image src={logo} size="mini" />
+            <div style={{ paddingTop: '12px' }}>
+              <Image src={logo} size="mini" />
+            </div>
           </Menu.Item>
           
           <Menu.Item
@@ -111,6 +113,7 @@ class NavBar extends Component {
             onClick={this.handleBtnClick}
           >
             <Icon name="home" />
+            <br />
             Home
           </Menu.Item>
 
@@ -121,6 +124,7 @@ class NavBar extends Component {
             onClick={this.handleBtnClick}
           >
             <Icon name="globe" />
+            <br />
             About Us
           </Menu.Item>
 
@@ -131,6 +135,7 @@ class NavBar extends Component {
             onClick={this.handleBtnClick}
           >
             <Icon name="phone" />
+            <br />
             Contact Us
           </Menu.Item>
 
