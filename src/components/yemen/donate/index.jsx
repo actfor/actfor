@@ -49,7 +49,7 @@ class Donate extends Component {
 
     return (
       <div>
-        <Card.Group stackable>
+        <Card.Group centered stackable>
           {cards.map(card => (
             <Card color="secondary">
               <Image src={card.img} wrapped />
@@ -57,7 +57,7 @@ class Donate extends Component {
                 <Card.Header>{card.header}</Card.Header>
                 <Divider />
                 <Button
-                  secondary
+                  primary
                   as='a' target="_blank"
                   href={card.link}
                   content='Visit Site'
