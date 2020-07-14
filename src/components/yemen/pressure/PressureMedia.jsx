@@ -41,7 +41,10 @@ class PressureMedia extends Component {
 
           <Accordion.Title>
             <Header as="h1">
-              Portrayal of Muhammad Bin Salman
+              Portrayal of Muhammad Bin Salman (MBS)
+              <Header.Subheader>
+                The media should not portray MBS positively after his countless human rights abuses. They have given him a platform and allowed him to spread his propaganda.
+              </Header.Subheader>
             </Header>
           </Accordion.Title>
 

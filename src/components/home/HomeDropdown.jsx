@@ -22,12 +22,7 @@ class HomeDropdown extends Component {
         key: 'yemen',
         value: 'yemen/education/crisis',
         text: 'Yemen'
-      },
-      {
-        key: 'blm',
-        value: 'blm',
-        text: 'BLM'
-      },
+      }
     ]
 
     const style = {

@@ -32,7 +32,7 @@ class About extends Component {
                 Our Purpose
               </Header>
               <Divider />
-              <div style={{ fontSize: '16px' }}>
+              <div style={{ fontSize: '20px' }}>
                 <p>
                   The purpose of this website is to highlight the voices of activists on issues we care about and to encourage the everyday citizen to take action. We noticed that many people speak passionately about a variety of issues on social media, and we wanted to help everyone take the next step by translating education into action. In regards to these issues, our website is an easy and accessible way to consolidate information, contact officials, donate, and keep track of upcoming elections.
                 </p>

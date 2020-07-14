@@ -12,6 +12,7 @@ import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 
 import Donate from './donate';
+import { Header } from 'semantic-ui-react';
 
 class YemenPages extends Component {
   render() {
@@ -27,6 +28,11 @@ class YemenPages extends Component {
           </Route>
 
           <Route path="/yemen/pressure/media">
+            <Header>
+              <Header.Subheader>
+                Use this page to contact media outlets.
+              </Header.Subheader>
+            </Header>
             <PressureMedia />
           </Route>
 
