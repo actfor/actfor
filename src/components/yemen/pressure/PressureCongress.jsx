@@ -9,7 +9,7 @@ import {
 } from 'semantic-ui-react';
 
 // components
-import S398Message from './congress/S398Message';
+import S243Message from './congress/S243Message';
 import HR910Message from './congress/HR910Message';
 import HJ56Message from './congress/HJ56Message';
 
@@ -49,14 +49,14 @@ class PressureCongress extends Component {
           >
             <Icon name="dropdown" />
             <Header style={{ display: 'inline' }} as="h2">
-              S. 398
+              S. Res. 243
               <Header.Subheader>
-                Saudi Arabia Accountability and Yemen Act of 2019
+                A resolution requesting information on Saudi Arabia’s human rights practices in Yemen pursuant to section 502B(c) of the Foreign Assistance Act of 1961
               </Header.Subheader>
             </Header>
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 0}>
-            <S398Message />
+            <S243Message />
           </Accordion.Content>
 
           {/* HR 910 */}

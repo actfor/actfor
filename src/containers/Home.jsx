@@ -19,12 +19,14 @@ class Home extends Component {
               <br />
               <br />
               <Container textAlign="center">
-                <Header as="h4">
-                  This website builds on the work of activists and encourages action on social justice issues.  
-                </Header>
-                <p>
-                  Use the drop down menu above to choose a cause that you would like to act for!
-                </p>
+                <div style={{ fontSize: '20px' }}>
+                  <Header as="h2">
+                    This website builds on the work of activists and encourages action on social justice issues.  
+                  </Header>
+                  <p>
+                    Use the drop down menu above to choose a cause that you would like to act for!
+                  </p>
+                </div>
               </Container>
             </div>
         );

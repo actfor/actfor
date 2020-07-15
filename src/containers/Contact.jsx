@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
+  Button,
   Container,
   Divider,
   Header,
+  Icon,
 } from 'semantic-ui-react';
 
 // components
@@ -17,18 +19,39 @@ class Contact extends Component {
         <div>
           <NavBar />
           <Container>
-            <Header as="h1">Contact Us</Header>
+            <Header as="h1">
+              Contact Us
+              <Header.Subheader>Visit and follow our socials, or email us at info@actfor.us</Header.Subheader>
+            </Header>
             <Divider />
-            <p>
-              Email us at <tab />
-              <MailTo
-                email="info@actfor.us"
-                subject=""
-                body=""
+            <Button.Group vertical labeled icon size="big">
+              <Button
+                primary
+                icon
+                labelPosition='left'
+                as='a'
+                href='mailto:info@actfor.us'
               >
-                info@actfor.us
-              </MailTo>
-            </p>
+                <Icon name="mail" />
+                Email info@actfor.us
+              </Button>
+              <Button
+                color='instagram'
+                as='a'
+                href='https://www.instagram.com/actfor.us/'
+              >
+                <Icon name='instagram' />
+                Instagram
+              </Button>
+              <Button
+                color='twitter'
+                as='a'
+                href='https://twitter.com/actfor_us'
+              >
+                <Icon name='twitter' />
+                Twitter
+              </Button>
+            </Button.Group>
           </Container>
         </div>
       );

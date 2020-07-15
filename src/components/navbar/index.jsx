@@ -144,7 +144,6 @@ class NavBar extends Component {
               {this.renderMenu(rightMenu)}
             </Menu.Menu>
           }
-
         </Menu>
       </div>
     );
