@@ -10,7 +10,6 @@ import {
 
 // containers
 import About from './containers/About';
-import BLM from './containers/BLM';
 import Contact from './containers/Contact';
 import Home from './containers/Home';
 import Yemen from './containers/Yemen';
@@ -36,10 +35,6 @@ class ActFor extends Component {
 
             <Route path="/yemen">
               <Yemen />
-            </Route>
-
-            <Route path="/blm">
-              <BLM />
             </Route>
 
             <Route path="*">

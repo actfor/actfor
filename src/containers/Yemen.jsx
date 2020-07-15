@@ -34,16 +34,16 @@ class Yemen extends Component {
         icon: 'bullhorn',
         dropdown: [
           {
+            text: 'Pressure Congress',
+            path: '/yemen/pressure/congress'
+          },
+          {
             text: 'Pressure Media',
             path: '/yemen/pressure/media'
           },
           {
             text: 'Pressure The White House',
             path: '/yemen/pressure/whitehouse'
-          },
-          {
-            text: 'Pressure Congress',
-            path: '/yemen/pressure/congress'
           },
         ],
       },

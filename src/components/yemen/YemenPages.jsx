@@ -12,6 +12,7 @@ import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 
 import Donate from './donate';
+import { Header } from 'semantic-ui-react';
 
 import CrisisArticle from './education/CrisisArticle';
 import ResourceList from './education/ResourceList';
@@ -30,14 +31,29 @@ class YemenPages extends Component {
           </Route>
 
           <Route path="/yemen/pressure/media">
+            <Header>
+              <Header.Subheader>
+                Use this page to contact media outlets.
+              </Header.Subheader>
+            </Header>
             <PressureMedia />
           </Route>
 
           <Route path="/yemen/pressure/whitehouse">
+            <Header>
+              <Header.Subheader>
+                Use this page to contact The White House.
+              </Header.Subheader>
+            </Header>
             <PressureWhiteHouse />
           </Route>
 
           <Route path="/yemen/pressure/congress">
+            <Header>
+              <Header.Subheader>
+                Use this page to contact congress.
+              </Header.Subheader>
+            </Header>
             <PressureCongress />
           </Route>
 
