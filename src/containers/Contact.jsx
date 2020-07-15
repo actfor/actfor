@@ -31,6 +31,7 @@ class Contact extends Component {
                 labelPosition='left'
                 as='a'
                 href='mailto:info@actfor.us'
+                target="_blank"
               >
                 <Icon name="mail" />
                 Email info@actfor.us
@@ -38,6 +39,7 @@ class Contact extends Component {
               <Button
                 color='instagram'
                 as='a'
+                target="_blank"
                 href='https://www.instagram.com/actfor.us/'
               >
                 <Icon name='instagram' />
@@ -46,6 +48,7 @@ class Contact extends Component {
               <Button
                 color='twitter'
                 as='a'
+                target="_blank"
                 href='https://twitter.com/actfor_us'
               >
                 <Icon name='twitter' />
