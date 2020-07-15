@@ -105,7 +105,7 @@ const mediaMess60 = (name, location, custom) => (
   </div>
 )
 
-const congressS398 = (name, location, custom) => (
+const congressS243 = (name, location, custom) => (
   <div>
     <p>
       Dear Senator,
@@ -113,7 +113,7 @@ const congressS398 = (name, location, custom) => (
     <br />
     { custom && <p>{custom}</p> }
     <p>
-      <b>I am writing to urge you to vote for S. 398, the Saudi Arabia Accountability and Yemen Act of 2019.</b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
+      <b>I am writing to urge you to vote for S.Res. 243: A resolution requesting information on Saudi Arabia’s human rights practices in Yemen pursuant to section 502B(c) of the Foreign Assistance Act of 1961.</b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
     </p>
     <br />
     <p>
@@ -125,11 +125,11 @@ const congressS398 = (name, location, custom) => (
     </p>
     <br />
     <p>
-      The United States sends more weapons to Saudi Arabia than any other nation. This is unacceptable. Passing S. 398 means that the United States can no longer authorize transfers to Saudi Arabia of missiles, ammunition, ground vehicles, aircraft, or other weapons that fall within Categories III, IV, VII, or VIII of the U.S. Munitions List. Do the right thing. Please save lives by voting for S. 398.
+      The United States sends more weapons to Saudi Arabia than any other nation. This is unacceptable. Passing S. Res. 243 means that the Department of State must transmit to the Senate a statement including (1) information on alleged Saudi Arabian human rights violations in Yemen; (2) a description of U.S. government steps to promote human rights as part of Saudi Arabia's activities in Yemen; (3) an assessment of whether security assistance to Saudi Arabia should be continued; and (4) other specified information related to Saudi Arabia, Yemen, and Israel. Do the right thing. Please save lives by voting for S. Res. 243.
     </p>
     <br />
     <p>
-      <b>Please vote for S. 398, the Saudi Arabia Accountability and Yemen Act of 2019.</b>
+      <b>Please vote for S. Res. 243.</b>
     </p>
     <br />
     <p>
@@ -226,7 +226,7 @@ export {
   whiteHouseMessage,
   mediaMessTime,
   mediaMess60,
-  congressS398,
+  congressS243,
   congressHR910,
   congressHJ56,
 };
