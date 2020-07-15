@@ -6,9 +6,6 @@ const MayaArticle = () => (
       <b>US-Backed Saudi Coalition is Responsible for the World’s Worst Crisis</b>
     </p>
     <br />
-    <p>
-      By: Maya Ghanem
-    </p>
     <br />
     <p>
       The man-made crisis in Yemen is the world’s worst catastrophe. <b>Over 24 million people</b> in Yemen desperately need aid, of which <b>12.2 million</b> are children. <b>3.2 million</b> people have “acute malnutrition”, including <b>two million children</b> under five and <b>one million pregnant and lactating women. 17.8 million people</b> lack water and sanitation, resulting in the world's fastest cholera epidemic. <b>14.8 million people</b> lack access to healthcare. <b>10 million people</b> are expected to starve by the end of the year.

@@ -10,8 +10,7 @@ import {
 import PressureCongress from './pressure/PressureCongress';
 import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
-import MayaArticle from './education/juhood.js';
-import Resources from './education/resources';
+import CrisisArticle from './education/CrisisArticle';
 
 import Donate from './donate';
 
@@ -20,12 +19,12 @@ class YemenPages extends Component {
     return (
       <div>
         <Switch>
-          <Route path="/yemen/education/juhood">
-            <MayaArticle />
+          <Route path="/yemen/education/crisis">
+            <CrisisArticle />
           </Route>
 
           <Route path="/yemen/education/resources">
-            <Resources />
+            {/* <Resources /> */}
           </Route>
 
           <Route path="/yemen/pressure/media">
