@@ -136,6 +136,7 @@ class ResourceList extends Component {
           autoplay={false}
           source="youtube"
           id="nLRgdFP-s30"
+          aspectRatio="21:9"
         />
       </div>
     );
