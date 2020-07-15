@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import {
   Container,
+  Divider,
 } from 'semantic-ui-react';
 
 class CrisisArticle extends Component {
@@ -49,7 +50,173 @@ class CrisisArticle extends Component {
         </p>
 
         <p>
-          
+          Because Yemen imports 90 percent of its food, even before the onset of the war, any cessation of imports would devastate Yemen. The naval blockade by the coalition greatly restricts the amount of humanitarian aid that can reach the Yemeni population. All warring parties, particularly the Houthis and the Hadi government, heavily tax and impede aid that does reach the ports, resulting in lengthy delivery dates: “Offloading [humanitarian goods at a port] takes an average of thirty days due to inefficient port management, financial disputes between shippers, and limited capacity at the al-Hodeidah port, which was severely damaged by airstrikes” (<a href="https://www.ipinst.org/wp-content/uploads/2018/01/IPI-Rpt-Humanitarian-Crisis-in-Yemen.pdf" target="_blank">Coppi</a>, 2018). To compensate for delivery and tariffs, goods are heavily priced and taxed -- to the point that Yemeni markets are often filled with food no one can afford. 
+        </p>
+
+        <p>
+          Yemen’s Central Bank faces difficulty trying to collect taxes that are to benefit humanitarian services and economic stability. Public servants have gone unpaid for months, more than 170 schools and 70 health facilities are significantly or completely damaged, and Yemen’s GDP has decreased by a cumulative 37.5 percent since 2015.
+        </p>
+
+        <p>
+          The UN considers the lack of access to healthcare for 14.8 million people to be the greatest concern for Yemen’s population. Because of a lack of financial resources, Yemen’s public health sector is entirely reliant on humanitarian aid, healthcare workers are forced to leave, and facilities are destroyed or vulnerable to destruction. Less than 45 percent of basic health facilities are functional, especially since hospitals frequently run out of power due to weak electrical infrastructure. Facilities run extremely low on medical supplies, and when they are available, warring parties attempt to divert or heavily tax these supplies.
+        </p>
+
+        <p>
+          Yemen’s remnants of a healthcare system cannot address the atypical spread of preventable diseases in the country. So far, two cholera outbreaks in Yemen, one in 2016 and one in 2017, are the fastest growing cholera epidemics in history. Additionally, Chikungunya virus, a mosquito transmitted outbreak, runs rampant in the country. Millions of children are declared at risk for malnutrition, cholera, and measles. The coronavirus exacerbates Yemen’s tragedy to a critical point: in the first two weeks of May, 951 Yemenis have died from the coronavirus, representing nearly half the amount of direct war casualties in all of 2015.
+        </p>
+
+        <p>
+          Yemen simply cannot cope with war, three pandemics, economic destruction, and the coronavirus. It is on the brink of existence. 
+        </p>
+
+        <h3>We Must Take Action, Do Something. </h3>
+
+        <p>
+          The Yemeni crisis is not just a humanitarian disaster; it is a political, man-made tragedy. Aid is important, but not enough. While long term political instability between the Houthis and Hadi supporters should eventually be addressed, we now need to focus on the larger players that are responsible for the humanitarian crisis-- the Saudi coalition. As the general public, we need to put public pressure on Saudi Arabia, the United States, the UK, France, and other governments involved in the coalition to stop the naval blockade and air strikes, and to pay reparations to the civilians of Yemen. Here’s what you can do.
+        </p>
+
+        <h3>Politics</h3>
+
+        <p>
+          Since the onset of the crisis, a plethora of resolutions and bills have been introduced to the United States Congress. Here are three <a href="https://www.govtrack.us/search?q=yemen" target="_blank">(of many)</a> pieces of resolution that still require further action:
+          <ul>
+            <li>
+              <a href="" hreaf="https://www.govtrack.us/congress/bills/116/hr910" target="_blank">H.R. 910</a>: Yemen Refueling Prohibition Act: To prohibit the use of funds to provide for in-flight refueling of Saudi or Saudi-led coalition aircraft conducting missions as part of the ongoing coalition intervention in Yemen.
+            </li>
+
+            <li>
+              <a href="https://www.govtrack.us/congress/bills/116/hjres56" target="_blank">H.J.Res. 56</a>: Directing the President to terminate the use of the United States Armed Forces with respect to the military intervention led by Saudi Arabia in the Republic of Yemen.
+            </li>
+
+            <li>
+              <a href="https://www.govtrack.us/congress/bills/116/sres243" target="_blank">S.Res. 243</a>: A resolution requesting information on Saudi Arabia’s human rights practices in Yemen pursuant to section 502B(c) of the Foreign Assistance Act of 1961
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          <b>Contact your house representatives and senators and ask that they cosponsor and pass these resolutions and bills.</b> Calling, emailing, and being present in government meetings can put significant pressure on government officials and demonstrate to them that the general public knows and cares about their actions (or lack thereof). To contact your congress members, click <a href="http://clerk.house.gov/member_info/TTD-116.pdf" target="_blank">here</a> for a list of telephone numbers for each member of the House of Representatives, and click <a href="https://contactsenators.com/senator-phone-numbers" target="_blank">here</a> for a list of telephone numbers for every U.S. senator.
+        </p>
+
+        <h3>Public Pressure</h3>
+
+        <p>
+          On January 20, 2019, Senator Bernie Sanders (Democrat, Vermont) introduced <a href="https://www.govtrack.us/congress/bills/116/sjres7" target="_blank">S.J.Res. 7</a>, a “ A joint resolution to direct the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress.” On April 16, 2019, this became the first and only piece of legislation regarding the Yemeni crisis passed by both the senate and the house, but President Donald Trump vetoed the resolution. The senate attempted but failed to override the veto on May 2, 2019.
+        </p>
+
+        <p>
+          <b>Put consistent pressure on President Trump for this egregious action.</b> This is not just a typical blunder of the Trump administration. It is intentional violence on millions of vulnerable people, resulting in hundreds of thousands of deaths. The crisis in Yemen cannot be a single headline in a single news cycle. The situation is ongoing, so the coverage, attention, and action needs to be ongoing. <b><a href="https://www.whitehouse.gov/get-involved/write-or-call/" target="_blank">Contact</a> the White House, call out President Trump on social media, and keep your efforts focused on this topic.</b>
+        </p>
+
+        <p>
+         <b>Hold Mohammad bin Salman (MBS), the crown prince and deputy prime minister of Saudi Arabia, accountable for the violence he has committed on the Yemeni people.</b> In addition to being the architect of Yemen’s catastrophic war, MBS has a history of arresting and murdering political rivals, dissenters, and reporters who otherwise would have been able to provide real information to the international community. Despite his countless scandals and oppression of the Yemeni people, Western media positively portrays Mohammad bin Salman.  In 2018, 60 Minutes interviewed MBS (<a href="https://www.cbsnews.com/news/saudi-crown-prince-talks-to-60-minutes/" target="_blank">O'Donnell</a>, 2018), and TIME Magazine featured the crown prince on their front cover (<a href="https://time.com/5228006/mohammed-bin-salman-interview-transcript-full/" target="_blank">Time</a>, 2018). Ever since Saudi Arabia passed a law allowing women to drive, MBS has appeared to be progressive in the West, but this is only a distraction from the ongoing oppression of Yemen. Do not let MBS fool you. He is not a reformer. <b>Promote journalists and media that call out and criticize Muhammad Bin Salman for the violence he has committed on Yemen.</b>
+        </p>
+
+        <p>
+          <b>Remember that public pressure is key.</b> Saudi Arabia and the United States continue to blockade and conduct airstrikes in Yemen because there is inadequate public awareness on the issue. Yemen has been “The Forgotten War”. But we cannot forget Yemen, and if we place enough public pressure on those who should be held accountable, <b>we will not forget Yemen</b>.
+        </p>
+
+        <h3>Humanitarian Aid</h3>
+
+        <p>
+          Donating to humanitarian aid organizations can help alleviate the needs of the Yemeni people. Researching the credibility of non-profit organizations before sending donations ensures that your money and provisions are efficiently used and directly benefiting the populations. 
+        </p>
+
+        <p>
+          Donate to:
+          <ol>
+            <li><a href="https://mwatana.org/en/" target="_blank">Mwatana for Human Rights</a></li>
+            <li><a href="https://www.unicef.org/yemen/" target="_blank">UNICEF Yemen</a></li>
+            <li><a href="https://www.monareliefye.org/" target="_blank">Mona Relief</a></li>
+            <li><a href="https://zahratrust.org/" target="_blank">The Zahra Trust</a></li>
+            <li><a href="https://www.oxfamamerica.org/explore/countries/yemen/" target="_blank">OXFAM</a></li>
+          </ol>
+        </p>
+
+        <p>Do your part: hold the U.S. and Saudi governments accountable, raise awareness, and donate to humanitarian organizations. <b>We cannot and will not forget Yemen.</b></p>
+
+        <Divider />
+
+        <h3>References</h3>
+        
+        <p>
+          Al-Khayat, M. (2020, December 31). Checkpoint children: Armed Houthis under 18. Retrieved July 01, 2020, from <a href="https://web.archive.org/web/20150418002313/http://www.yementimes.com/en/1828/report/4489/Checkpoint-children-Armed-Houthis-under-18.htm" target="_blank">
+            https://web.archive.org/web/20150418002313/http://www.yementimes.com/en/1828/report/4489/Checkpoint-children-Armed-Houthis-under-18.htm
+          </a>
+        </p>
+
+        <p>
+          Al-Samei, M. (2018, July 18). Yemen's Hadi has no regrets about seeking Saudi help. Retrieved July 01, 2020, from <a href="https://www.aa.com.tr/en/africa/yemen-s-hadi-has-no-regrets-about-seeking-saudi-help/1207407?fbclid=IwAR2H3cHERVYSmwu-Fe6T_4zmxF7YrtgMF-NYjz99fWLtEffMBarugISqySU" target="_blank">https://www.aa.com.tr/en/africa/yemen-s-hadi-has-no-regrets-about-seeking-saudi-help/1207407?fbclid=IwAR2H3cHERVYSmwu-Fe6T_4zmxF7YrtgMF-NYjz99fWLtEffMBarugISqySU </a>
+        </p>
+
+        <p>
+          Bazzi, M. (2018, June 11). The war in Yemen is disastrous. America is only making things worse | Mohamad Bazzi. Retrieved June 23, 2020, from <a href="https://www.theguardian.com/commentisfree/2018/jun/11/trump-yemen-saudi-arabi-war-us-involvement-worsening-crisis" target="_blank">https://www.theguardian.com/commentisfree/2018/jun/11/trump-yemen-saudi-arabi-war-us-involvement-worsening-crisis</a>
+        </p>
+
+        <p>
+          BBC. (2018, December 31). Yemen war: WFP accuses Houthi rebels of diverting food aid. Retrieved July 01, 2020, from <a href="https://www.bbc.com/news/world-middle-east-46722502" target="_blank">https://www.bbc.com/news/world-middle-east-46722502</a> 
+        </p>
+
+        <p>
+          Brehony, N. (2015). Yemen And The Houthis: Genesis Of The 2015 Crisis. Asian Affairs, 46(2), 232-250. doi:10.1080/03068374.2015.1037162 
+        </p>
+
+        <p>
+          Brown, D. (2018, May 03). Green Berets are reportedly helping Saudi Arabia destroy Houthi ballistic missiles in Yemen. Retrieved June 24, 2020, from <a href="https://www.businessinsider.com/green-berets-helping-saudi-arabia-yemen-destroy-houthi-missiles-2018-5" target="_blank">https://www.businessinsider.com/green-berets-helping-saudi-arabia-yemen-destroy-houthi-missiles-2018-5 </a>
+        </p>
+
+        <p>
+          Coppi, G. (2018). The Humanitarian Crisis in Yemen: Beyond the Man-Made Disaster. International Peace Institute, 1-40. Retrieved June 22, 2020, from <a href="https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/resources/docs/IPI%20Humanitarian-Crisis-in-Yemen.pdf" target="_blank">
+          https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/resources/docs/IPI%20Humanitarian-Crisis-in-Yemen.pdf 
+          </a>
+        </p>
+
+        <p>
+          CNN Editorial Research. (2020, February 28). Yemen Fast Facts. Retrieved June 23, 2020, from <a href="https://edition.cnn.com/2013/07/10/world/meast/yemen-fast-facts/index.html" target="_blank">https://edition.cnn.com/2013/07/10/world/meast/yemen-fast-facts/index.html </a>
+        </p>
+
+        <p>
+          Hasan, S. (2019, September 19). How much influence does Iran have on the Houthis? Retrieved June 29, 2020, from <a href="https://www.trtworld.com/middle-east/how-much-influence-does-iran-have-on-the-houthis-29911?fbclid=IwAR35kzqhGQqzNMIUfCkUbkH3jOGF7_zNUWmEeHaiYrtviajEcGUVVagdduo" target="_blank">https://www.trtworld.com/middle-east/how-much-influence-does-iran-have-on-the-houthis-29911?fbclid=IwAR35kzqhGQqzNMIUfCkUbkH3jOGF7_zNUWmEeHaiYrtviajEcGUVVagdduo</a>
+        </p>
+
+        <p>
+        Humanitarian crisis in Yemen remains the worst in the world, warns UN | | UN News. (2019, February 14). Retrieved June 23, 2020, from <a href="https://news.un.org/en/story/2019/02/1032811" target="_blank">https://news.un.org/en/story/2019/02/1032811</a>
+        </p>
+
+        <p>
+          Juneau, T. (2016). Iran's policy towards the Houthis in Yemen: A limited return on a modest investment. International Affairs, 92(3), 647-663. doi:10.1111/1468-2346.12599 
+        </p>
+
+        <p>
+          Nikbakht, D., & McKenzie, S. (2018, April 03). Yemen war is world's worst humanitarian crisis, UN says. Retrieved June 23, 2020, from <a href="https://www.cnn.com/2018/04/03/middleeast/yemen-worlds-worst-humanitarian-crisis-un-intl/index.html" target="_blank">https://www.cnn.com/2018/04/03/middleeast/yemen-worlds-worst-humanitarian-crisis-un-intl/index.html</a>
+        </p>
+
+        <p>
+          O'Donnell, N. (2018, March 19). Saudi Arabia's heir to the throne talks to 60 Minutes. Retrieved June 23, 2020, from <a href="https://www.cbsnews.com/news/saudi-crown-prince-talks-to-60-minutes/" target="_blank">https://www.cbsnews.com/news/saudi-crown-prince-talks-to-60-minutes/</a>
+        </p>
+
+        <p>
+          Roberts, W. (2017, June 08). Questions raised over $110bn arms deal to Saudi Arabia. Retrieved June 24, 2020, from <a href="https://www.aljazeera.com/news/2017/06/questions-raised-110bn-arms-deal-saudi-arabia-170608033511760.html" target="_blank">https://www.aljazeera.com/news/2017/06/questions-raised-110bn-arms-deal-saudi-arabia-170608033511760.html</a> 
+        </p>
+
+        <p>
+          Search GovTrack: Yemen. (n.d.). Retrieved June 23, 2020, from <a href="https://www.govtrack.us/search?q=yemen " target="_blank">https://www.govtrack.us/search?q=yemen</a> 
+        </p>
+
+        <p>
+          Snyder, S. (2018, December 14). Here is a list of organizations helping people in Yemen who are surviving in the world's worst humanitarian crisis. Retrieved June 23, 2020, from <a href="https://www.pri.org/stories/2017-11-29/heres-how-you-can-send-help-people-trapped-worlds-worst-humanitarian-crisis" target="_blank">https://www.pri.org/stories/2017-11-29/heres-how-you-can-send-help-people-trapped-worlds-worst-humanitarian-crisis</a> 
+        </p>
+
+        <p>
+          Time. (2018, April 05). Saudi Arabian Crown Prince Mohammed bin Salman Interview. Retrieved June 23, 2020, from <a href="https://time.com/5228006/mohammed-bin-salman-interview-transcript-full/" target="_blank">https://time.com/5228006/mohammed-bin-salman-interview-transcript-full/</a>
+        </p>
+
+        <p>
+          Ward, C. (2017, December 19). In Yemen, the markets have food, but children are starving to death. Retrieved June 23, 2020, from <a href="https://edition.cnn.com/2017/12/19/middleeast/yemen-intl/index.html" target="_blank">https://edition.cnn.com/2017/12/19/middleeast/yemen-intl/index.html</a>
+        </p>
+
+        <p>
+          Yemen crisis: Why is there a war? (2020, June 19). Retrieved June 23, 2020, from <a href="https://www.bbc.com/news/world-middle-east-29319423" target="_blank">https://www.bbc.com/news/world-middle-east-29319423</a>
         </p>
       </Container>
     );
