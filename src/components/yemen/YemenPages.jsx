@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// semantic-ui
+import { Header } from 'semantic-ui-react';
+
 import {
   Switch,
   Redirect,
@@ -12,7 +15,6 @@ import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 
 import Donate from './donate';
-import { Header } from 'semantic-ui-react';
 
 import CrisisArticle from './education/CrisisArticle';
 import ResourceList from './education/ResourceList';

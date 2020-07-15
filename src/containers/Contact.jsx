@@ -10,7 +10,6 @@ import {
 } from 'semantic-ui-react';
 
 // components
-import MailTo from './../components/MailTo';
 import NavBar from './../components/navbar';
 
 class Contact extends Component {

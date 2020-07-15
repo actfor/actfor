@@ -6,7 +6,7 @@ import { List } from 'semantic-ui-react';
 import reactElementToJSXString from 'react-element-to-jsx-string';
 
 // components
-import StepMessage from './../../../StepMessage';
+import StepMessage from '../../../common/StepMessage';
 
 // messages
 import { mediaMessTime } from './../messages'
