@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 // semantic-ui
 import { List } from 'semantic-ui-react';
 
-import reactElementToJSXString from 'react-element-to-jsx-string';
-
 // components
 import StepMessage from '../../../common/StepMessage';
 

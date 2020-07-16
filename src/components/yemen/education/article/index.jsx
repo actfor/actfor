@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import {
   Container,
-  Divider,
 } from 'semantic-ui-react';
 
 import AccordionArticle from './AccordionArticle';

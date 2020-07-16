@@ -5,7 +5,6 @@ import {
   Accordion,
   Header,
   Icon,
-  Image,
 } from 'semantic-ui-react';
 
 // components
