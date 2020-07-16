@@ -8,7 +8,7 @@ import {
 } from 'semantic-ui-react';
 
 class AccordionArticle extends Component {
-  state = { activeIndex: -1 }
+  state = { activeIndex: -1, activeSecondaryIndex: -1 }
 
   handleClick = (e, titleProps) => {
     const { index } = titleProps
@@ -18,8 +18,16 @@ class AccordionArticle extends Component {
     this.setState({ activeIndex: newIndex })
   }
 
+  handleSecondaryClick = (e, titleProps) => {
+    const { index } = titleProps
+    const { activeSecondaryIndex } = this.state
+    const newIndex = activeSecondaryIndex === index ? -1 : index
+
+    this.setState({ activeSecondaryIndex: newIndex })
+  }
+
   render() {
-    const { activeIndex } = this.state;
+    const { activeIndex, activeSecondaryIndex } = this.state;
     return (
       <Accordion>
         <Accordion.Title
@@ -110,89 +118,90 @@ class AccordionArticle extends Component {
             The Yemeni crisis is not just a humanitarian disaster; it is a political, man-made tragedy. Aid is important, but not enough. While long term political instability between the Houthis and Hadi supporters should eventually be addressed, we now need to focus on the larger players that are responsible for the humanitarian crisis-- the Saudi coalition. As the general public, we need to put public pressure on Saudi Arabia, the United States, the UK, France, and other governments involved in the coalition to stop the naval blockade and air strikes, and to pay reparations to the civilians of Yemen. Here’s what you can do.
           </p>
 
-        </Accordion.Content>
 
-        <Accordion.Title
-          active={activeIndex === 4}
-          index={4}
-          onClick={this.handleClick}
-        >
+          <Accordion.Title
+            active={activeSecondaryIndex === 0}
+            index={0}
+            onClick={this.handleSecondaryClick}
+          >
+            <Icon name='dropdown' />
+            <h3 style={{ display: 'inline' }}>Politics</h3>
+          </Accordion.Title>
+          <Accordion.Content active={activeSecondaryIndex === 0}>
+            <p>
+              Since the onset of the crisis, a plethora of resolutions and bills have been introduced to the United States Congress. Here are three <a href="https://www.govtrack.us/search?q=yemen" target="_blank">(of many)</a> pieces of resolution that still require further action:
+              <ul>
+                <li>
+                  <a href="https://www.govtrack.us/congress/bills/116/hr910" target="_blank">H.R. 910</a>: Yemen Refueling Prohibition Act: To prohibit the use of funds to provide for in-flight refueling of Saudi or Saudi-led coalition aircraft conducting missions as part of the ongoing coalition intervention in Yemen.
+                </li>
+
+                <li>
+                  <a href="https://www.govtrack.us/congress/bills/116/hjres56" target="_blank">H.J.Res. 56</a>: Directing the President to terminate the use of the United States Armed Forces with respect to the military intervention led by Saudi Arabia in the Republic of Yemen.
+                </li>
+
+                <li>
+                  <a href="https://www.govtrack.us/congress/bills/116/sres243" target="_blank">S.Res. 243</a>: A resolution requesting information on Saudi Arabia’s human rights practices in Yemen pursuant to section 502B(c) of the Foreign Assistance Act of 1961
+                </li>
+              </ul>
+            </p>
+
+            <p>
+              <b>Contact your house representatives and senators and ask that they cosponsor and pass these resolutions and bills.</b> Calling, emailing, and being present in government meetings can put significant pressure on government officials and demonstrate to them that the general public knows and cares about their actions (or lack thereof). To contact your congress members, click <a href="http://clerk.house.gov/member_info/TTD-116.pdf" target="_blank">here</a> for a list of telephone numbers for each member of the House of Representatives, and click <a href="https://contactsenators.com/senator-phone-numbers" target="_blank">here</a> for a list of telephone numbers for every U.S. senator.
+            </p>
+
+          </Accordion.Content>
+
+          <Accordion.Title
+            active={activeSecondaryIndex === 1}
+            index={1}
+            onClick={this.handleSecondaryClick}
+          >
+            <Icon name='dropdown' />
+            <h3 style={{ display: 'inline' }}>Public Pressure</h3>
+          </Accordion.Title>
+          <Accordion.Content active={activeSecondaryIndex === 1}>
+            <p>
+              On January 20, 2019, Senator Bernie Sanders (Democrat, Vermont) introduced <a href="https://www.govtrack.us/congress/bills/116/sjres7" target="_blank">S.J.Res. 7</a>, a “ A joint resolution to direct the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress.” On April 16, 2019, this became the first and only piece of legislation regarding the Yemeni crisis passed by both the senate and the house, but President Donald Trump vetoed the resolution. The senate attempted but failed to override the veto on May 2, 2019.
+            </p>
+
+            <p>
+              <b>Put consistent pressure on President Trump for this egregious action.</b> This is not just a typical blunder of the Trump administration. It is intentional violence on millions of vulnerable people, resulting in hundreds of thousands of deaths. The crisis in Yemen cannot be a single headline in a single news cycle. The situation is ongoing, so the coverage, attention, and action needs to be ongoing. <b><a href="https://www.whitehouse.gov/get-involved/write-or-call/" target="_blank">Contact</a> the White House, call out President Trump on social media, and keep your efforts focused on this topic.</b>
+            </p>
+
+            <p>
+            <b>Hold Mohammad bin Salman (MBS), the crown prince and deputy prime minister of Saudi Arabia, accountable for the violence he has committed on the Yemeni people.</b> In addition to being the architect of Yemen’s catastrophic war, MBS has a history of arresting and murdering political rivals, dissenters, and reporters who otherwise would have been able to provide real information to the international community. Despite his countless scandals and oppression of the Yemeni people, Western media positively portrays Mohammad bin Salman.  In 2018, 60 Minutes interviewed MBS (<a href="https://www.cbsnews.com/news/saudi-crown-prince-talks-to-60-minutes/" target="_blank">O'Donnell</a>, 2018), and TIME Magazine featured the crown prince on their front cover (<a href="https://time.com/5228006/mohammed-bin-salman-interview-transcript-full/" target="_blank">Time</a>, 2018). Ever since Saudi Arabia passed a law allowing women to drive, MBS has appeared to be progressive in the West, but this is only a distraction from the ongoing oppression of Yemen. Do not let MBS fool you. He is not a reformer. <b>Promote journalists and media that call out and criticize Muhammad Bin Salman for the violence he has committed on Yemen.</b>
+            </p>
+
+            <p>
+              <b>Remember that public pressure is key.</b> Saudi Arabia and the United States continue to blockade and conduct airstrikes in Yemen because there is inadequate public awareness on the issue. Yemen has been “The Forgotten War”. But we cannot forget Yemen, and if we place enough public pressure on those who should be held accountable, <b>we will not forget Yemen</b>.
+            </p>
+          </Accordion.Content>
+
+          <Accordion.Title
+            active={activeSecondaryIndex === 2}
+            index={2}
+            onClick={this.handleSecondaryClick}
+          >
           <Icon name='dropdown' />
-          <h2 style={{ display: 'inline' }}>Politics</h2>
+          <h3 style={{ display: 'inline' }}>Humanitarian Aid</h3>
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 4}>
-          <p>
-            Since the onset of the crisis, a plethora of resolutions and bills have been introduced to the United States Congress. Here are three <a href="https://www.govtrack.us/search?q=yemen" target="_blank">(of many)</a> pieces of resolution that still require further action:
-            <ul>
-              <li>
-                <a href="https://www.govtrack.us/congress/bills/116/hr910" target="_blank">H.R. 910</a>: Yemen Refueling Prohibition Act: To prohibit the use of funds to provide for in-flight refueling of Saudi or Saudi-led coalition aircraft conducting missions as part of the ongoing coalition intervention in Yemen.
-              </li>
+          <Accordion.Content active={activeSecondaryIndex === 2}>
+            <p>
+              Donating to humanitarian aid organizations can help alleviate the needs of the Yemeni people. Researching the credibility of non-profit organizations before sending donations ensures that your money and provisions are efficiently used and directly benefiting the populations. 
+            </p>
 
-              <li>
-                <a href="https://www.govtrack.us/congress/bills/116/hjres56" target="_blank">H.J.Res. 56</a>: Directing the President to terminate the use of the United States Armed Forces with respect to the military intervention led by Saudi Arabia in the Republic of Yemen.
-              </li>
+            <p>
+              Donate to:
+              <ol>
+                <li><a href="https://mwatana.org/en/" target="_blank">Mwatana for Human Rights</a></li>
+                <li><a href="https://www.unicef.org/yemen/" target="_blank">UNICEF Yemen</a></li>
+                <li><a href="https://www.monareliefye.org/" target="_blank">Mona Relief</a></li>
+                <li><a href="https://zahratrust.org/" target="_blank">The Zahra Trust</a></li>
+                <li><a href="https://www.oxfamamerica.org/explore/countries/yemen/" target="_blank">OXFAM</a></li>
+              </ol>
+            </p>
+          </Accordion.Content>
 
-              <li>
-                <a href="https://www.govtrack.us/congress/bills/116/sres243" target="_blank">S.Res. 243</a>: A resolution requesting information on Saudi Arabia’s human rights practices in Yemen pursuant to section 502B(c) of the Foreign Assistance Act of 1961
-              </li>
-            </ul>
-          </p>
-
-          <p>
-            <b>Contact your house representatives and senators and ask that they cosponsor and pass these resolutions and bills.</b> Calling, emailing, and being present in government meetings can put significant pressure on government officials and demonstrate to them that the general public knows and cares about their actions (or lack thereof). To contact your congress members, click <a href="http://clerk.house.gov/member_info/TTD-116.pdf" target="_blank">here</a> for a list of telephone numbers for each member of the House of Representatives, and click <a href="https://contactsenators.com/senator-phone-numbers" target="_blank">here</a> for a list of telephone numbers for every U.S. senator.
-          </p>
-
-        </Accordion.Content>
-
-        <Accordion.Title
-          active={activeIndex === 5}
-          index={5}
-          onClick={this.handleClick}
-        >
-          <Icon name='dropdown' />
-          <h2 style={{ display: 'inline' }}>Public Pressure</h2>
-        </Accordion.Title>
-        <Accordion.Content active={activeIndex === 5}>
-          <p>
-            On January 20, 2019, Senator Bernie Sanders (Democrat, Vermont) introduced <a href="https://www.govtrack.us/congress/bills/116/sjres7" target="_blank">S.J.Res. 7</a>, a “ A joint resolution to direct the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress.” On April 16, 2019, this became the first and only piece of legislation regarding the Yemeni crisis passed by both the senate and the house, but President Donald Trump vetoed the resolution. The senate attempted but failed to override the veto on May 2, 2019.
-          </p>
-
-          <p>
-            <b>Put consistent pressure on President Trump for this egregious action.</b> This is not just a typical blunder of the Trump administration. It is intentional violence on millions of vulnerable people, resulting in hundreds of thousands of deaths. The crisis in Yemen cannot be a single headline in a single news cycle. The situation is ongoing, so the coverage, attention, and action needs to be ongoing. <b><a href="https://www.whitehouse.gov/get-involved/write-or-call/" target="_blank">Contact</a> the White House, call out President Trump on social media, and keep your efforts focused on this topic.</b>
-          </p>
-
-          <p>
-          <b>Hold Mohammad bin Salman (MBS), the crown prince and deputy prime minister of Saudi Arabia, accountable for the violence he has committed on the Yemeni people.</b> In addition to being the architect of Yemen’s catastrophic war, MBS has a history of arresting and murdering political rivals, dissenters, and reporters who otherwise would have been able to provide real information to the international community. Despite his countless scandals and oppression of the Yemeni people, Western media positively portrays Mohammad bin Salman.  In 2018, 60 Minutes interviewed MBS (<a href="https://www.cbsnews.com/news/saudi-crown-prince-talks-to-60-minutes/" target="_blank">O'Donnell</a>, 2018), and TIME Magazine featured the crown prince on their front cover (<a href="https://time.com/5228006/mohammed-bin-salman-interview-transcript-full/" target="_blank">Time</a>, 2018). Ever since Saudi Arabia passed a law allowing women to drive, MBS has appeared to be progressive in the West, but this is only a distraction from the ongoing oppression of Yemen. Do not let MBS fool you. He is not a reformer. <b>Promote journalists and media that call out and criticize Muhammad Bin Salman for the violence he has committed on Yemen.</b>
-          </p>
-
-          <p>
-            <b>Remember that public pressure is key.</b> Saudi Arabia and the United States continue to blockade and conduct airstrikes in Yemen because there is inadequate public awareness on the issue. Yemen has been “The Forgotten War”. But we cannot forget Yemen, and if we place enough public pressure on those who should be held accountable, <b>we will not forget Yemen</b>.
-          </p>
-        </Accordion.Content>
-
-        <Accordion.Title
-          active={activeIndex === 6}
-          index={6}
-          onClick={this.handleClick}
-        >
-          <Icon name='dropdown' />
-          <h2 style={{ display: 'inline' }}>Humanitarian Aid</h2>
-        </Accordion.Title>
-        <Accordion.Content active={activeIndex === 6}>
-          <p>
-            Donating to humanitarian aid organizations can help alleviate the needs of the Yemeni people. Researching the credibility of non-profit organizations before sending donations ensures that your money and provisions are efficiently used and directly benefiting the populations. 
-          </p>
-
-          <p>
-            Donate to:
-            <ol>
-              <li><a href="https://mwatana.org/en/" target="_blank">Mwatana for Human Rights</a></li>
-              <li><a href="https://www.unicef.org/yemen/" target="_blank">UNICEF Yemen</a></li>
-              <li><a href="https://www.monareliefye.org/" target="_blank">Mona Relief</a></li>
-              <li><a href="https://zahratrust.org/" target="_blank">The Zahra Trust</a></li>
-              <li><a href="https://www.oxfamamerica.org/explore/countries/yemen/" target="_blank">OXFAM</a></li>
-            </ol>
-          </p>
         </Accordion.Content>
 
         <p>Do your part: hold the U.S. and Saudi governments accountable, raise awareness, and donate to humanitarian organizations. <b>We cannot and will not forget Yemen.</b></p>
