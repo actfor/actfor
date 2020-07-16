@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // components
-import StepMessage from '../../../StepMessage';
+import StepMessage from '../../../common/StepMessage';
 
 // messages
 import { congressS243 } from '../messages';

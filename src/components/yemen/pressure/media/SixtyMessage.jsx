@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { List } from 'semantic-ui-react';
 
 // components
-import StepMessage from './../../../StepMessage';
+import StepMessage from '../../../common/StepMessage';
 
 // messages
 import { mediaMess60 } from './../messages'

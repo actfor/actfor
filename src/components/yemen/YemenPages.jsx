@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// semantic-ui
+import { Header } from 'semantic-ui-react';
+
 import {
   Switch,
   Redirect,
@@ -11,8 +14,10 @@ import PressureCongress from './pressure/PressureCongress';
 import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 
+import CrisisArticle from './education/article';
+import ResourceList from './education/resources';
+
 import Donate from './donate';
-import { Header } from 'semantic-ui-react';
 
 class YemenPages extends Component {
   render() {
@@ -20,11 +25,11 @@ class YemenPages extends Component {
       <div>
         <Switch>
           <Route path="/yemen/education/crisis">
-            Maya Article
+            <CrisisArticle />
           </Route>
 
           <Route path="/yemen/education/resources">
-            Other Resources List
+            <ResourceList />
           </Route>
 
           <Route path="/yemen/pressure/media">
