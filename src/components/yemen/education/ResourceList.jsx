@@ -18,6 +18,7 @@ import * as rightsreport from './images/4.png';
 import * as greenmatters from './images/5.png';
 import * as mit from './images/6.png';
 import * as airstrike from './images/7.png';
+import * as archive from './images/8.png';
 
 import * as book1 from './images/book1.jpg';
 
@@ -27,8 +28,9 @@ class ResourceList extends Component {
       <Card color="secondary">
         <Image src={card.img} wrapped />
         <Card.Content>
-          <Card.Header>{card.header}</Card.Header>
+          {/* <Card.Header>{card.header}</Card.Header> */}
           <Card.Description>{card.description}</Card.Description>
+          <Card.Description style={{ color: 'red' }}>{card.disclaimer}</Card.Description>
         </Card.Content>
         <Card.Content extra>
           <Button
@@ -101,6 +103,13 @@ class ResourceList extends Component {
         img: caard,
         link: 'https://yemencrisis.carrd.co/',
       },
+      {
+        header: 'Yemeni Archive: Observation Database',
+        description: '',
+        disclaimer: 'Disclaimer! Contains graphic videos that may be unsuitable for sensitive viewers.',
+        img: archive,
+        link: 'https://yemeniarchive.org/en/database',
+      }
     ];
 
     return (

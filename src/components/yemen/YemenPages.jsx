@@ -16,7 +16,7 @@ import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 
 import Donate from './donate';
 
-import CrisisArticle from './education/CrisisArticle';
+import CrisisArticle from './education/article';
 import ResourceList from './education/ResourceList';
 
 class YemenPages extends Component {
