@@ -14,10 +14,10 @@ import PressureCongress from './pressure/PressureCongress';
 import PressureMedia from './pressure/PressureMedia';
 import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 
-import Donate from './donate';
-
 import CrisisArticle from './education/article';
-import ResourceList from './education/ResourceList';
+import ResourceList from './education/resources';
+
+import Donate from './donate';
 
 class YemenPages extends Component {
   render() {
