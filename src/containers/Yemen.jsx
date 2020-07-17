@@ -52,7 +52,15 @@ class Yemen extends Component {
         content: 'Donate',
         icon: 'dollar',
         path: '/yemen/donate'
+      },
+
+      {
+        id: 'elections',
+        content: 'Election Info',
+        icon: 'inbox',
+        path: '/yemen/elections'
       }
+
     ];
 
     return (

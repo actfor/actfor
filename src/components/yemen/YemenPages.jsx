@@ -17,6 +17,8 @@ import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 import CrisisArticle from './education/article';
 import ResourceList from './education/resources';
 
+import ElectionsInfo from './elections';
+
 import Donate from './donate';
 
 class YemenPages extends Component {
@@ -61,6 +63,10 @@ class YemenPages extends Component {
 
           <Route path="/yemen/donate">
             <Donate />
+          </Route>
+
+          <Route path="/yemen/elections">
+            <ElectionsInfo />
           </Route>
 
           <Route path="/yemen/*">
