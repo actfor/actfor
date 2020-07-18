@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import ReactGA from 'react-ga';
 import { Route } from 'react-router-dom';
 
+// env vars
+require('dotenv').config()
+
 class GoogleAnalytics extends Component {
   componentDidMount () {
     this.logPageChange(

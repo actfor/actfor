@@ -10,9 +10,6 @@ import './semantic/dist/semantic.min.css';
 import './styles/index.css';
 import './styles/App.css';
 
-// env vars
-require('dotenv').config()
-
 
 ReactDOM.render(
   <ActFor />,
