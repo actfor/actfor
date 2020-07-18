@@ -11,7 +11,7 @@ import { createBrowserHistory } from 'history';
 
 // Google Analytics
 import ReactGA from 'react-ga';
-import GA from 'utils/GoogleAnalytics'
+import GA from './utils/GoogleAnalytics'
 
 // containers
 import About from './containers/About';
