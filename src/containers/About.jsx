@@ -47,6 +47,9 @@ class About extends Component {
                 </p>
               </div>
 
+              <br />
+              <br />
+
               <Header as="h1">
                 Contact Us
                 <Header.Subheader>Would you like to contribute or ask any questions? Visit and follow our socials, or email us at info@actfor.us!</Header.Subheader>
@@ -84,6 +87,7 @@ class About extends Component {
                 </Button>
               </Button.Group>
             </Container>
+            <br />
           </div>
       );
     }
