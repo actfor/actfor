@@ -56,7 +56,6 @@ const init = (options = {}) => {
   if (isGAEnabled) {
     const trackingId = process.env.REACT_APP_GA_ID
     ReactGA.initialize(trackingId);
-    console.log('Google Analytics Tracking ID:', trackingId);
   }
 
   return isGAEnabled;
