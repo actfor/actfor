@@ -18,15 +18,6 @@ import About from './containers/About';
 import Home from './containers/Home';
 import Yemen from './containers/Yemen';
 
-// Initialize google analytics page view tracking
-// const trackingId = "UA-73887375-2"; // Replace with your Google Analytics tracking ID
-// ReactGA.initialize(trackingId);
-// const history = createBrowserHistory();
-// history.listen(location => {
-//   ReactGA.set({ page: location.pathname }); // Update the user's current page
-//   ReactGA.pageview(location.pathname); // Record a pageview for the given page
-// });
-
 class ActFor extends Component {
 
   render() {
