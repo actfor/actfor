@@ -27,6 +27,37 @@ class Elections extends Component {
         </p>
         <ElectionsInfo />
       </Container>
+
+      <Accordion>
+        <Accordion.Title
+          active={activeIndex === 0}
+          index={0}
+          onClick={this.handleClick}
+        >
+          <Icon style={{ }} name='dropdown' />
+          <h2 style={{ display: 'inline' }}>National Election</h2>
+        </Accordion.Title>
+        <Accordion.Content active={activeIndex === 0}>
+          <p>
+            The U.S. is Saudi Arabia’s largest weapons supplier.
+            In 2019, the Trump administration declared an emergency
+            over Iran, bypassed Congress, and moved forward with an $8
+            billion arms sale to Saudi Arabia and other Gulf nations.
+            As recently as 5/20, the Trump administration <a target='blank' href='https://www.cnn.com/2020/05/27/opinions/pompeo-saudi-arabia-arms-menendez/index.html'> moved to
+            increase weapons sales</a> to Saudi Arabia. (<a target='blank' href='https://www.nytimes.com/2020/05/28/us/politics/congress-saudi-arabia-arms-sales.html'>Edmondson, 2020</a>).
+            In 2019, the president vetoed bipartisan legislation that
+            would have ended the U.S.’s military involvement in Saudi
+            Arabia’s war in Yemen.
+          </p>
+
+          <p>
+            <a target='blank' href='https://joebiden.com'>Joe Biden</a> <a target='blank' href='https://www.cfr.org/article/presidential-candidates-saudi-arabia'> would end U.S. support for the Saudi-led war</a> in
+            yemen and order a reassessment of our relationship with Saudi
+            Arabia.
+          </p>
+
+        </Accordion.Content>
+      </Accordion>
     );
   }
 }

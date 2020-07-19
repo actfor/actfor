@@ -108,7 +108,7 @@ class ElectionsInfo extends Component {
           onClick={this.handleClick}
         >
           <Icon name='dropdown' />
-          <h2 style={{ display: 'inline' }}>H.J.Res. 37 </h2>
+          <h2 style={{ display: 'inline' }}>Support for H.J.Res. 37 </h2>
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 2}>
           <p>
