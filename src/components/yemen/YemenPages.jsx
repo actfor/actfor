@@ -23,6 +23,8 @@ import National from './elections/National Election';
 
 import Donate from './donate';
 
+import People from './people';
+
 class YemenPages extends Component {
   render() {
     return (
@@ -92,6 +94,10 @@ class YemenPages extends Component {
 
           <Route path="/yemen/donate">
             <Donate />
+          </Route>
+
+          <Route path="/yemen/people">
+            <People />
           </Route>
 
           <Route path="/yemen/*">

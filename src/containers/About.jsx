@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
+  Button,
   Container,
   Divider,
   Header,
+  Icon,
   Popup,
 } from 'semantic-ui-react';
 
@@ -44,7 +46,48 @@ class About extends Component {
                   This website exists to uplift the voices of BIPoC activists who are onsite and have been spearheading these initiatives for years. While the creators of this website are limited to issues and voices that we have access to, we turn our attention to the people leading grassroots organizations, the journalists who have lost their lives for true reporting, and to BIPoC politicians working to protect human rights for their own communities and other BIPoC individuals. 
                 </p>
               </div>
+
+              <br />
+              <br />
+
+              <Header as="h1">
+                Contact Us
+                <Header.Subheader>Would you like to contribute or ask any questions? Visit and follow our socials, or email us at info@actfor.us!</Header.Subheader>
+              </Header>
+              <Divider />
+              <Button.Group vertical labeled icon size="big">
+                <Button
+                  primary
+                  icon
+                  labelPosition='left'
+                  as='a'
+                  href='mailto:info@actfor.us'
+                  target="_blank"
+                >
+                  <Icon name="mail" />
+                  Email info@actfor.us
+                </Button>
+                <Button
+                  color='instagram'
+                  as='a'
+                  target="_blank"
+                  href='https://www.instagram.com/actfor.us/'
+                >
+                  <Icon name='instagram' />
+                  Instagram
+                </Button>
+                <Button
+                  color='twitter'
+                  as='a'
+                  target="_blank"
+                  href='https://twitter.com/actfor_us'
+                >
+                  <Icon name='twitter' />
+                  Twitter
+                </Button>
+              </Button.Group>
             </Container>
+            <br />
           </div>
       );
     }

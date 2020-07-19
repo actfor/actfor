@@ -128,17 +128,6 @@ class NavBar extends Component {
             About Us
           </Menu.Item>
 
-          <Menu.Item
-            id="contact"
-            path="/contact"
-            as='a'
-            onClick={this.handleBtnClick}
-          >
-            <Icon name="phone" />
-            <br />
-            Contact Us
-          </Menu.Item>
-
           {rightMenu &&
             <Menu.Menu position="right">
               {this.renderMenu(rightMenu)}

@@ -48,11 +48,18 @@ class Yemen extends Component {
         ],
       },
       {
+        id: 'people',
+        content: 'People',
+        icon: 'users',
+        path: '/yemen/people',
+      },
+      {
         id: 'donate',
         content: 'Donate',
         icon: 'dollar',
         path: '/yemen/donate'
       },
+<<<<<<< HEAD
 
       {
         id: 'elections',
@@ -74,6 +81,8 @@ class Yemen extends Component {
         ],
       },
 
+=======
+>>>>>>> 2c3c93ebd03594212adf619d3dd06707f10e96fc
     ];
 
     return (

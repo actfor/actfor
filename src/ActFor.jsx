@@ -7,10 +7,14 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import { createBrowserHistory } from 'history';
+
+// Google Analytics
+import ReactGA from 'react-ga';
+import GA from './utils/GoogleAnalytics'
 
 // containers
 import About from './containers/About';
-import Contact from './containers/Contact';
 import Home from './containers/Home';
 import Yemen from './containers/Yemen';
 
@@ -20,6 +24,7 @@ class ActFor extends Component {
     return (
       <div style={{ margin: '24px' }} >
         <Router>
+        { GA.init() && <GA.RouteTracker /> }
           <Switch>
             <Route exact path="/">
               <Home />
@@ -27,10 +32,6 @@ class ActFor extends Component {
 
             <Route path="/about">
               <About />
-            </Route>
-
-            <Route path="/contact">
-              <Contact />
             </Route>
 
             <Route path="/yemen">

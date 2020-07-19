@@ -6,7 +6,6 @@ import ActFor from './ActFor';
 import * as serviceWorker from './utils/serviceWorker';
 
 // styles
-// import 'semantic-ui-css/semantic.min.css'
 import './semantic/dist/semantic.min.css';
 import './styles/index.css';
 import './styles/App.css';
