@@ -17,6 +17,7 @@ import GA from './utils/GoogleAnalytics'
 import About from './containers/About';
 import Home from './containers/Home';
 import Yemen from './containers/Yemen';
+import Uyghur from './containers/Uyghur';
 
 class ActFor extends Component {
 
@@ -36,6 +37,10 @@ class ActFor extends Component {
 
             <Route path="/yemen">
               <Yemen />
+            </Route>
+
+            <Route path="/uyghur">
+              <Uyghur />
             </Route>
 
             <Route path="*">

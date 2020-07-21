@@ -22,6 +22,11 @@ class HomeDropdown extends Component {
         key: 'yemen',
         value: 'yemen/education/crisis',
         text: 'Yemen'
+      },
+      {
+        key: 'uyghur',
+        value: 'uyghur/education',
+        text: 'Uyghur Muslims'
       }
     ]
 
