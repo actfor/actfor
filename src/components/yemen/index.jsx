@@ -17,10 +17,6 @@ import PressureWhiteHouse from './pressure/PressureWhiteHouse';
 import CrisisArticle from './education/article';
 import ResourceList from './education/resources';
 
-import Champions from './elections/Champions';
-import Congressional from './elections/Congressional Elections';
-import National from './elections/National Election';
-
 import Donate from './donate';
 
 import People from './people';
@@ -65,32 +61,6 @@ class YemenPages extends Component {
             <PressureCongress />
           </Route>
 
-          <Route path="/yemen/elections/National Election">
-            <Header>
-              <Header.Subheader>
-
-              </Header.Subheader>
-            </Header>
-            <National />
-          </Route>
-
-          <Route path="/yemen/elections/Congressional Elections">
-            <Header>
-              <Header.Subheader>
-
-              </Header.Subheader>
-            </Header>
-            <Congressional />
-          </Route>
-
-          <Route path="/yemen/elections/Champions">
-            <Header>
-              <Header.Subheader>
-
-              </Header.Subheader>
-            </Header>
-            <Champions />
-          </Route>
 
           <Route path="/yemen/donate">
             <Donate />

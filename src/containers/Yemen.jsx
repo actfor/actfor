@@ -60,26 +60,6 @@ class Yemen extends Component {
         path: '/yemen/donate'
       },
 
-      {
-        id: 'elections',
-        content: 'Elections',
-        icon: 'inbox',
-        dropdown: [
-          {
-            text: 'National Election',
-            path: '/yemen/elections/National Election'
-          },
-          {
-            text: 'Congressional Elections',
-            path: '/yemen/elections/Congressional Elections'
-          },
-          {
-            text: 'Champions',
-            path: '/yemen/elections/Champions'
-          },
-        ],
-      },
-
     ];
 
     return (
