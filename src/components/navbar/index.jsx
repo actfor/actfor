@@ -21,7 +21,7 @@ class NavBar extends Component {
 
   handleBtnClick = (e, { path }) => {
     const { history } = this.props;
-    
+
     if (!path) {
       history.push('/');
     }
@@ -105,7 +105,7 @@ class NavBar extends Component {
               <Image src={logo} size="mini" />
             </div>
           </Menu.Item>
-          
+
           <Menu.Item
             id="home"
             path="/"
@@ -126,6 +126,17 @@ class NavBar extends Component {
             <Icon name="globe" />
             <br />
             About Us
+          </Menu.Item>
+
+          <Menu.Item
+            id="elections"
+            path="/elections"
+            as='a'
+            onClick={this.handleBtnClick}
+          >
+            <Icon name="inbox" />
+            <br />
+            Elections
           </Menu.Item>
 
           {rightMenu &&
