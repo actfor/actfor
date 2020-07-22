@@ -8,7 +8,7 @@ import {
 
 // components
 import NavBar from './../components/navbar';
-import YemenPages from './../components/yemen/YemenPages';
+import YemenPages from '../components/yemen';
 
 class Yemen extends Component {
   render() {
@@ -29,7 +29,7 @@ class Yemen extends Component {
         ],
       },
       {
-        id: 'public',
+        id: 'pressure',
         content: 'Public Pressure',
         icon: 'bullhorn',
         dropdown: [
