@@ -88,7 +88,7 @@ class People extends Component {
         <Header as="h2">
           Stories
         </Header>
-        <Card.Group>
+        <Card.Group stackable>
         {
           stories.map(card => (
             <Card color="secondary">
@@ -120,7 +120,7 @@ class People extends Component {
         <Header as="h2">
           Journalists
         </Header>
-        <Card.Group>
+        <Card.Group stackable>
           {
             journalists.map(card => (
               <Card color="secondary">
@@ -137,7 +137,7 @@ class People extends Component {
         <Header as="h2">
           Academia
         </Header>
-        <Card.Group>
+        <Card.Group stackable>
           {
             academia.map(card => (
               <Card color="secondary">

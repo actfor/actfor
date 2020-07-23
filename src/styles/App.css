@@ -40,3 +40,25 @@
 .large-text p {
   font-size: 20px;
 }
+
+
+@media (max-width: 719px){
+  #navbar {
+    padding-bottom: 256px;
+  }
+
+  .App-header {
+    min-height: calc(var(--vh, 1vh) * 100);
+    min-width: calc(var(--vw, 1vw) * 100);
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  .mobile {
+    display: none;
+  }
+}
