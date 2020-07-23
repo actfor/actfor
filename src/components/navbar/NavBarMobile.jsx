@@ -35,11 +35,8 @@ class NavBarMobile extends Component {
     // Hide or show the menu.
     handleScroll = () => {
       const { prevScrollpos } = this.state;
-      console.log('prevScrollpos', prevScrollpos );
   
       const currentScrollPos = window.pageYOffset;
-      console.log('currentScrollPos', currentScrollPos );
-
       const visible = prevScrollpos > currentScrollPos && currentScrollPos < 20;
   
       this.setState({
