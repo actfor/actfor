@@ -37,7 +37,7 @@ class NavBarMobile extends Component {
       const { prevScrollpos } = this.state;
   
       const currentScrollPos = window.pageYOffset;
-      const visible = prevScrollpos > currentScrollPos && currentScrollPos < 20;
+      const visible = prevScrollpos > currentScrollPos && currentScrollPos < 220;
   
       this.setState({
         prevScrollpos: currentScrollPos,
@@ -120,7 +120,7 @@ class NavBarMobile extends Component {
     const { visible } = this.state;
 
     const visibleStyle = {
-      paddingBottom: '120px'
+      paddingBottom: '220px'
     }
     const invisStyle = {
       ...visibleStyle,
