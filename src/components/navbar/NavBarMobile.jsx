@@ -37,7 +37,7 @@ class NavBarMobile extends Component {
       const { prevScrollpos } = this.state;
   
       const currentScrollPos = window.pageYOffset;
-      const visible = prevScrollpos > currentScrollPos && currentScrollPos < 220;
+      const visible = prevScrollpos > currentScrollPos;
   
       this.setState({
         prevScrollpos: currentScrollPos,
