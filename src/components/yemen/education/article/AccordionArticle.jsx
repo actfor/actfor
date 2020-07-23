@@ -200,11 +200,13 @@ class AccordionArticle extends Component {
                 <li><a href="https://www.oxfamamerica.org/explore/countries/yemen/" target="_blank">OXFAM</a></li>
               </ol>
             </p>
+
+            <p>Do your part: hold the U.S. and Saudi governments accountable, raise awareness, and donate to humanitarian organizations. <b>We cannot and will not forget Yemen.</b></p>
+
           </Accordion.Content>
 
         </Accordion.Content>
 
-        <p>Do your part: hold the U.S. and Saudi governments accountable, raise awareness, and donate to humanitarian organizations. <b>We cannot and will not forget Yemen.</b></p>
 
         <Divider />
 
