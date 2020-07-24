@@ -35,13 +35,23 @@ class NavBarMobile extends Component {
     // Hide or show the menu.
     handleScroll = () => {
       const { prevScrollpos } = this.state;
+      const { unscrollable } = this.props;
+
+      if (unscrollable) {
+        return;
+      }
   
       const currentScrollPos = window.pageYOffset;
-      const visible = prevScrollpos > currentScrollPos;
+      const currentVisible = prevScrollpos > currentScrollPos;
+      if (currentVisible) {
+        this.setState({ prevScrollpos: currentScrollPos })
+        return;
+      }
+      console.log('here');
   
       this.setState({
         prevScrollpos: currentScrollPos,
-        visible
+        visible: currentVisible,
       });
     };
 
@@ -114,58 +124,65 @@ class NavBarMobile extends Component {
     })
   )
 
+  showNav = () => {
+    this.setState({ visible: true })
+  }
+
   render() {
 
     const { rightMenu } = this.props;
     const { visible } = this.state;
 
+    const numOfRight = rightMenu ? rightMenu.length : 0;
+    const padding = 40 * (2 + numOfRight) + 60;
+
     const visibleStyle = {
-      paddingBottom: '220px'
+      paddingBottom: `${padding}px`
     }
-    const invisStyle = {
-      ...visibleStyle,
-      visibility: 'hidden',
-    }
-    const style = visible ? visibleStyle : invisStyle;
+
+    const style = visible ? visibleStyle : { display: 'none' };
 
     return (
-      <div style={style}>
-        <Menu stackable fixed="top" inverted color="primary">
+      <div>
+        <Icon name="sidebar" size="big" onClick={this.showNav} />
+        <div style={style}>
+          <Menu stackable fixed="top" inverted color="primary">
 
-          <Menu.Item
-            header
-          >
-            <div style={{ paddingTop: '12px' }}>
-              <Image src={logo} size="mini" />
-            </div>
-          </Menu.Item>
-          
-          <Menu.Item
-            id="home"
-            path="/"
-            as='a'
-            onClick={this.handleBtnClick}
-          >
-            <Icon name="home" />
-            Home
-          </Menu.Item>
+            <Menu.Item
+              header
+            >
+              <div style={{ paddingTop: '12px' }}>
+                <Image src={logo} size="mini" />
+              </div>
+            </Menu.Item>
+            
+            <Menu.Item
+              id="home"
+              path="/"
+              as='a'
+              onClick={this.handleBtnClick}
+            >
+              <Icon name="home" />
+              Home
+            </Menu.Item>
 
-          <Menu.Item
-            id="about"
-            path="/about"
-            as='a'
-            onClick={this.handleBtnClick}
-          >
-            <Icon name="globe" />
-            About Us
-          </Menu.Item>
+            <Menu.Item
+              id="about"
+              path="/about"
+              as='a'
+              onClick={this.handleBtnClick}
+            >
+              <Icon name="globe" />
+              About Us
+            </Menu.Item>
 
-          {rightMenu &&
-            <Menu.Menu position="right">
-              {this.renderMenu(rightMenu)}
-            </Menu.Menu>
-          }
-        </Menu>
+            {rightMenu &&
+              <Menu.Menu position="right">
+                {this.renderMenu(rightMenu)}
+              </Menu.Menu>
+            }
+          </Menu>
+        </div>
       </div>
     );
   }

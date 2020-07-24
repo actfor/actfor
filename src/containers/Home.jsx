@@ -14,7 +14,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-              <NavBar />
+              <NavBar unscrollable />
               <HomeDropdown />
               <br />
               <br />

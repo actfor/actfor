@@ -28,7 +28,7 @@ class About extends Component {
 
       return (
           <div>
-            <NavBar />  
+            <NavBar unscrollable />  
             <Container>
               <Header as="h1">
                 Our Purpose
