@@ -25,7 +25,7 @@ class HomeDropdown extends Component {
       },
       {
         key: 'uyghur',
-        value: 'uyghur/education',
+        value: 'uyghur/education/nowthis',
         text: 'Uyghur Muslims'
       }
     ]

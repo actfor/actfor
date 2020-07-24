@@ -10,12 +10,19 @@ import {
   Route,
 } from 'react-router-dom';
 
+// pages
+import UyghurNowThis from './education/nowthis';
+
 class UyghurPages extends Component {
   render() {
     return (
       <div>
         <Switch>
-          <Route path="/uyghur/education/">
+          <Route path="/uyghur/education/nowthis">
+            <UyghurNowThis />
+          </Route>
+
+          <Route path="/uyghur/education/who">
             Uyghur Education
           </Route>
 
@@ -23,7 +30,7 @@ class UyghurPages extends Component {
             Uyghur Public Pressure
           </Route>
 
-          <Route path="/uyghur/People/">
+          <Route path="/uyghur/people/">
             Uyghur People
           </Route>
 

@@ -17,7 +17,16 @@ class Uyghur extends Component {
         id: 'education',
         content: 'Education',
         icon: 'pencil',
-        path: '/uyghur/education',
+        dropdown: [
+          {
+            text: 'Now This',
+            path: '/uyghur/education/nowthis'
+          },
+          {
+            text: 'Who are the Ugyhurs?',
+            path: '/uyghur/education/who',
+          }
+        ]
       },
       {
         id: 'pressure',
