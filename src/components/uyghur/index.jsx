@@ -12,6 +12,7 @@ import {
 
 // pages
 import UyghurNowThis from './education/nowthis';
+import UyghurBoycott  from './boycott'
 
 class UyghurPages extends Component {
   render() {
@@ -35,7 +36,7 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/boycott/">
-            Uyghur Boycott
+            <UyghurBoycott />
           </Route>
 
           <Route path="/uyghur/donate/">
