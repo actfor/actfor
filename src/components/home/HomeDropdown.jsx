@@ -30,6 +30,12 @@ class HomeDropdown extends Component {
       }
     ]
 
+    options.sort((a, b) => {
+      if(a.text < b.text) { return -1; }
+      if(a.text > b.text) { return 1; }
+      return 0;
+    })
+
     const style = {
       backgroundColor: '#88060d',
       textAlign: 'center',
