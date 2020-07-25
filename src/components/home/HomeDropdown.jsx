@@ -37,11 +37,23 @@ class HomeDropdown extends Component {
       borderRadius: '24px'
     };
 
+    // return (
+    //   <div style={style}>
+    //     <Image centered src={title} size="medium" />
+    //     <br />
+    //     <br />
+    //     <Dropdown
+    //       fluid
+    //       selection
+    //       search
+    //       placeholder='Choose one'
+    //       onChange={this.onChange}
+    //       options={options}
+    //     />
+    //   </div>
+    // );
     return (
       <div style={style}>
-        <Image centered src={title} size="medium" />
-        <br />
-        <br />
         <Dropdown
           fluid
           selection

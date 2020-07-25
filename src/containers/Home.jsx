@@ -9,28 +9,36 @@ import {
 // components
 import NavBar from './../components/navbar';
 import HomeDropdown from './../components/home/HomeDropdown';
+import HomeSlideshow from '../components/home/HomeSlideshow';
+
+// styles
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class Home extends Component {
-    render() {
-        return (
-            <div>
-              <NavBar unscrollable />
-              <HomeDropdown />
-              <br />
-              <br />
-              <Container textAlign="center">
-                <div style={{ fontSize: '20px' }}>
-                  <Header as="h2">
-                    This website builds on the work of activists and encourages action on social justice issues.  
-                  </Header>
-                  <p>
-                    Use the drop down menu above to choose a cause that you would like to act for!
-                  </p>
-                </div>
-              </Container>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <NavBar unscrollable />
+        <Container>
+          <HomeSlideshow />
+        </Container>
+        <br />
+        <br />
+        <Container textAlign="center">
+          <div style={{ fontSize: '20px' }}>
+            <Header as="h2">
+              This website builds on the work of activists and encourages action on social justice issues.  
+            </Header>
+            <p>
+              Use the drop down menu below to choose a cause that you would like to act for!
+            </p>
+          </div>
+        </Container>
+        <br />
+        <HomeDropdown />
+      </div>
+    );
+  }
 }
 
 export default Home;
