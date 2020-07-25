@@ -11,9 +11,6 @@ import NavBar from './../components/navbar';
 import HomeDropdown from './../components/home/HomeDropdown';
 import HomeSlideshow from '../components/home/HomeSlideshow';
 
-// styles
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
-
 class Home extends Component {
   render() {
     return (
