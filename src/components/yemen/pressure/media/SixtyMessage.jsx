@@ -15,6 +15,7 @@ class SixtyMessage extends Component {
       <List.Item>
         <h4>Contact NBC</h4>
         <List.List>
+          <List.Item><b>Email:</b> 60min@cbsnews.com</List.Item>
           <List.Item><b>Phone:</b> (212) 975-3247</List.Item>
           <List.Item>
             <b>Address:</b>
