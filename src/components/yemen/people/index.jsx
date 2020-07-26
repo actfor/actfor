@@ -118,6 +118,23 @@ class People extends Component {
         <ActivistsCards />
 
         <Header as="h2">
+          Academia
+        </Header>
+        <Card.Group stackable>
+          {
+            academia.map(card => (
+              <Card color="secondary">
+                <Card.Content>
+                  <Card.Header>{card.header}</Card.Header>
+                  <Divider />
+                  <Card.Description>{card.content}</Card.Description>
+                </Card.Content>
+              </Card> 
+            ))
+          }
+        </Card.Group>
+
+        <Header as="h2">
           Journalists
         </Header>
         <Card.Group stackable>
@@ -134,22 +151,6 @@ class People extends Component {
           }
         </Card.Group>
 
-        <Header as="h2">
-          Academia
-        </Header>
-        <Card.Group stackable>
-          {
-            academia.map(card => (
-              <Card color="secondary">
-                <Card.Content>
-                  <Card.Header>{card.header}</Card.Header>
-                  <Divider />
-                  <Card.Description>{card.content}</Card.Description>
-                </Card.Content>
-              </Card> 
-            ))
-          }
-        </Card.Group>
       </Container>
     );
   }
