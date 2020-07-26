@@ -11,10 +11,8 @@ class UyghurNowThis extends Component {
   render() {
     return (
       <Container>
-        <Header>
-          <Header.Subheader>
-            China Has Detained More Than a Million Muslims | Op-Ed | NowThis
-          </Header.Subheader>
+        <Header as="h3">
+          China Has Detained More Than a Million Muslims | Op-Ed | NowThis
         </Header>
         <Embed
           active
