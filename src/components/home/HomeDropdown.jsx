@@ -64,6 +64,7 @@ class HomeDropdown extends Component {
           fluid
           selection
           search
+          selectOnBlur={false}
           placeholder='Choose one'
           onChange={this.onChange}
           options={options}
