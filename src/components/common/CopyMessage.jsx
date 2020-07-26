@@ -22,7 +22,7 @@ class CopyMessage extends Component {
       top: '-10000px'
     }
     return (
-      <div>
+      <div style={{ color: '#88060d' }}>
         <Popup
           on="click"
           content="Copied Successfully!"
@@ -34,7 +34,7 @@ class CopyMessage extends Component {
             />
           }
         />
-        Copy Message to Clipboard
+        <h4 style={{ display: 'inline' }}>Copy Message to Clipboard</h4>
         <div
           id={id}
           style={style}
