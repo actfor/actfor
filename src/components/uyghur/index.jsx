@@ -11,6 +11,8 @@ import {
 } from 'react-router-dom';
 
 // pages
+import UyghurDirectory from './directory';
+
 import UyghurNowThis from './education/nowthis';
 
 class UyghurPages extends Component {
@@ -18,6 +20,10 @@ class UyghurPages extends Component {
     return (
       <div>
         <Switch>
+          <Route exact path="/uyghur">
+            <UyghurDirectory />
+          </Route>
+
           <Route path="/uyghur/education/nowthis">
             <UyghurNowThis />
           </Route>
@@ -43,7 +49,7 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/*">
-            <Redirect to="/uyghur/education/" />
+            <Redirect to="/uyghur" />
           </Route>
         </Switch>
       </div>
