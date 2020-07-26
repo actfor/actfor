@@ -17,8 +17,7 @@ class Home extends Component {
       <div>
         <NavBar unscrollable />
         <Container textAlign="center">
-          <HomeSlideshow />
-          <br />
+          <HomeDropdown />
           <br />
           <div style={{ fontSize: '20px' }}>
             <Header as="h2">
@@ -29,7 +28,7 @@ class Home extends Component {
             </p>
           </div>
           <br />
-          <HomeDropdown />
+          <HomeSlideshow />
         </Container>
       </div>
     );
