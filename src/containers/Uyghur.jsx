@@ -19,13 +19,13 @@ class Uyghur extends Component {
         icon: 'pencil',
         dropdown: [
           {
+            text: 'Article: Who are the Ugyhurs?',
+            path: '/uyghur/education/who',
+          },
+          {
             text: 'Now This',
             path: '/uyghur/education/nowthis'
           },
-          {
-            text: 'Who are the Ugyhurs?',
-            path: '/uyghur/education/who',
-          }
         ]
       },
       {
