@@ -76,13 +76,13 @@ class StepMessage extends Component {
                 <Divider />
                 <Header>
                   <Header.Subheader>
-                    Add your own custom message to the script to avoid it getting automatically filtered out.
+                    Add your own custom message to the script to avoid it getting automatically filtered out. It will be added to the top of the message. (recommended)
                   </Header.Subheader>
                 </Header>
                 <Form>
                   <TextArea
                     id="custom"
-                    placeholder="Custom Message"
+                    placeholder="Example: I am John Smith and I am an undergraduate student. This issue is incredibly important because..."
                     value={custom}
                     onChange={this.handleTextChange}
                   />
