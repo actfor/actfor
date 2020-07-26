@@ -5,6 +5,8 @@ import {
   Accordion,
   Divider,
   Icon,
+  Tab,
+  Table,
 } from 'semantic-ui-react';
 
 class AccordionArticle extends Component {
@@ -85,7 +87,7 @@ class AccordionArticle extends Component {
           </p>
 
           <p>
-            Because Yemen imports 90 percent of its food, even before the onset of the war, any cessation of imports would devastate Yemen. The naval blockade by the coalition greatly restricts the amount of humanitarian aid that can reach the Yemeni population. All warring parties, particularly the Houthis and the Hadi government, heavily tax and impede aid that does reach the ports, resulting in lengthy delivery dates: “Offloading [humanitarian goods at a port] takes an average of thirty days due to inefficient port management, financial disputes between shippers, and limited capacity at the al-Hodeidah port, which was severely damaged by airstrikes” (<a href="https://www.ipinst.org/wp-content/uploads/2018/01/IPI-Rpt-Humanitarian-Crisis-in-Yemen.pdf" target="_blank">Coppi</a>, 2018). To compensate for delivery and tariffs, goods are heavily priced and taxed -- to the point that Yemeni markets are often filled with food no one can afford. 
+            Because Yemen imports 90 percent of its food, even before the onset of the war, any cessation of imports would devastate Yemen. The naval blockade by the coalition greatly restricts the amount of humanitarian aid that can reach the Yemeni population. All warring parties, particularly the Houthis and the Hadi government, heavily tax and impede aid that does reach the ports, resulting in lengthy delivery dates: “Offloading [humanitarian goods at a port] takes an average of thirty days due to inefficient port management, financial disputes between shippers, and limited capacity at the al-Hodeidah port, which was severely damaged by airstrikes” (<a href="https://www.ipinst.org/wp-content/uploads/2018/01/IPI-Rpt-Humanitarian-Crisis-in-Yemen.pdf" target="_blank">Coppi</a>, 2018). To compensate for delivery and tariffs, goods are heavily priced and taxed -- to the point that Yemeni markets are often filled with food no one can afford.
           </p>
 
           <p>
@@ -101,7 +103,7 @@ class AccordionArticle extends Component {
           </p>
 
           <p>
-            Yemen simply cannot cope with war, three pandemics, economic destruction, and the coronavirus. It is on the brink of existence. 
+            Yemen simply cannot cope with war, three pandemics, economic destruction, and the coronavirus. It is on the brink of existence.
           </p>
         </Accordion.Content>
 
@@ -187,7 +189,7 @@ class AccordionArticle extends Component {
         </Accordion.Title>
           <Accordion.Content active={activeSecondaryIndex === 2}>
             <p>
-              Donating to humanitarian aid organizations can help alleviate the needs of the Yemeni people. Researching the credibility of non-profit organizations before sending donations ensures that your money and provisions are efficiently used and directly benefiting the populations. 
+              Donating to humanitarian aid organizations can help alleviate the needs of the Yemeni people. Researching the credibility of non-profit organizations before sending donations ensures that your money and provisions are efficiently used and directly benefiting the populations.
             </p>
 
             <p>
@@ -200,13 +202,11 @@ class AccordionArticle extends Component {
                 <li><a href="https://www.oxfamamerica.org/explore/countries/yemen/" target="_blank">OXFAM</a></li>
               </ol>
             </p>
-
-            <p>Do your part: hold the U.S. and Saudi governments accountable, raise awareness, and donate to humanitarian organizations. <b>We cannot and will not forget Yemen.</b></p>
-
           </Accordion.Content>
 
         </Accordion.Content>
 
+        <p>Do your part: hold the U.S. and Saudi governments accountable, raise awareness, and donate to humanitarian organizations. <b>We cannot and will not forget Yemen.</b></p>
 
         <Divider />
 
@@ -218,7 +218,7 @@ class AccordionArticle extends Component {
           <Icon name='dropdown' />
           <h2 style={{ display: 'inline' }}>References</h2>
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 7}>       
+        <Accordion.Content active={activeIndex === 7}>
           <p>
             Al-Khayat, M. (2020, December 31). Checkpoint children: Armed Houthis under 18. Retrieved July 01, 2020, from <a href="https://web.archive.org/web/20150418002313/http://www.yementimes.com/en/1828/report/4489/Checkpoint-children-Armed-Houthis-under-18.htm" target="_blank">
               https://web.archive.org/web/20150418002313/http://www.yementimes.com/en/1828/report/4489/Checkpoint-children-Armed-Houthis-under-18.htm
@@ -234,11 +234,11 @@ class AccordionArticle extends Component {
           </p>
 
           <p>
-            BBC. (2018, December 31). Yemen war: WFP accuses Houthi rebels of diverting food aid. Retrieved July 01, 2020, from <a href="https://www.bbc.com/news/world-middle-east-46722502" target="_blank">https://www.bbc.com/news/world-middle-east-46722502</a> 
+            BBC. (2018, December 31). Yemen war: WFP accuses Houthi rebels of diverting food aid. Retrieved July 01, 2020, from <a href="https://www.bbc.com/news/world-middle-east-46722502" target="_blank">https://www.bbc.com/news/world-middle-east-46722502</a>
           </p>
 
           <p>
-            Brehony, N. (2015). Yemen And The Houthis: Genesis Of The 2015 Crisis. Asian Affairs, 46(2), 232-250. doi:10.1080/03068374.2015.1037162 
+            Brehony, N. (2015). Yemen And The Houthis: Genesis Of The 2015 Crisis. Asian Affairs, 46(2), 232-250. doi:10.1080/03068374.2015.1037162
           </p>
 
           <p>
@@ -247,7 +247,7 @@ class AccordionArticle extends Component {
 
           <p>
             Coppi, G. (2018). The Humanitarian Crisis in Yemen: Beyond the Man-Made Disaster. International Peace Institute, 1-40. Retrieved June 22, 2020, from <a href="https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/resources/docs/IPI%20Humanitarian-Crisis-in-Yemen.pdf" target="_blank">
-            https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/resources/docs/IPI%20Humanitarian-Crisis-in-Yemen.pdf 
+            https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/resources/docs/IPI%20Humanitarian-Crisis-in-Yemen.pdf
             </a>
           </p>
 
@@ -264,7 +264,7 @@ class AccordionArticle extends Component {
           </p>
 
           <p>
-            Juneau, T. (2016). Iran's policy towards the Houthis in Yemen: A limited return on a modest investment. International Affairs, 92(3), 647-663. doi:10.1111/1468-2346.12599 
+            Juneau, T. (2016). Iran's policy towards the Houthis in Yemen: A limited return on a modest investment. International Affairs, 92(3), 647-663. doi:10.1111/1468-2346.12599
           </p>
 
           <p>
@@ -276,15 +276,15 @@ class AccordionArticle extends Component {
           </p>
 
           <p>
-            Roberts, W. (2017, June 08). Questions raised over $110bn arms deal to Saudi Arabia. Retrieved June 24, 2020, from <a href="https://www.aljazeera.com/news/2017/06/questions-raised-110bn-arms-deal-saudi-arabia-170608033511760.html" target="_blank">https://www.aljazeera.com/news/2017/06/questions-raised-110bn-arms-deal-saudi-arabia-170608033511760.html</a> 
+            Roberts, W. (2017, June 08). Questions raised over $110bn arms deal to Saudi Arabia. Retrieved June 24, 2020, from <a href="https://www.aljazeera.com/news/2017/06/questions-raised-110bn-arms-deal-saudi-arabia-170608033511760.html" target="_blank">https://www.aljazeera.com/news/2017/06/questions-raised-110bn-arms-deal-saudi-arabia-170608033511760.html</a>
           </p>
 
           <p>
-            Search GovTrack: Yemen. (n.d.). Retrieved June 23, 2020, from <a href="https://www.govtrack.us/search?q=yemen " target="_blank">https://www.govtrack.us/search?q=yemen</a> 
+            Search GovTrack: Yemen. (n.d.). Retrieved June 23, 2020, from <a href="https://www.govtrack.us/search?q=yemen " target="_blank">https://www.govtrack.us/search?q=yemen</a>
           </p>
 
           <p>
-            Snyder, S. (2018, December 14). Here is a list of organizations helping people in Yemen who are surviving in the world's worst humanitarian crisis. Retrieved June 23, 2020, from <a href="https://www.pri.org/stories/2017-11-29/heres-how-you-can-send-help-people-trapped-worlds-worst-humanitarian-crisis" target="_blank">https://www.pri.org/stories/2017-11-29/heres-how-you-can-send-help-people-trapped-worlds-worst-humanitarian-crisis</a> 
+            Snyder, S. (2018, December 14). Here is a list of organizations helping people in Yemen who are surviving in the world's worst humanitarian crisis. Retrieved June 23, 2020, from <a href="https://www.pri.org/stories/2017-11-29/heres-how-you-can-send-help-people-trapped-worlds-worst-humanitarian-crisis" target="_blank">https://www.pri.org/stories/2017-11-29/heres-how-you-can-send-help-people-trapped-worlds-worst-humanitarian-crisis</a>
           </p>
 
           <p>

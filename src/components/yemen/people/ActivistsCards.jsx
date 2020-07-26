@@ -70,7 +70,7 @@ class ActivistsCards extends Component {
 
     return (
       <div>
-        <Card.Group>
+        <Card.Group stackable>
           {
             cards.map(card => (
               <Card color="secondary">

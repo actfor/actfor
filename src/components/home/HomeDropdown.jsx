@@ -25,10 +25,16 @@ class HomeDropdown extends Component {
       },
       {
         key: 'uyghur',
-        value: 'uyghur/education',
+        value: 'uyghur/education/nowthis',
         text: 'Uyghur Muslims'
       }
     ]
+
+    options.sort((a, b) => {
+      if(a.text < b.text) { return -1; }
+      if(a.text > b.text) { return 1; }
+      return 0;
+    })
 
     const style = {
       backgroundColor: '#88060d',
@@ -37,11 +43,23 @@ class HomeDropdown extends Component {
       borderRadius: '24px'
     };
 
+    // return (
+    //   <div style={style}>
+    //     <Image centered src={title} size="medium" />
+    //     <br />
+    //     <br />
+    //     <Dropdown
+    //       fluid
+    //       selection
+    //       search
+    //       placeholder='Choose one'
+    //       onChange={this.onChange}
+    //       options={options}
+    //     />
+    //   </div>
+    // );
     return (
       <div style={style}>
-        <Image centered src={title} size="medium" />
-        <br />
-        <br />
         <Dropdown
           fluid
           selection
