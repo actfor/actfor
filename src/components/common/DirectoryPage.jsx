@@ -17,7 +17,7 @@ class DirectoryPage extends Component {
         <Header as="h4">
           You can locate the resources described in this table at the navigation bar on the top of the page.
         </Header>
-        <Table celled padded>
+        <Table stackable celled padded>
           {/* Header */}
           <Table.Header>
             <Table.Row>
