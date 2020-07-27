@@ -5,6 +5,7 @@ import {
   Container,
   Icon,
   Table,
+  Header,
 } from 'semantic-ui-react';
 
 class DirectoryPage extends Component {
@@ -13,6 +14,9 @@ class DirectoryPage extends Component {
 
     return (
       <Container style={{ fontSize: '20px' }}>
+        <Header as="h4">
+          You can locate the resources described in this table at the navigation bar on the top of the page.
+        </Header>
         <Table celled padded>
           {/* Header */}
           <Table.Header>

@@ -17,8 +17,6 @@ class Home extends Component {
       <div>
         <NavBar unscrollable />
         <Container textAlign="center">
-          <HomeDropdown />
-          <br />
           <div style={{ fontSize: '20px' }}>
             <Header as="h2">
               This website builds on the work of activists and encourages action on social justice issues.  
@@ -27,6 +25,8 @@ class Home extends Component {
               Use the drop down menu below to choose a cause that you would like to act for!
             </p>
           </div>
+          <br />
+          <HomeDropdown />
           <br />
           <HomeSlideshow />
         </Container>
