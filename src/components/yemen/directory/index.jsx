@@ -23,7 +23,7 @@ class YemenDirectory extends Component {
       {
         title: 'Donate',
         icon: 'dollar',
-        description: 'This page will help you find trusted sites where you can take finacial action towards the Yemen crisis.',
+        description: 'This page will help you find trusted sites where you can take financial action towards the Yemen crisis.',
       },
     ]
     return (

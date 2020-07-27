@@ -28,7 +28,7 @@ class UyghurDirectory extends Component {
       {
         title: 'Donate',
         icon: 'dollar',
-        description: 'This page will help you find trusted sites where you can take finacial action to help the Uyghur Muslims.',
+        description: 'This page will help you find trusted sites where you can take financial action to help the Uyghur Muslims.',
       },
     ];
 
