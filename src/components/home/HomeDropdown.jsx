@@ -23,11 +23,11 @@ class HomeDropdown extends Component {
         value: 'yemen',
         text: 'Yemen'
       },
-      {
-        key: 'uyghur',
-        value: 'uyghur',
-        text: 'Uyghur Muslims'
-      }
+      // {
+      //   key: 'uyghur',
+      //   value: 'uyghur',
+      //   text: 'Uyghur Muslims'
+      // }
     ]
 
     options.sort((a, b) => {
