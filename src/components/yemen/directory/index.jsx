@@ -8,7 +8,7 @@ class YemenDirectory extends Component {
       {
         title: 'Education',
         icon: 'pencil',
-        description: 'These pages are inteded to help you understand and learn more about the Yemen crisis. This includes articles and access to other resources such as articles, books, and videos.',
+        description: 'These pages are intended to help you understand and learn more about the Yemen crisis. This includes articles and access to other resources such as articles, books, and videos.',
       },
       {
         title: 'Public Pressure',
