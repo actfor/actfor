@@ -7,7 +7,7 @@ import {
 
 class UyghurBoycott  extends Component {
   render() {
-    const color = site.variables.get(pageBackground);
+    // const color = site.variables.get(pageBackground);
     return (
         <Container style={{ fontSize: '20px'}}>
         <p> 
@@ -21,7 +21,7 @@ class UyghurBoycott  extends Component {
         <p> <b>
             List of orgs to boycott:</b>
         </p>
-        <Table celled color= {color} key ="#F9F9F9" inverted>
+        <Table celled color= "primary" >
             <Table.Body>
                 <Table.Row>
                     <Table.Cell>
