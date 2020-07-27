@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
-    Container,
+    Container, Icon, Label, Menu, Table 
   } from 'semantic-ui-react';
 
 class UyghurBoycott  extends Component {
   render() {
+    const color = site.variables.get(pageBackground);
     return (
         <Container style={{ fontSize: '20px'}}>
         <p> 
@@ -20,61 +21,64 @@ class UyghurBoycott  extends Component {
         <p> <b>
             List of orgs to boycott:</b>
         </p>
-        <table class="boycottcols">
-            <tbody>
-                <td>
-                <p>	Abercrombie & Fitch	</p>
-                <p>	Acer	</p>
-                <p>	Adidas	</p>
-                <p>	Alstom	</p>
-                <p>	Amazon	</p>
-                <p>	Apple	</p>
-                <p>	ASUS	</p>
-                <p>	BAIC Motor	</p>
-                <p>	BMW	</p>
-                <p>	Calvin Klein	</p>
-                <p>	Carter’s	</p>
-                <p>	Cisco	</p>
-                <p>	Fila	</p>
-                <p>	Gap	</p>
-                <p>	General Motors	</p>
-                </td>
-                <td>
-                    <p>	Google	</p>
-                    <p>	H&M	</p>
-                    <p>	HP	</p>
-                    <p>	Huawei	</p>
-                    <p>	Jaguar	</p>
-                    <p>	L.L.Bean	</p>
-                    <p>	Lacoste	</p>
-                    <p>	Land Rover	</p>
-                    <p>	Lenovo	</p>
-                    <p>	LG	</p>
-                    <p>	Mercedes-Benz	</p>
-                    <p>	Microsoft	</p>
-                    <p>	Mitsubishi	</p>
-                    <p>	Nike	</p>
-                    <p>	Nintendo	</p>
-                </td>
-                <td>
-                    <p>	Nokia	</p>
-                    <p>	The North Face	</p>
-                    <p>	Oculus	</p>
-                    <p>	Panasonic	</p>
-                    <p>	Polo Ralph Lauren	</p>
-                    <p>	Puma	</p>
-                    <p>	Samsung	</p>
-                    <p>	Skechers	</p>
-                    <p>	Sony	</p>
-                    <p>	Tommy Hilfiger	</p>
-                    <p>	Toshiba	</p>
-                    <p>	Uniqlo	</p>
-                    <p>	Victoria’s Secret	</p>
-                    <p>	Volkswagen	</p>
-                    <p>	Zara	</p>
-                </td>
-            </tbody>
-        </table>
+        <Table celled color= {color} key ="#F9F9F9" inverted>
+            <Table.Body>
+                <Table.Row>
+                    <Table.Cell>
+                        <p>	Abercrombie & Fitch	</p>
+                        <p>	Acer	</p>
+                        <p>	Adidas	</p>
+                        <p>	Alstom	</p>
+                        <p>	Amazon	</p>
+                        <p>	Apple	</p>
+                        <p>	ASUS	</p>
+                        <p>	BAIC Motor	</p>
+                        <p>	BMW	</p>
+                        <p>	Calvin Klein	</p>
+                        <p>	Carter’s	</p>
+                        <p>	Cisco	</p>
+                        <p>	Fila	</p>
+                        <p>	Gap	</p>
+                        <p>	General Motors	</p>
+                        
+                    </Table.Cell>
+                    <Table.Cell>
+                        <p>	Google	</p>
+                        <p>	H&M	</p>
+                        <p>	HP	</p>
+                        <p>	Huawei	</p>
+                        <p>	Jaguar	</p>
+                        <p>	L.L.Bean	</p>
+                        <p>	Lacoste	</p>
+                        <p>	Land Rover	</p>
+                        <p>	Lenovo	</p>
+                        <p>	LG	</p>
+                        <p>	Mercedes-Benz	</p>
+                        <p>	Microsoft	</p>
+                        <p>	Mitsubishi	</p>
+                        <p>	Nike	</p>
+                        <p>	Nintendo	</p>
+                    </Table.Cell>
+                    <Table.Cell>
+                        <p>	Nokia	</p>
+                        <p>	The North Face	</p>
+                        <p>	Oculus	</p>
+                        <p>	Panasonic	</p>
+                        <p>	Polo Ralph Lauren	</p>
+                        <p>	Puma	</p>
+                        <p>	Samsung	</p>
+                        <p>	Skechers	</p>
+                        <p>	Sony	</p>
+                        <p>	Tommy Hilfiger	</p>
+                        <p>	Toshiba	</p>
+                        <p>	Uniqlo	</p>
+                        <p>	Victoria’s Secret	</p>
+                        <p>	Volkswagen	</p>
+                        <p>	Zara	</p>
+                    </Table.Cell>
+                </Table.Row>
+            </Table.Body>
+        </Table>
         <br></br>
         <p style={{ fontSize: '18px'}}>
             Visit our Pressuring Brands tab to send a message to these companies urging them to terminate contracts with Xinjiang manufacturers benefitting from forced labor of Uyghur Muslims.
