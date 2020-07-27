@@ -3,7 +3,14 @@ import React, { Component } from 'react';
 import {
   Card,
   Divider,
+  Image,
 } from 'semantic-ui-react';
+
+// images
+import * as alfaqih from './images/alfaqih.png';
+import * as hisham from './images/hisham.png';
+import * as muna from './images/muna.png';
+import * as radhya from './images/radhya.png';
 
 class ActivistsCards extends Component {
   render() {
@@ -11,6 +18,7 @@ class ActivistsCards extends Component {
     const cards = [
       {
         header: 'Abdulrasheed Alfaqih',
+        image: alfaqih,
         content: (
           <div>
             <p>
@@ -24,6 +32,7 @@ class ActivistsCards extends Component {
       },
       {
         header: 'Muna Luqman',
+        image: muna,
         content: (
           <div>
             <p>
@@ -47,6 +56,7 @@ class ActivistsCards extends Component {
       },
       {
         header: 'Hisham al-Omeisy',
+        image: hisham,
         content: (
           <div>
             <p>
@@ -60,6 +70,7 @@ class ActivistsCards extends Component {
       },
       {
         header: 'Radhya Almutawakel',
+        image: radhya,
         content: (
           <div>
             Radhya Almutawakel is the Yemeni co-founder of the <a href="https://mwatana.org/en/about/" target="_blank">Mwatana Organization for Human Rights</a>. She is the first person to brief the UN Security Council on Yemen, and has written for The Guardian, The New Internationalist, and Vice News. In 2018, Almutawakel was <a href="https://www.hrw.org/sites/default/files/supporting_resources/joint_civilsociety_statement_mwatana_two.pdf" target="_blank">detained</a> by the Saudi led-coalition at the Seiyun City Airport for at least 12 hours.
@@ -74,6 +85,7 @@ class ActivistsCards extends Component {
           {
             cards.map(card => (
               <Card color="secondary">
+                {card.image && <Image src={card.image} wrapped />}
                 <Card.Content>
                   <Card.Header>{card.header}</Card.Header>
                   <Divider />

@@ -7,10 +7,17 @@ import {
   Container,
   Divider,
   Header,
+  Image,
 } from 'semantic-ui-react';
 
 // components
 import ActivistsCards from './ActivistsCards';
+
+// images
+import * as abdel from './images/abdel.png'
+import * as almigdad from './images/almigdad.png'
+import * as jamalk from './images/jamalk.png';
+import * as rees from './images/rees.png';
 
 class People extends Component {
   render() {
@@ -46,10 +53,12 @@ class People extends Component {
       {
         header: 'Abdel Karim al-Khaiwani',
         description: 'Abdel Karim al-Khaiwani was a politician, human rights activist, and journalist. Al-Khawaini also made efforts towards peace in Yemen through his participation in the National Dialogue Conference and as a goodwill ambassador of the International Council for Human Rights in Yemen.  After Khaiwani published several articles critical of Saleh and Yemeni government corruption, government officials harassed, beat, searched, and imprisoned Saleh; on March 18 2015, three gunmen assassinated Khaiwani in his home.',
+        image: abdel,
       },
       {
         header: 'Almigdad Mojalli',
         description: "Almigdad Mojalli was a journalist for The Daily Telegraph, Al Jazeera, IRIN for the UNited Nations, and Voice of America. His work focused on Yemen's humanitarian crisis and the impact of foreign intervention on Yemen. Accused as a spy for Saudi Arabia and the United States, Mojalli received threats of confinement from the Houthi government in 2016. On January 17, 2016, Mojalli was killed by a Saudi airstrike while on assignment to find witnesses of an airstrike that occurred the week before.",
+        image: almigdad,
       },
       {
         header: 'Jamal al-Sharabi',
@@ -58,6 +67,7 @@ class People extends Component {
       {
         header: 'Jamal Khashoggi',
         description: 'Jamal Khashoggi was a columnist for The Washington Post and editor in chief of Al-Arab News Channel. Khashoggi was a known dissident of Saudi Arabia, criticizing Saudi-coalition intervention in Yemen and the actions of Muhammad bin Salman (MBS). He was assassinated at the Saudi consulate by Saudi agents on October 2, 2018, which led to international uproar.',
+        image: jamalk,
       },
       {
         header: 'Ziad al-Sharabi',
@@ -75,6 +85,7 @@ class People extends Component {
             </p>
           </div>
         ),
+        image: rees,
       }
     ]
 
@@ -124,6 +135,7 @@ class People extends Component {
           {
             academia.map(card => (
               <Card color="secondary">
+                {card.image && <Image src={card.image} wrapped />}
                 <Card.Content>
                   <Card.Header>{card.header}</Card.Header>
                   <Divider />
@@ -141,6 +153,7 @@ class People extends Component {
           {
             journalists.map(card => (
               <Card color="secondary">
+                {card.image && <Image src={card.image} wrapped />}
                 <Card.Content>
                   <Card.Header>{card.header}</Card.Header>
                   <Divider />
