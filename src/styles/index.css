@@ -11,17 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.boycottcols {
-  border-collapse: collapse;
-  width: 100%;
-  text-align: top;
-}
-.boycottcols, td{
-  border: 1px solid black;
-  padding: 20px;
-}
-
-.quote {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}

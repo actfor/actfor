@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
-    Container, Icon, Label, Menu, Table 
+    Container, Icon, Label, Menu, Table, Button
   } from 'semantic-ui-react';
 
 class UyghurBoycott  extends Component {
@@ -10,18 +10,24 @@ class UyghurBoycott  extends Component {
     // const color = site.variables.get(pageBackground);
     return (
         <Container style={{ fontSize: '20px'}}>
-        <p> 
-            Link to ASPI report: <a href="https://www.aspi.org.au/report/uyghurs-sale">https://www.aspi.org.au/report/uyghurs-sale</a>
-        </p>
+            
         <p class= "quote"> <i>  
-            “The Chinese government has facilitated the mass transfer of Uyghur and other ethnic minority citizens from the far west region of Xinjiang to factories across the country. Under conditions that strongly suggest forced labour, Uyghurs are working in factories that are in the supply chains of at least 83 well-known global brands in the technology, clothing and automotive sectors, including Apple, BMW, Gap, Huawei, Nike, Samsung, Sony and Volkswagen.”
-        </i>
+            “The Chinese government has facilitated the mass transfer of Uyghur and other ethnic minority citizens from the far west region of Xinjiang to factories across the country. Under conditions that strongly suggest forced labour, Uyghurs are working in factories that are in the supply chains of at least 83 well-known global brands in the technology, clothing and automotive sectors, including Apple, BMW, Gap, Huawei, Nike, Samsung, Sony and Volkswagen.” <br></br>
+         </i>
+        <Button
+                    primary
+                    as='a' target="_blank"
+                    href="https://www.aspi.org.au/report/uyghurs-sale"
+                    content='Full ASPI report'
+                    icon='external alternate'
+                    labelPosition='left'
+                />
         </p>
         <br></br>
         <p> <b>
             List of orgs to boycott:</b>
         </p>
-        <Table celled color= "primary" >
+        <Table celled color= "secondary">
             <Table.Body>
                 <Table.Row>
                     <Table.Cell>
