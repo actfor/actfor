@@ -2,30 +2,31 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
-    Container, Icon, Label, Menu, Table, Button
-  } from 'semantic-ui-react';
+  Button,
+  Container,
+  Table,
+} from 'semantic-ui-react';
 
 class UyghurBoycott  extends Component {
   render() {
-    // const color = site.variables.get(pageBackground);
     return (
-        <Container style={{ fontSize: '20px'}}>
-            
+      <Container style={{ fontSize: '20px'}}>
         <p class= "quote"> <i>  
             “The Chinese government has facilitated the mass transfer of Uyghur and other ethnic minority citizens from the far west region of Xinjiang to factories across the country. Under conditions that strongly suggest forced labour, Uyghurs are working in factories that are in the supply chains of at least 83 well-known global brands in the technology, clothing and automotive sectors, including Apple, BMW, Gap, Huawei, Nike, Samsung, Sony and Volkswagen.” <br></br>
-         </i>
-        <Button
-                    primary
-                    as='a' target="_blank"
-                    href="https://www.aspi.org.au/report/uyghurs-sale"
-                    content='Full ASPI report'
-                    icon='external alternate'
-                    labelPosition='left'
-                />
+        </i>
+        <br />
+          <Button
+            primary
+            as='a' target="_blank"
+            href="https://www.aspi.org.au/report/uyghurs-sale"
+            content='Full ASPI report'
+            icon='external alternate'
+            labelPosition='left'
+          />
         </p>
-        <br></br>
-        <p> <b>
-            List of orgs to boycott:</b>
+        <br />
+        <p>
+          <b>List of orgs to boycott:</b>
         </p>
         <Table celled color= "secondary">
             <Table.Body>
@@ -85,10 +86,11 @@ class UyghurBoycott  extends Component {
                 </Table.Row>
             </Table.Body>
         </Table>
-        <br></br>
+        <br />
         <p style={{ fontSize: '18px'}}>
             Visit our Pressuring Brands tab to send a message to these companies urging them to terminate contracts with Xinjiang manufacturers benefitting from forced labor of Uyghur Muslims.
         </p>
+        <br />
       </Container>
     );
   }
