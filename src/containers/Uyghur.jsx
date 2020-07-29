@@ -20,7 +20,7 @@ class Uyghur extends Component {
         dropdown: [
           {
             text: 'Article: Who are the Ugyhurs?',
-            path: '/uyghur/education/who',
+            path: '/uyghur/education/article',
           },
           {
             text: 'Now This',

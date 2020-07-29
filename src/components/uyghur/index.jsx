@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // semantic-ui
-import { Header } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 
 // router
 import {
@@ -13,16 +13,23 @@ import {
 // pages
 import UyghurDirectory from './directory';
 
+import UyghurArticle from './education/article';
 import UyghurNowThis from './education/nowthis';
+
 import UyghurBoycott  from './boycott'
+
 
 class UyghurPages extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <Switch>
           <Route exact path="/uyghur">
             <UyghurDirectory />
+          </Route>
+
+          <Route path="/uyghur/education/article">
+            <UyghurArticle />
           </Route>
 
           <Route path="/uyghur/education/nowthis">
@@ -53,7 +60,7 @@ class UyghurPages extends Component {
             <Redirect to="/uyghur" />
           </Route>
         </Switch>
-      </div>
+      </Container>
     );
   }
 }
