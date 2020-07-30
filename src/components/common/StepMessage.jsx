@@ -46,7 +46,7 @@ class StepMessage extends Component {
     const currentStep = steps.filter(step => step.name == activeItem)[0] || {}
 
     switch (currentStep.type) {
-      case 'name': 
+      case 'name':
         return (
           <div>
             <Segment.Group>
@@ -102,7 +102,7 @@ class StepMessage extends Component {
               <Header as='h2'>
                 {currentStep.name}
                 <Header.Subheader>
-                  Read our generated script for your message, and then copy it by clicking the button! 
+                  Read our generated script for your message, and then copy it by clicking the button!
                 </Header.Subheader>
               </Header>
             </Segment>
@@ -171,6 +171,47 @@ class StepMessage extends Component {
               {currentStep.segment}
             </Segment.Group>
           </div>
+        );
+      break;
+
+
+      case 'email-all':
+        return (
+          <Segment.Group>
+            <Segment>
+              <Header as='h2'>
+                {currentStep.name}
+                <Header.Subheader>
+                  {currentStep.subheader}
+                </Header.Subheader>
+              </Header>
+            </Segment>
+
+            <Segment placeholder>
+              <Grid columns={2} relaxed='very' stackable>
+
+                <Grid.Column>
+                  {currentStep.leftSegment}
+                </Grid.Column>
+
+                <Grid.Column textAlign='center' verticalAlign='middle'>
+                  <Header icon>
+                    <Icon name='mail'/>
+                    Send to {currentStep.sendTo}
+                  </Header>
+                  <MailTo
+                    email={currentStep.email}
+                    subject={currentStep.subject}
+                    body={reactElementToJSXString(currentStep.message(name, location))}
+                  >
+                    <Button primary>Send email to {currentStep.email}</Button>
+                  </MailTo>
+                </Grid.Column>
+
+              </Grid>
+              <Divider vertical>Or</Divider>
+            </Segment>
+          </Segment.Group>
         );
       break;
 

@@ -12,6 +12,8 @@ import {
 
 // pages
 import UyghurNowThis from './education/nowthis';
+import PressureCongress from './pressure/PressureCongress'
+import PressureBrands from './pressure/PressureBrands'
 
 class UyghurPages extends Component {
   render() {
@@ -26,8 +28,22 @@ class UyghurPages extends Component {
             Uyghur Education
           </Route>
 
-          <Route path="/uyghur/pressure/">
-            Uyghur Public Pressure
+          <Route path="/uyghur/pressure/media">
+            <Header>
+              <Header.Subheader>
+                Use this page to contact brands involved in the crisis.
+              </Header.Subheader>
+            </Header>
+            <PressureBrands />
+          </Route>
+
+          <Route path="/uyghur/pressure/congress">
+            <Header>
+              <Header.Subheader>
+                Use this page to contact congress.
+              </Header.Subheader>
+            </Header>
+            <PressureCongress />
           </Route>
 
           <Route path="/uyghur/people/">
