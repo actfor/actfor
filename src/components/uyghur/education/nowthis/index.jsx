@@ -10,7 +10,7 @@ import {
 class UyghurNowThis extends Component {
   render() {
     return (
-      <Container>
+      <div>
         <Header as="h3">
           China Has Detained More Than a Million Muslims | Op-Ed | NowThis
         </Header>
@@ -21,7 +21,7 @@ class UyghurNowThis extends Component {
           id="zmaqJDlWwrs"
           aspectRatio="21:9"
         />
-      </Container>
+      </div>
     );
   }
 }
