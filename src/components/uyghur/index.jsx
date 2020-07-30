@@ -19,6 +19,8 @@ import UyghurResources from './education/resources';
 
 import UyghurBoycott  from './boycott'
 
+import UyghurPeople from './people';
+
 
 class UyghurPages extends Component {
   render() {
@@ -46,7 +48,7 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/people/">
-            Uyghur People
+            <UyghurPeople />
           </Route>
 
           <Route path="/uyghur/boycott/">

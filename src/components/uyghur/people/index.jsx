@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
-  Button,
   Card,
   Container,
   Divider,
@@ -15,21 +14,18 @@ import PeopleCards from './../../common/PeopleCards';
 
 // card content
 import {
-  academia,
   activists,
   journalists,
   stories,
-} from './cards'
+} from './cards';
 
 
-
-class People extends Component {
+class UyghurPeople extends Component {
   render() {
-
     return (
-      <Container>
+      <div>
         <Header as="h1">
-          People of the Yemen Movement
+          People of the Uyghur Movement
         </Header>
         <Divider />
 
@@ -37,11 +33,6 @@ class People extends Component {
           Stories
         </Header>
         <PeopleCards people={stories} />
-
-        <Header as="h2">
-          Academia
-        </Header>
-        <PeopleCards people={academia} />
 
         <Header as="h2">
           Activists
@@ -52,10 +43,9 @@ class People extends Component {
           Journalists
         </Header>
         <PeopleCards people={journalists} />
-
-      </Container>
+      </div>
     );
   }
 }
 
-export default People;
+export default UyghurPeople;
