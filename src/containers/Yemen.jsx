@@ -19,7 +19,7 @@ class Yemen extends Component {
         icon: 'pencil',
         dropdown: [
           {
-            text: 'World\'s Worst Crisis',
+            text: 'Article: World\'s Worst Crisis',
             path: '/yemen/education/crisis'
           },
           {

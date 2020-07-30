@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn bstart`
+
+**Run this your first time at least, and every other time you need to rebuild semantic-ui settings.** <br />
+Builds the app with gulp scripts, and the runs the default start script in order to run the app in development mode.
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />

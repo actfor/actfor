@@ -15,6 +15,7 @@ class TimeMessage extends Component {
       <List.Item>
         <h4>Contact Customer Service</h4>
         <List.List>
+          <List.Item><b>Email:</b> time@subscription.co.uk</List.Item>
           <List.Item><b>Tel dialing from the UK:</b> 0345 045 0360</List.Item>
           <List.Item><b>From all other countries:</b> +44 (0) 1858 438830</List.Item>
         </List.List>

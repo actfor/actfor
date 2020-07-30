@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import {
   Button,
   Card,
+  Container,
   Divider,
   Embed,
   Header,
@@ -113,22 +114,26 @@ class ResourceList extends Component {
     ];
 
     return (
-      <div>
+      <Container>
         <Header as="h1">
+          Resources on the Yemen Crisis
+        </Header>
+        <Divider />
+        <Header as="h2">
           Articles
         </Header>
         <Card.Group stackable>
           {this.renderCards(articles)}
         </Card.Group>
 
-        <Header as="h1">
+        <Header as="h2">
           Books
         </Header>
         <Card.Group stackable>
           {this.renderCards(books)}
         </Card.Group>
 
-        <Header as="h1">
+        <Header as="h2">
           Extra
         </Header>
         <Card.Group stackable>
@@ -136,10 +141,12 @@ class ResourceList extends Component {
         </Card.Group>
 
         <Divider />
-        <Header as="h1">
+        <Header as="h2">
           Videos
         </Header>
-        <Header as="h3">Al-Jazeera: Explainer: The War in Yemen Explained in 3 minutes</Header>
+        <Header as="h3">
+          Al-Jazeera: Explainer: The War in Yemen Explained in 3 minutes
+        </Header>
         <Embed
           active
           autoplay={false}
@@ -147,7 +154,7 @@ class ResourceList extends Component {
           id="nLRgdFP-s30"
           aspectRatio="21:9"
         />
-      </div>
+      </Container>
     );
   }
 }

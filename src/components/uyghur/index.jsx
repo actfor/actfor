@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // semantic-ui
-import { Header } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 
 // router
 import {
@@ -11,47 +11,48 @@ import {
 } from 'react-router-dom';
 
 // pages
+import UyghurDirectory from './directory';
+
+import UyghurArticle from './education/article';
 import UyghurNowThis from './education/nowthis';
-import PressureCongress from './pressure/PressureCongress'
-import PressureBrands from './pressure/PressureBrands'
+import UyghurResources from './education/resources';
+
+import UyghurBoycott  from './boycott'
+
+import UyghurPeople from './people';
+
 
 class UyghurPages extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <Switch>
+          <Route exact path="/uyghur">
+            <UyghurDirectory />
+          </Route>
+
+          <Route path="/uyghur/education/article">
+            <UyghurArticle />
+          </Route>
+
           <Route path="/uyghur/education/nowthis">
             <UyghurNowThis />
           </Route>
 
-          <Route path="/uyghur/education/who">
-            Uyghur Education
+          <Route path="/uyghur/education/resources">
+            <UyghurResources />
           </Route>
 
-          <Route path="/uyghur/pressure/media">
-            <Header>
-              <Header.Subheader>
-                Use this page to contact brands involved in the crisis.
-              </Header.Subheader>
-            </Header>
-            <PressureBrands />
-          </Route>
-
-          <Route path="/uyghur/pressure/congress">
-            <Header>
-              <Header.Subheader>
-                Use this page to contact congress.
-              </Header.Subheader>
-            </Header>
-            <PressureCongress />
+          <Route path="/uyghur/pressure/">
+            Uyghur Public Pressure
           </Route>
 
           <Route path="/uyghur/people/">
-            Uyghur People
+            <UyghurPeople />
           </Route>
 
           <Route path="/uyghur/boycott/">
-            Uyghur Boycott
+            <UyghurBoycott />
           </Route>
 
           <Route path="/uyghur/donate/">
@@ -59,10 +60,10 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/*">
-            <Redirect to="/uyghur/education/" />
+            <Redirect to="/uyghur" />
           </Route>
         </Switch>
-      </div>
+      </Container>
     );
   }
 }

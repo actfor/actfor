@@ -20,12 +20,12 @@ class HomeDropdown extends Component {
     const options = [
       {
         key: 'yemen',
-        value: 'yemen/education/crisis',
+        value: 'yemen',
         text: 'Yemen'
       },
       {
         key: 'uyghur',
-        value: 'uyghur/education/nowthis',
+        value: 'uyghur',
         text: 'Uyghur Muslims'
       }
     ]
@@ -64,6 +64,7 @@ class HomeDropdown extends Component {
           fluid
           selection
           search
+          selectOnBlur={false}
           placeholder='Choose one'
           onChange={this.onChange}
           options={options}
