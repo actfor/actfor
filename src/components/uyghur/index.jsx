@@ -12,8 +12,8 @@ import {
 
 // pages
 import UyghurDirectory from './directory';
-
 import UyghurNowThis from './education/nowthis';
+import UyghurPeople from './people';
 
 class UyghurPages extends Component {
   render() {
@@ -37,7 +37,7 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/people/">
-            Uyghur People
+            <UyghurPeople />
           </Route>
 
           <Route path="/uyghur/boycott/">
