@@ -15,6 +15,7 @@ import UyghurDirectory from './directory';
 
 import UyghurArticle from './education/article';
 import UyghurNowThis from './education/nowthis';
+import UyghurResources from './education/resources';
 
 import UyghurBoycott  from './boycott'
 
@@ -36,8 +37,8 @@ class UyghurPages extends Component {
             <UyghurNowThis />
           </Route>
 
-          <Route path="/uyghur/education/who">
-            Uyghur Education
+          <Route path="/uyghur/education/resources">
+            <UyghurResources />
           </Route>
 
           <Route path="/uyghur/pressure/">

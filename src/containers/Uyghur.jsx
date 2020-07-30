@@ -26,6 +26,10 @@ class Uyghur extends Component {
             text: 'Now This',
             path: '/uyghur/education/nowthis'
           },
+          {
+            text: 'Other Resources',
+            path: '/uyghur/education/resources'
+          }
         ]
       },
       {
