@@ -23,7 +23,7 @@ import {
 class UyghurPeople extends Component {
   render() {
     return (
-      <Container>
+      <div>
         <Header as="h1">
           People of the Uyghur Movement
         </Header>
@@ -32,19 +32,18 @@ class UyghurPeople extends Component {
         <Header as="h2">
           Stories
         </Header>
-        <PeopleCards people={stories()} />
-
+        <PeopleCards people={stories} />
 
         <Header as="h2">
           Activists
         </Header>
-        <PeopleCards people={activists()} />
+        <PeopleCards people={activists} />
 
         <Header as="h2">
           Journalists
         </Header>
-        <PeopleCards people={journalists()} />
-      </Container>
+        <PeopleCards people={journalists} />
+      </div>
     );
   }
 }
