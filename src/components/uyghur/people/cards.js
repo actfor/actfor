@@ -47,7 +47,7 @@ const stories = [
   {
     header: 'Mihrigul Tursun',
     description: 'Mihrigul Tursun is a young Uyghur mother who was detained and tortured by the Chinese government numerous times. After giving birth to triplets in Egypt and returning to China afterwards, the authorities arrested her at the airport. They separated her from her children and did not allow her to see them during her detention. Under the Chinese government’s negligent watch, Mihrigul’s son died in custody. She wasn’t allowed to see him at the hospital before he passed away. Although she was later able to escape custody, Mihrigul found out that her husband had been sentenced to 16 years in prison.',
-    link: 'https://uhrp.org/news/uighur-survivor-story-videof',
+    link: 'https://uhrp.org/news/uighur-survivor-story-video',
   },
   {
     header: 'Tursunay Ziyawudun',
