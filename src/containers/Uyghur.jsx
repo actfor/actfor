@@ -43,7 +43,7 @@ class Uyghur extends Component {
           },
           {
             text: 'Pressure Brands',
-            path: '/uyghur/pressure/media'
+            path: '/uyghur/pressure/brands'
           },
         ],
       },

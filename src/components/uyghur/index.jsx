@@ -12,7 +12,6 @@ import {
 
 // pages
 import UyghurDirectory from './directory';
-
 import UyghurArticle from './education/article';
 import UyghurNowThis from './education/nowthis';
 import PressureCongress from './pressure/PressureCongress'

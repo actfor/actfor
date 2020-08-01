@@ -195,7 +195,7 @@ const congressHJ56 = (name, location, custom) => (
     </p>
     <br />
     <p>
-      The intentional genocide of Uyghurs in China is one of the worst crises that must be stopped, especially through international pressure. We need to do all we can to stop direct or indirect U.S. support of the detention and forced labor of Uyghurs.
+      The man-made crisis in Yemen is the world’s worst catastrophe. Over 24 million people in Yemen desperately need aid, of which 12.2 million are children. 3.2 million people have “acute malnutrition”, including two million children under five and one million pregnant and lactating women. 17.8 million people lack water and sanitation, resulting in the world's fastest cholera epidemic. 14.8 million people lack access to healthcare. 10 million people are expected to starve by the end of the year.
     </p>
     <br />
     <p>
