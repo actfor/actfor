@@ -1,56 +1,40 @@
 import React, { Component } from 'react';
 
-// semantic-ui
-import {
-  Accordion,
-  Header,
-  Icon,
-  Image,
-  Divider,
-} from 'semantic-ui-react';
-
 // components
-import BrandsMessage from './brands/BrandsMessage';
+import StepMessage from '../../common/StepMessage';
+import BrandsSegment from './brands/BrandsSegment';
 
+// messages
+import { brandsMess } from './messages'
 
-class PressureBrands extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeIndex: -1,
-    }
-  }
-
-  handleClick = (e, { index }) => {
-    const { activeIndex } = this.state
-    const newIndex = activeIndex === index ? -1 : index
-
-    this.setState({ activeIndex: newIndex })
-   }
+class BrandsMessage extends Component {
 
   render() {
-    const { activeIndex } = this.state;
-
+    const steps = [
+      {
+        type: 'name',
+        name: 'Step 1',
+      },
+      {
+        type: 'message',
+        name: 'Step 2',
+        message: brandsMess,
+      },
+      {
+        type: 'other',
+        name: 'Step 3',
+        subheader: 'Email all of the brands',
+        component: BrandsSegment
+      }
+    ]
     return (
-      <div >
-        <Accordion fluid styled>
-
-          <Accordion.Title>
-            <Header as="h1">
-              Pressure American brands to stop using forced Uyghur labor
-              <Header.Subheader>
-                Urge brands to terminate all contracts with Xinjiang manufacturers benefitting from the forced labor of Uyghurs
-              </Header.Subheader>
-            </Header>
-          </Accordion.Title>
-          {/* Pressure Brands */}
-          <Divider />
-          <BrandsMessage />
-        </Accordion>
+      <div>
+        <StepMessage
+          steps={steps}
+        />
       </div>
     );
   }
 }
 
-export default PressureBrands;
+export default BrandsMessage;

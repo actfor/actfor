@@ -168,7 +168,7 @@ class StepMessage extends Component {
                   </Header.Subheader>
                 </Header>
               </Segment>
-              {currentStep.functionalSegment && currentStep.functionalSegment(name, location)}
+              {currentStep.component && <currentStep.component name={name} location={location} />}
               {currentStep.segment}
             </Segment.Group>
           </div>
