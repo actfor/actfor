@@ -20,6 +20,7 @@ import UyghurResources from './education/resources';
 import UyghurBoycott  from './boycott'
 
 import UyghurPeople from './people';
+import UyghurDonate from './donate';
 
 
 class UyghurPages extends Component {
@@ -56,7 +57,7 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/donate/">
-            Uyghur Donate
+            <UyghurDonate />
           </Route>
 
           <Route path="/uyghur/*">
