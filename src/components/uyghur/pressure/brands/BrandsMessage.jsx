@@ -40,7 +40,8 @@ class BrandsMessage extends Component {
       {
         type: 'other',
         name: 'Step 3',
-        segment: brandSegment,
+        subheader: 'Email all of the brands',
+        functionalSegment: brandSegment,
       }
     ]
     return (

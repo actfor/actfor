@@ -58,22 +58,22 @@ const brandSegment = ( name, location ) => {
               <Table.Cell>Alstrom</Table.Cell>
               <Table.Cell>transportservices@alstrom.com</Table.Cell>
             </Table.Row>
-            <Table.Row>
+            {/* <Table.Row>
               <Table.Cell>Amazon</Table.Cell>
               <Table.Cell>*need email*</Table.Cell>
-            </Table.Row>
-            <Table.Row>
+            </Table.Row> */}
+            {/* <Table.Row>
               <Table.Cell>Apple</Table.Cell>
               <Table.Cell>*need email*</Table.Cell>
-            </Table.Row>
+            </Table.Row> */}
             <Table.Row>
               <Table.Cell>ASUS</Table.Cell>
               <Table.Cell>onlineservice@asus.com</Table.Cell>
             </Table.Row>
-            <Table.Row>
+            {/* <Table.Row>
               <Table.Cell>BAIC Motor</Table.Cell>
               <Table.Cell>*need email*</Table.Cell>
-            </Table.Row>
+            </Table.Row> */}
             <Table.Row>
               <Table.Cell>BMW</Table.Cell>
               <Table.Cell>bmwgenius@bmwusa.com</Table.Cell>
@@ -146,14 +146,14 @@ const brandSegment = ( name, location ) => {
               <Table.Cell>Mercedes-Benz</Table.Cell>
               <Table.Cell>mbfs.fraudcontrol@daimler.com</Table.Cell>
             </Table.Row>
-            <Table.Row>
+            {/* <Table.Row>
               <Table.Cell>Microsoft</Table.Cell>
               <Table.Cell>*need email*</Table.Cell>
-            </Table.Row>
-            <Table.Row>
+            </Table.Row> */}
+            {/* <Table.Row>
               <Table.Cell>Mitsubishi</Table.Cell>
               <Table.Cell>*need email*</Table.Cell>
-            </Table.Row>
+            </Table.Row> */}
             <Table.Row>
               <Table.Cell>Nike</Table.Cell>
               <Table.Cell>NIGEL.POWELL@NIKE.COM</Table.Cell>
@@ -166,10 +166,10 @@ const brandSegment = ( name, location ) => {
               <Table.Cell>Nokia</Table.Cell>
               <Table.Cell>services@nokia.com</Table.Cell>
             </Table.Row>
-            <Table.Row>
+            {/* <Table.Row>
               <Table.Cell>The North Face</Table.Cell>
               <Table.Cell>*need email*</Table.Cell>
-            </Table.Row>
+            </Table.Row> */}
             <Table.Row>
               <Table.Cell>Oculus</Table.Cell>
               <Table.Cell>media@oculus.com</Table.Cell>
