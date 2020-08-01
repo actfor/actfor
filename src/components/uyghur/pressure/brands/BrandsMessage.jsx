@@ -20,7 +20,7 @@ import MailTo from '../../../common/MailTo';
 // messages
 import { brandsMess } from './../messages'
 
-//segments
+//segment
 import { brandSegment } from './brandSegments';
 
 
