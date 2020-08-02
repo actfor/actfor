@@ -27,6 +27,8 @@ import UyghurPeople from './people';
 import PressureCongress from './pressure/PressureCongress'
 import PressureBrands from './pressure/PressureBrands'
 
+import UyghurDonate from './donate';
+
 
 class UyghurPages extends Component {
   render() {
@@ -77,7 +79,7 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/donate/">
-            Uyghur Donate
+            <UyghurDonate />
           </Route>
 
           <Route path="/uyghur/*">
