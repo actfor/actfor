@@ -15,12 +15,12 @@ class UyghurDonate extends Component {
         link: 'https://www.justiceforall.org/save-uighur/',
       },
       {
-        header: 'Uyghur Human Rights Project',
-        link: 'https://uhrp.org/',
-      },
-      {
         header: 'Uyghur American Association',
         link: 'https://uyghuraa.org/',
+      },
+      {
+        header: 'Uyghur Human Rights Project',
+        link: 'https://uhrp.org/',
       },
     ];
 
