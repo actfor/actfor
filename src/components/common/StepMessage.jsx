@@ -150,7 +150,6 @@ class StepMessage extends Component {
                 </Grid.Column>
 
               </Grid>
-              <Divider vertical>Or</Divider>
             </Segment>
           </Segment.Group>
         );
