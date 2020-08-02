@@ -11,7 +11,8 @@ import {
   Menu,
   Segment,
   TextArea,
-  Button
+  Button,
+  Table,
 } from 'semantic-ui-react';
 
 import reactElementToJSXString from 'react-element-to-jsx-string';
@@ -46,7 +47,7 @@ class StepMessage extends Component {
     const currentStep = steps.filter(step => step.name == activeItem)[0] || {}
 
     switch (currentStep.type) {
-      case 'name': 
+      case 'name':
         return (
           <div>
             <Segment.Group>
@@ -102,7 +103,7 @@ class StepMessage extends Component {
               <Header as='h2'>
                 {currentStep.name}
                 <Header.Subheader>
-                  Read our generated script for your message, and then copy it by clicking the button! 
+                  Read our generated script for your message, and then copy it by clicking the button!
                 </Header.Subheader>
               </Header>
             </Segment>
@@ -149,7 +150,6 @@ class StepMessage extends Component {
                 </Grid.Column>
 
               </Grid>
-              <Divider vertical>Or</Divider>
             </Segment>
           </Segment.Group>
         );
@@ -167,7 +167,7 @@ class StepMessage extends Component {
                   </Header.Subheader>
                 </Header>
               </Segment>
-
+              {currentStep.component && <currentStep.component name={name} location={location} />}
               {currentStep.segment}
             </Segment.Group>
           </div>

@@ -47,7 +47,6 @@ class NavBarMobile extends Component {
         this.setState({ prevScrollpos: currentScrollPos })
         return;
       }
-      console.log('here');
   
       this.setState({
         prevScrollpos: currentScrollPos,

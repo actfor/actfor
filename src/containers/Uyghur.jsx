@@ -36,7 +36,16 @@ class Uyghur extends Component {
         id: 'pressure',
         content: 'Public Pressure',
         icon: 'bullhorn',
-        path: '/uyghur/pressure',
+        dropdown: [
+          {
+            text: 'Pressure Congress',
+            path: '/uyghur/pressure/congress'
+          },
+          {
+            text: 'Pressure Brands',
+            path: '/uyghur/pressure/brands'
+          },
+        ],
       },
       {
         id: 'people',

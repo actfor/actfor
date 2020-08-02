@@ -59,6 +59,7 @@ class Yemen extends Component {
         icon: 'dollar',
         path: '/yemen/donate'
       },
+
     ];
 
     return (
