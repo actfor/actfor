@@ -28,6 +28,8 @@ import UyghurDonate from './donate';
 import PressureCongress from './pressure/PressureCongress'
 import PressureBrands from './pressure/PressureBrands'
 
+import UyghurDonate from './donate';
+
 
 class UyghurPages extends Component {
   render() {

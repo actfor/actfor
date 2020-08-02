@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 
-// semantic-ui
-import {
-  Button,
-  Card,
-  Container,
-  Divider,
-  Image,
-} from 'semantic-ui-react';
+// component
+import DonatePage from './../../common/DonatePage';
 
 // images
 import * as uyghurCampaign from './../../../images/uyghurCampaignLogo.jpg';
@@ -15,9 +9,9 @@ import * as uyghurAssociation from './../../../images/uyghurAssociationLogo.jpg'
 import * as uyghurJustice from './../../../images/uyghurJusticeLogo.png';
 import * as uyghurRights from './../../../images/uyghurRightsLogo.jpg';
 
+
 class UyghurDonate extends Component {
   render() {
-
     const cards = [
       {
         header: 'Justice For All: Uyghur Project',
@@ -45,32 +39,10 @@ class UyghurDonate extends Component {
       }
     ];
 
-
     return (
-      <Container>
-        <Card.Group centered stackable>
-          {cards.map(card => (
-            <Card color="secondary">
-              <Image src={card.img} wrapped />
-              <Card.Content>
-                <Card.Header>{card.header}</Card.Header>
-                <Divider />
-                <Card.Description>{card.description}</Card.Description>
-              </Card.Content>
-              <Card.Content extra>
-                <Button
-                  primary
-                  as='a' target="_blank"
-                  href={card.link}
-                  content='Visit Site'
-                  icon='external alternate'
-                  labelPosition='left'
-                  />
-              </Card.Content>
-            </Card>
-          ))}
-        </Card.Group>
-      </Container>
+      <div>
+        <DonatePage header="Donate" subheader="Donate to help the Uyghur Muslims" cards={cards} />
+      </div>
     );
   }
 }

@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 
-// semantic-ui
-import {
-  Button,
-  Card,
-  Container,
-  Divider,
-  Image,
-} from 'semantic-ui-react';
+// components
+import DonatePage from './../../common/DonatePage';
 
 // images
 import * as mona from './../../../images/mona.png';
@@ -18,7 +12,6 @@ import * as zahra from './../../../images/zahra.jpg';
 
 class Donate extends Component {
   render() {
-
     const cards = [
       {
         header: 'Mona Relief',
@@ -54,30 +47,9 @@ class Donate extends Component {
 
 
     return (
-      <Container>
-        <Card.Group centered stackable>
-          {cards.map(card => (
-            <Card color="secondary">
-              <Image src={card.img} wrapped />
-              <Card.Content>
-                <Card.Header>{card.header}</Card.Header>
-                <Divider />
-                <Card.Description>{card.description}</Card.Description>
-              </Card.Content>
-              <Card.Content extra>
-                <Button
-                  primary
-                  as='a' target="_blank"
-                  href={card.link}
-                  content='Visit Site'
-                  icon='external alternate'
-                  labelPosition='left'
-                  />
-              </Card.Content>
-            </Card>
-          ))}
-        </Card.Group>
-      </Container>
+      <div>
+        <DonatePage header="Donate" subheader="Donate to the help the Yemeni Crisis" cards={cards}/>
+      </div>
     );
   }
 }

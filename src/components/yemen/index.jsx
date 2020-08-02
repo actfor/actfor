@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
 // semantic-ui
-import { Header } from 'semantic-ui-react';
+import {
+  Container,
+  Header
+} from 'semantic-ui-react';
 
 import {
   Switch,
@@ -26,7 +29,7 @@ import People from './people';
 class YemenPages extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <Switch>
           <Route exact path="/yemen">
             <YemenDirectory />
@@ -80,7 +83,7 @@ class YemenPages extends Component {
             <Redirect to="/yemen" />
           </Route>
         </Switch>
-      </div>
+      </Container>
     );
   }
 }
