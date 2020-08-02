@@ -56,7 +56,6 @@ class PressureWhiteHouse extends Component {
           </Button>
         </Grid.Column>
       </Grid>
-      <Divider vertical>Or</Divider>
     </Segment>
   )
 
