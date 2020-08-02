@@ -40,7 +40,7 @@ class BrandsMessage extends Component {
       {
         type: 'other',
         name: 'Step 3',
-        segment: brandSegment,
+        functionalSegment: brandSegment,
       }
     ]
     return (

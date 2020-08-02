@@ -41,7 +41,7 @@ class UyghurPages extends Component {
             <UyghurResources />
           </Route>
 
-          <Route path="/uyghur/pressure/media">
+          <Route path="/uyghur/pressure/brands">
             <Header>
               <Header.Subheader>
                 Use this page to contact brands involved in the crisis.

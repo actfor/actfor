@@ -157,7 +157,6 @@ class StepMessage extends Component {
       break;
 
       case 'other':
-      const segment = currentStep.segment(name, location)
         return (
           <div>
             <Segment.Group>
@@ -169,8 +168,8 @@ class StepMessage extends Component {
                   </Header.Subheader>
                 </Header>
               </Segment>
-
-              {segment}
+              {currentStep.functionalSegment && currentStep.functionalSegment(name, location)}
+              {currentStep.segment}
             </Segment.Group>
           </div>
         );

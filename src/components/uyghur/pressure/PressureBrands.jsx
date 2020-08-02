@@ -45,7 +45,6 @@ class PressureBrands extends Component {
             </Header>
           </Accordion.Title>
           {/* Pressure Brands */}
-          <Divider />
           <BrandsMessage />
         </Accordion>
       </div>
