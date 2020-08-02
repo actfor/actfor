@@ -23,7 +23,7 @@ class UyghurDirectory extends Component {
       {
         title: 'Boycott',
         icon: 'cancel',
-        description: 'These pages will inform you on the companies that need to be boycotted due to their support of the Chinese\'s government.'
+        description: 'This page will inform you on the companies that need to be boycotted because they directly or indirectly benefit from Uyghur forced labor.'
       },
       {
         title: 'Donate',
