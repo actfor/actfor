@@ -23,7 +23,6 @@ import UyghurNowThis from './education/nowthis';
 import UyghurResources from './education/resources';
 
 import UyghurPeople from './people';
-import UyghurDonate from './donate';
 
 import PressureCongress from './pressure/PressureCongress'
 import PressureBrands from './pressure/PressureBrands'
