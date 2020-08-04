@@ -15,9 +15,10 @@ import GA from './utils/GoogleAnalytics'
 
 // containers
 import About from './containers/About';
+import BLM from './containers/BLM';
 import Home from './containers/Home';
-import Yemen from './containers/Yemen';
 import Uyghur from './containers/Uyghur';
+import Yemen from './containers/Yemen';
 
 class ActFor extends Component {
 
@@ -29,6 +30,10 @@ class ActFor extends Component {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+
+            <Route path="/blm">
+              <BLM />
             </Route>
 
             <Route path="/about">

@@ -19,6 +19,11 @@ class HomeDropdown extends Component {
   render() {
     const options = [
       {
+        key: 'blm',
+        value: 'blm',
+        text: 'Black Lives Matter',
+      },
+      {
         key: 'yemen',
         value: 'yemen',
         text: 'Yemen'
@@ -27,7 +32,7 @@ class HomeDropdown extends Component {
         key: 'uyghur',
         value: 'uyghur',
         text: 'Uyghur Muslims'
-      }
+      },
     ]
 
     options.sort((a, b) => {
