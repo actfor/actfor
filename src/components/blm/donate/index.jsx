@@ -18,35 +18,35 @@ class BlmDonate extends Component {
         img: bailProjectLogo,
         link: "https://secure.givelively.org/donate/the-bail-project",
         description:
-          "Justice For All (JFA) is a nonprofit organization based in Chicago with Consultative Status at the United Nations. JFA is focused on educating citizens about social justice concerns and providing guidance for action through regular newsletters and media engagement. Specifically, JFA aims to combat the rising trend of Islamophobia around the world impacting Muslim Americans and other Muslims around the world.",
+          "The Bail Project, Inc. is a non-profit organization designed to combat mass incarceration by disrupting the money bail system ‒ one person at a time. They use 100% of donations to pay the bail of people across the country. Once a client’s case has ended, the bail money is recycled back into their funds.",
       },
       {
         header: "Mutual Aid Networks",
         img: mutualAidLogo,
         link: "https://mutualaid.carrd.co/",
         description:
-          "The Uyghur Human Rights Project promotes the rights of the Uyghurs and other Turkic Muslim peoples in East Turkistan, referred to by the Chinese government as the Xinjiang Uyghur Autonomous Region, through research-based advocacy. It publishes  reports and analysis in English and Chinese to defend Uyghurs’ civil, political, social, cultural, and economic rights according to international human rights standards.",
+          "Mutual aid networks are direct community efforts that enable community members to help each other in various ways. Although local mutual aid networks differ in their exact purposes and organization, they are a good way to directly contribute to helping people (often Black and other BIPOC individuals) in your locality.",
       },
       {
         header: "Black LGBTQIA+ Migrant Project",
         img: Blmp,
         link: "https://transgenderlawcenter.org/programs/blmp",
         description:
-          "Campaign for Uyghurs works to promote and advocate for the human rights and democratic freedoms for the Uyghurs and other Turkic people in East Turkistan. It mobilizes individuals and the international community and builds bridges to take action on behalf of and to raise public awareness of the Uyghur issue with a special focus on Uyghur women and youth, and to activate persons and entities to work together to stop the systematic human rights abuses against the people of East Turkistan.",
+          "BLMP envisions a world where no one is forced to give up their homeland, where all Black LGBTQIA+ people are free and liberated. They build and center the power of Black LGBTQIA+ migrants to ensure the liberation of all Black people through community-building, political education, creating access to direct services, and organizing across borders.",
       },
       {
         header: "The Marsha P. Johnson Institute",
         img: marshaPLogo,
         link: "https://marshap.org/donate/",
         description:
-          "Campaign for Uyghurs works to promote and advocate for the human rights and democratic freedoms for the Uyghurs and other Turkic people in East Turkistan. It mobilizes individuals and the international community and builds bridges to take action on behalf of and to raise public awareness of the Uyghur issue with a special focus on Uyghur women and youth, and to activate persons and entities to work together to stop the systematic human rights abuses against the people of East Turkistan.",
+          "The Marsha P. Johnson Institute (MPJI) protects and defends the human rights of Black transgender people. They do this by organizing, advocating, creating an intentional community to heal, developing transformative leadership, and promoting our collective power. They were founded both as a response to the murders of BLACK trans women and women of color and how that is connected to our exclusion from social justice issues, namely racial, gender, and reproductive justice, as well as gun violence.",
       },
       {
         header: "Black Voters Matter Fund",
         img: bvmLogo,
         link: "https://blackvotersmatterfund.org/donate/",
         description:
-          "The Uyghur American Association (UAA) is a non-partisan organization with the chief goals of promoting and preserving Uyghur culture and supporting the right of Uyghur people to use peaceful, democratic means to determine their own political futures.",
+          "Black Voters Matter's goal is to increase power in marginalized, predominantly Black communities. Effective voting allows a community to determine its own destiny. BVMF accomplishes this goal through voter registration, policy advocacy, and organizational development/training.",
       },
     ];
 
@@ -54,7 +54,8 @@ class BlmDonate extends Component {
       <div>
         <DonatePage
           header="Donate"
-          subheader="Donate to support the Black Lives Matter movement"
+          subheader="Many organizations received large influxes of money after the murder of George Floyd, but donations continue to dwindle as the news cycle moves on. It’s important to constantly show support for Black Lives and recognize that this is a movement and not just a moment. Because of this, we encourage smaller monthly/regular donations over larger one-time donations.
+          "
           cards={cards}
         />
       </div>
