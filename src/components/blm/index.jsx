@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 // semantic-ui
-import {
-  Container,
-  Header
-} from 'semantic-ui-react';
+import { Container, Header } from "semantic-ui-react";
 
 // router
-import {
-  Switch,
-  Redirect,
-  Route,
-} from 'react-router-dom';
+import { Switch, Redirect, Route } from "react-router-dom";
 
 // pages
-import BLMDirectory from './directory';
+import BLMDirectory from "./directory";
+import BlmDonate from "./donate";
 
 class BLMPages extends Component {
   render() {
@@ -25,36 +19,28 @@ class BLMPages extends Component {
             <BLMDirectory />
           </Route>
 
-          <Route path="/blm/education">
-            BLM Education
-          </Route>
+          <Route path="/blm/education">BLM Education</Route>
 
           <Route path="/blm/pressure/congress">
             BLM Public Pressure - Congress
           </Route>
 
-          <Route path="/blm/pressure/state">
-            BLM Public Pressure - State
-          </Route>
+          <Route path="/blm/pressure/state">BLM Public Pressure - State</Route>
 
           <Route path="/blm/pressure/cities">
             BLM Public Pressure - Cities
           </Route>
 
-          <Route path="/blm/pressure/cases">
-            BLM Public Pressure - Cases
-          </Route>
+          <Route path="/blm/pressure/cases">BLM Public Pressure - Cases</Route>
 
           <Route path="/blm/pressure/petitions">
             BLM Public Pressure - Petitions
           </Route>
 
-          <Route path="/blm/people">
-            BLM People
-          </Route>
+          <Route path="/blm/people">BLM People</Route>
 
           <Route path="/blm/donate">
-            BLM Donate
+            <BlmDonate />
           </Route>
 
           <Route path="/blm/*">
