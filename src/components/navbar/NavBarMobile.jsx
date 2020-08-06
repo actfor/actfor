@@ -56,7 +56,7 @@ class NavBarMobile extends Component {
 
   handleBtnClick = (e, { path }) => {
     const { history } = this.props;
-    
+    window.scrollTo(0, 0)
     if (!path) {
       history.push('/');
     }

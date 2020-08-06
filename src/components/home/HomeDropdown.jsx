@@ -14,6 +14,7 @@ import * as title from './../../images/title.png'
 class HomeDropdown extends Component {
   onChange = (e, { value }) => {
     this.props.history.push(`/${value}`)
+    window.scrollTo(0, 0)
   }
 
   render() {
