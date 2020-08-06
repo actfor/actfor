@@ -1,20 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 // semantic-ui
 import {
   Container,
   Header
-} from 'semantic-ui-react';
+} from "semantic-ui-react";
 
 // router
 import {
-  Switch,
   Redirect,
   Route,
-} from 'react-router-dom';
+  Switch,
+} from "react-router-dom";
 
 // pages
-import BLMDirectory from './directory';
+import BLMDirectory from "./directory";
+import BLMDonate from "./donate";
 
 import PressureCities from './pressure/PressureCities';
 
@@ -56,7 +57,7 @@ class BLMPages extends Component {
           </Route>
 
           <Route path="/blm/donate">
-            BLM Donate
+            <BLMDonate />
           </Route>
 
           <Route path="/blm/*">
