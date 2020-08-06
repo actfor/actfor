@@ -19,25 +19,33 @@ class BLMPages extends Component {
             <BLMDirectory />
           </Route>
 
-          <Route path="/blm/education">BLM Education</Route>
+          <Route path="/blm/education">
+            BLM Education
+          </Route>
 
           <Route path="/blm/pressure/congress">
             BLM Public Pressure - Congress
           </Route>
 
-          <Route path="/blm/pressure/state">BLM Public Pressure - State</Route>
+          <Route path="/blm/pressure/state">
+            BLM Public Pressure - State
+          </Route>
 
           <Route path="/blm/pressure/cities">
             BLM Public Pressure - Cities
           </Route>
 
-          <Route path="/blm/pressure/cases">BLM Public Pressure - Cases</Route>
+          <Route path="/blm/pressure/cases">
+            BLM Public Pressure - Cases
+          </Route>
 
           <Route path="/blm/pressure/petitions">
             BLM Public Pressure - Petitions
           </Route>
 
-          <Route path="/blm/people">BLM People</Route>
+          <Route path="/blm/people">
+            BLM People
+          </Route>
 
           <Route path="/blm/donate">
             <BlmDonate />
