@@ -25,26 +25,30 @@ import * as book1 from './images/book1.jpg';
 
 class ResourceList extends Component {
   renderCards = (cards) => (
-    cards.map(card => (
-      <Card color="secondary">
-        <Image src={card.img} wrapped />
-        <Card.Content>
-          {/* <Card.Header>{card.header}</Card.Header> */}
-          <Card.Description>{card.description}</Card.Description>
-          <Card.Description style={{ color: 'red' }}>{card.disclaimer}</Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-          <Button
-              primary
-              as='a' target="_blank"
-              href={card.link}
-              content='Visit Site'
-              icon='external alternate'
-              labelPosition='left'
-            ></Button>
-        </Card.Content>
-      </Card>
-    ))
+    <Card.Group stackable itemsPerRow={3} doubling>
+      {
+        cards.map(card => (
+          <Card color="secondary">
+            <Image src={card.img} wrapped />
+            <Card.Content>
+              {/* <Card.Header>{card.header}</Card.Header> */}
+              <Card.Description>{card.description}</Card.Description>
+              <Card.Description style={{ color: 'red' }}>{card.disclaimer}</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <Button
+                  primary
+                  as='a' target="_blank"
+                  href={card.link}
+                  content='Visit Site'
+                  icon='external alternate'
+                  labelPosition='left'
+                ></Button>
+            </Card.Content>
+          </Card>
+        ))
+      }
+    </Card.Group>
   );
 
   render() {
@@ -114,7 +118,7 @@ class ResourceList extends Component {
     ];
 
     return (
-      <Container>
+      <div>
         <Header as="h1">
           Resources on the Yemen Crisis
         </Header>
@@ -122,23 +126,17 @@ class ResourceList extends Component {
         <Header as="h2">
           Articles
         </Header>
-        <Card.Group stackable>
-          {this.renderCards(articles)}
-        </Card.Group>
+        {this.renderCards(articles)}
 
         <Header as="h2">
           Books
         </Header>
-        <Card.Group stackable>
-          {this.renderCards(books)}
-        </Card.Group>
+        {this.renderCards(books)}
 
         <Header as="h2">
           Extra
         </Header>
-        <Card.Group stackable>
-          {this.renderCards(extra)}
-        </Card.Group>
+        {this.renderCards(extra)}
 
         <Divider />
         <Header as="h2">
@@ -154,7 +152,7 @@ class ResourceList extends Component {
           id="nLRgdFP-s30"
           aspectRatio="21:9"
         />
-      </Container>
+      </div>
     );
   }
 }

@@ -23,26 +23,30 @@ import * as book from './images/book.jpg';
 
 class UyghurResources extends Component {
   renderCards = (cards) => (
-    cards.map(card => (
-      <Card color="secondary">
-        <Image src={card.img} wrapped />
-        <Card.Content>
-          {/* <Card.Header>{card.header}</Card.Header> */}
-          <Card.Description>{card.description}</Card.Description>
-          <Card.Description style={{ color: 'red' }}>{card.disclaimer}</Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-          <Button
-              primary
-              as='a' target="_blank"
-              href={card.link}
-              content='Visit Site'
-              icon='external alternate'
-              labelPosition='left'
-            ></Button>
-        </Card.Content>
-      </Card>
-    ))
+    <Card.Group stackable itemsPerRow={3} doubling>
+      {
+        cards.map(card => (
+          <Card color="secondary">
+            <Image src={card.img} wrapped />
+            <Card.Content>
+              {/* <Card.Header>{card.header}</Card.Header> */}
+              <Card.Description>{card.description}</Card.Description>
+              <Card.Description style={{ color: 'red' }}>{card.disclaimer}</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <Button
+                  primary
+                  as='a' target="_blank"
+                  href={card.link}
+                  content='Visit Site'
+                  icon='external alternate'
+                  labelPosition='left'
+                ></Button>
+            </Card.Content>
+          </Card>
+        ))
+      }
+    </Card.Group>
   );
 
   render() {
@@ -97,24 +101,17 @@ class UyghurResources extends Component {
         <Header as="h2">
           Academia
         </Header>
-        <Card.Group stackable>
-          {this.renderCards(academia)}
-        </Card.Group>
+        {this.renderCards(academia)}
 
         <Header as="h2">
           Articles
         </Header>
-        <Card.Group stackable>
-          {this.renderCards(articles)}
-        </Card.Group>
-
+        {this.renderCards(articles)}
 
         <Header as="h2">
           Books
         </Header> 
-        <Card.Group stackable>
-          {this.renderCards(books)}
-        </Card.Group>   
+        {this.renderCards(books)}
 
         <Header as="h2">
           Videos

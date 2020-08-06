@@ -22,7 +22,7 @@ class DonatePage extends Component {
         </Header>
         <Divider />
         <br />
-        <Card.Group stackable>
+        <Card.Group doubling itemsPerRow={3} stackable>
           {cards.map(card => (
             <Card color="secondary">
               <Image src={card.img} wrapped />
