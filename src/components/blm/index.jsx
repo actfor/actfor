@@ -18,6 +18,7 @@ import BLMDirectory from "./directory";
 import BLMDonate from "./donate";
 
 import PressureCities from './pressure/PressureCities';
+import PressureState from './pressure/PressureState';
 
 class BLMPages extends Component {
   render() {
@@ -37,7 +38,7 @@ class BLMPages extends Component {
           </Route>
 
           <Route path="/blm/pressure/state">
-            BLM Public Pressure - State
+            <PressureState />
           </Route>
 
           <Route path="/blm/pressure/cities">

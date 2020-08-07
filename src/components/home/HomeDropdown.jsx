@@ -5,7 +5,6 @@ import { withRouter } from 'react-router-dom';
 // semantic-ui
 import {
   Dropdown,
-  Image
 } from 'semantic-ui-react';
 
 // images
