@@ -50,4 +50,33 @@ const states = [
   { key: 'wy', value: 'wy', text: 'Wyoming' },
 ];
 
+const isPendingBillState = state => (
+  state === 'ca' ||
+  state === 'co' ||
+  state === 'de' ||
+  state === 'dc' ||
+  state === 'ga' ||
+  state === 'hi' ||
+  state === 'il' ||
+  state === 'ks' ||
+  state === 'me' ||
+  state === 'ma' ||
+  state === 'mi' ||
+  state === 'mn' ||
+  state === 'nv' ||
+  state === 'nj' ||
+  state === 'nm' ||
+  state === 'ny' ||
+  state === 'oh' ||
+  state === 'or' ||
+  state === 'pa' ||
+  state === 'ri' ||
+  state === 'sc' ||
+  state === 'tn'
+)
+
 export default states;
+
+export {
+  isPendingBillState,
+}
