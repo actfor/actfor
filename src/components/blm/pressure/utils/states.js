@@ -50,30 +50,146 @@ const states = [
   { key: 'wy', value: 'wy', text: 'Wyoming' },
 ];
 
-const isPendingBillState = state => (
-  state === 'ca' ||
-  state === 'co' ||
-  state === 'de' ||
-  state === 'dc' ||
-  state === 'ga' ||
-  state === 'hi' ||
-  state === 'il' ||
-  state === 'ks' ||
-  state === 'me' ||
-  state === 'ma' ||
-  state === 'mi' ||
-  state === 'mn' ||
-  state === 'nv' ||
-  state === 'nj' ||
-  state === 'nm' ||
-  state === 'ny' ||
-  state === 'oh' ||
-  state === 'or' ||
-  state === 'pa' ||
-  state === 'ri' ||
-  state === 'sc' ||
-  state === 'tn'
-)
+const isPendingBillState = state => {
+  if (state === 'ca') {
+    return [
+      'CA A 329',
+      'CA A 1196',
+      'CA A 1314',
+    ];
+  }
+  if (state === 'co') {
+    return [
+      'CO H 1393'
+    ];
+  }
+  if (state === 'de') {
+    return [
+      'DE H 350'
+    ];
+  }
+  if (state === 'dc') {
+    return [
+      'DC B 771'
+    ];
+  }
+  if (state === 'ga') {
+    return [
+      'GA S 514',
+      'GA S 525',
+      'GA H 1204',
+      'GA H 1207',
+      'GA HR 1599',
+    ];
+  }
+  if (state === 'hi') {
+    return [
+      'HI H 1278',
+      'HI H 1901',
+    ];
+  }
+  if (state === 'il') {
+    return [
+      'IL H 5810'
+    ];
+  }
+  if (state === 'ks') {
+    return [
+      'KS H 2010',
+      'KS HCR 5002',
+    ];
+  }
+  if (state === 'me') {
+    return [
+      'ME H 812',
+      'ME H 1208'
+    ]
+  }
+  if (state === 'ma') {
+    return [
+      'MA S 2820',
+      'MA H 2141',
+    ]
+  }
+  if (state === 'mi') {
+    return [
+      'MI H 5832',
+      'MI H 5837',
+    ];
+  }
+  if (state === 'mn') {
+    return [
+      'MN H 1',
+      'MN H 3',
+      'MN H 27',
+    ];
+  }
+  if (state === 'nv') {
+    return [
+      'NV BDR 106'
+    ];
+  }
+  if (state === 'nj') {
+    return [
+      'NJ S 2581',
+      'NJ SJR 84',
+      'NJ S 2581',
+      'NJ S 2589',
+    ];
+  }
+  if (state === 'nm') {
+    return [
+      'NM SM 1'
+    ];
+  }
+  if (state === 'ny') {
+    return [
+      'NY A 1601',
+      'NY S 2575',
+      'NY S 8495',
+      'NY S 8580',
+      'NY S 8626',
+      'NY S 8668',
+      'NY A 10755'
+    ];
+  }
+  if (state === 'oh') {
+    return [
+      'OH H 706',
+      'OH H 709',
+      'OH H 720',
+    ];
+  }
+  if (state === 'or') {
+    return [
+      'OR D 78',
+      'OR D 80',
+    ];
+  }
+  if (state === 'pa') {
+    return [
+      'PA S 459',
+      'PA S 1193',
+    ];
+  }
+  if (state === 'ri') {
+    return [
+      'RI H 8036'
+    ];
+  }
+  if (state === 'sc') {
+    return [
+      'SC H 3465',
+      'SC S 1244',
+    ];
+  }
+  if (state === 'tn') {
+    return [
+      'TN H 2936'
+    ];
+  }
+  return false;
+}
 
 export default states;
 

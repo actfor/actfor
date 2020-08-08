@@ -10,6 +10,9 @@ import {
 // utils
 import states from './utils/states';
 
+// components
+import StateMessage from './state/StateMessage';
+
 class PressureState extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +26,8 @@ class PressureState extends Component {
   }
 
   render() {
-    console.log('state', this.state);
+    const { selected } = this.state;
+    console.log('selected', selected);
     return (
       <div>
         <Header>
@@ -38,6 +42,7 @@ class PressureState extends Component {
           onChange={this.onChange}
           options={states}
         />
+        <StateMessage state={selected} />
       </div>
     );
   }

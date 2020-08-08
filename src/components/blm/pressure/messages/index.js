@@ -25,7 +25,7 @@ const pendingBills = (name, location, custom, bills) => (
     <p>To Whom This May Concern,</p>
     { custom && <p>{custom}</p> }
     <p>
-      My name is {name || '[INSERT YOUR NAME]'}, and I urge you to cosponsor and pass { createBillString(bills) || 'legislation'} This is a great first step towards comprehensive police reform.
+      My name is {name || '[INSERT YOUR NAME]'}, and I urge you to cosponsor and pass { createBillString(bills) || 'legislation'}. This is a great first step towards comprehensive police reform.
     </p>
     <p>
       I also urge you to pass legislation that will divest from police funding and instead invest in community resources for Black and marginalized communities. Funding community resources plays a large role in Black empowerment. From there, we can begin to dismantle the centuries of systemic oppression this country has imposed on Black people.
@@ -34,7 +34,7 @@ const pendingBills = (name, location, custom, bills) => (
       Please address systemic racism in your future legislation and policies. Racism is prevalent in our healthcare, education, economic, and law enforcement systems. Redlining, the racial wealth gap, environmental racism, and mass incarceration are still huge issues for Black communities today. We need to acknowledge and address the centuries long oppression of the Black community from which our country was founded.
     </p>
     { createBillString(bills) && 
-      <p>Please <b>cosponser and pass {createBillString(bills)}</b></p>
+      <p>Please <b>cosponser and pass {createBillString(bills)}.</b></p>
     }
     <p>Thank you,</p>
     <p>
@@ -56,7 +56,8 @@ const createBillString = bills => {
     return string;
   }
   for (let i = 1; i < bills.length; i++) {
-    if (i == bills.length) {
+    string = string.concat(',')
+    if (i == bills.length - 1) {
       string = string.concat(' and')
     }
     string = string.concat(` ${bills[i]}`)
