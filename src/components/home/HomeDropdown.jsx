@@ -5,7 +5,6 @@ import { withRouter } from 'react-router-dom';
 // semantic-ui
 import {
   Dropdown,
-  Image
 } from 'semantic-ui-react';
 
 // images
@@ -14,10 +13,16 @@ import * as title from './../../images/title.png'
 class HomeDropdown extends Component {
   onChange = (e, { value }) => {
     this.props.history.push(`/${value}`)
+    window.scrollTo(0, 0)
   }
 
   render() {
     const options = [
+      {
+        key: 'blm',
+        value: 'blm',
+        text: 'Black Lives Matter',
+      },
       {
         key: 'yemen',
         value: 'yemen',
@@ -27,7 +32,7 @@ class HomeDropdown extends Component {
         key: 'uyghur',
         value: 'uyghur',
         text: 'Uyghur Muslims'
-      }
+      },
     ]
 
     options.sort((a, b) => {

@@ -13,7 +13,7 @@ class PeopleCards extends Component {
     const { people } = this.props;
 
     return (
-      <Card.Group stackable>
+      <Card.Group doubling itemsPerRow={3} stackable>
         {
           people.map(card => (
             <Card color="secondary">

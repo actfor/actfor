@@ -29,6 +29,7 @@ class BrandsMessage extends Component {
     ]
     return (
 <<<<<<< HEAD
+<<<<<<< HEAD
       <div >
         <Accordion fluid styled>
 
@@ -44,11 +45,16 @@ class BrandsMessage extends Component {
           <BrandsMessage />
         </Accordion>
 =======
+=======
+>>>>>>> 34236d0c6655bfbb7cbc892dba875dba80c294f1
       <div>
         <StepMessage
           steps={steps}
         />
+<<<<<<< HEAD
 >>>>>>> 6cad6c89193014041117e4faf9d008889fdef009
+=======
+>>>>>>> 34236d0c6655bfbb7cbc892dba875dba80c294f1
       </div>
     );
   }

@@ -22,7 +22,6 @@ class DirectoryPage extends Component {
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell>Page</Table.HeaderCell>
-              <Table.HeaderCell>Button</Table.HeaderCell>
               <Table.HeaderCell>Description</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
@@ -33,10 +32,8 @@ class DirectoryPage extends Component {
             {pages.map(page => (
               <Table.Row>
                 <Table.Cell singleLine>
-                  <b>{page.title}</b>
-                </Table.Cell>
-                <Table.Cell textAlign="center">
-                  <Icon name={page.icon} size="huge"/>
+                  <Icon name={page.icon} />
+                  <b>{page.title}</b> 
                 </Table.Cell>
                 <Table.Cell>
                   {page.description}

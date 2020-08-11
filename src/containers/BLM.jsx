@@ -8,25 +8,16 @@ import {
 
 // components
 import NavBar from './../components/navbar';
-import YemenPages from '../components/yemen';
+import BLMPages from './../components/blm';
 
-class Yemen extends Component {
+class BLM extends Component {
   render() {
     const rightMenu = [
       {
         id: 'education',
         content: 'Education',
         icon: 'pencil',
-        dropdown: [
-          {
-            text: 'Article: World\'s Worst Crisis',
-            path: '/yemen/education/crisis'
-          },
-          {
-            text: 'Other Resources',
-            path: '/yemen/education/resources'
-          }
-        ],
+        path: '/blm/education',
       },
       {
         id: 'pressure',
@@ -35,43 +26,50 @@ class Yemen extends Component {
         dropdown: [
           {
             text: 'Pressure Congress',
-            path: '/yemen/pressure/congress'
+            path: '/blm/pressure/congress',
           },
           {
-            text: 'Pressure Media',
-            path: '/yemen/pressure/media'
+            text: 'Pressure Your State',
+            path: '/blm/pressure/state',
           },
           {
-            text: 'Pressure The White House',
-            path: '/yemen/pressure/whitehouse'
+            text: 'Pressure Cities',
+            path: '/blm/pressure/cities',
           },
+          {
+            text: 'Case Specific Details',
+            path: '/blm/pressure/cases'
+          },
+          {
+            text: 'Petitions',
+            path: '/blm/pressure/petitions',
+          }
         ],
       },
       {
         id: 'people',
         content: 'People',
         icon: 'users',
-        path: '/yemen/people',
+        path: '/blm/people',
       },
       {
         id: 'donate',
         content: 'Donate',
         icon: 'dollar',
-        path: '/yemen/donate'
+        path: '/blm/donate'
       },
     ];
-
     return (
       <div>
         <NavBar rightMenu={rightMenu} />
         <Header as="h1">
-          Yemen
+          Black Lives Matter
         </Header>
         <Divider />
-        <YemenPages />
+        <BLMPages />
       </div>
     );
   }
 }
 
-export default Yemen;
+export default BLM;

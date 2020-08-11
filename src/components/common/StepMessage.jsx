@@ -108,7 +108,7 @@ class StepMessage extends Component {
               </Header>
             </Segment>
             <Segment>
-              <CopyMessage id="mediaMess60" message={message}/>
+              <CopyMessage id="message" message={message}/>
               <Divider />
               {message}
             </Segment>
@@ -150,7 +150,6 @@ class StepMessage extends Component {
                 </Grid.Column>
 
               </Grid>
-              <Divider vertical>Or</Divider>
             </Segment>
           </Segment.Group>
         );
@@ -169,10 +168,14 @@ class StepMessage extends Component {
                 </Header>
               </Segment>
 <<<<<<< HEAD
+<<<<<<< HEAD
               {currentStep.functionalSegment && currentStep.functionalSegment(name, location)}
 =======
               {currentStep.component && <currentStep.component name={name} location={location} />}
 >>>>>>> 6cad6c89193014041117e4faf9d008889fdef009
+=======
+              {currentStep.component && <currentStep.component name={name} location={location} custom={custom} />}
+>>>>>>> 34236d0c6655bfbb7cbc892dba875dba80c294f1
               {currentStep.segment}
             </Segment.Group>
           </div>
