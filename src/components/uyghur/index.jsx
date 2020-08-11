@@ -27,11 +27,8 @@ import UyghurPeople from './people';
 import PressureCongress from './pressure/PressureCongress'
 import PressureBrands from './pressure/PressureBrands'
 
-<<<<<<< HEAD
-=======
 import UyghurDonate from './donate';
 
->>>>>>> 34236d0c6655bfbb7cbc892dba875dba80c294f1
 
 class UyghurPages extends Component {
   render() {
@@ -55,17 +52,11 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/pressure/brands">
-<<<<<<< HEAD
-<<<<<<< HEAD
             <Header>
-=======
             <Header as="h2">
               Pressure American brands to stop using forced Uyghur labor
->>>>>>> 6cad6c89193014041117e4faf9d008889fdef009
-=======
             <Header as="h2">
               Pressure American brands to stop using forced Uyghur labor
->>>>>>> 34236d0c6655bfbb7cbc892dba875dba80c294f1
               <Header.Subheader>
                 Urge brands to terminate all contracts with Xinjiang manufacturers benefitting from the forced labor of Uyghurs
               </Header.Subheader>
