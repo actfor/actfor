@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
 // semantic-ui
-import { Container, Header } from 'semantic-ui-react';
+import {
+  Container,
+  Header
+} from 'semantic-ui-react';
 
 // router
 import {
@@ -11,14 +14,19 @@ import {
 } from 'react-router-dom';
 
 // pages
+import UyghurBoycott  from './boycott'
+
 import UyghurDirectory from './directory';
+
 import UyghurArticle from './education/article';
 import UyghurNowThis from './education/nowthis';
+import UyghurResources from './education/resources';
+
+import UyghurPeople from './people';
+
 import PressureCongress from './pressure/PressureCongress'
 import PressureBrands from './pressure/PressureBrands'
-import UyghurResources from './education/resources';
-import UyghurBoycott  from './boycott'
-import UyghurPeople from './people';
+
 
 class UyghurPages extends Component {
   render() {
@@ -42,9 +50,14 @@ class UyghurPages extends Component {
           </Route>
 
           <Route path="/uyghur/pressure/brands">
+<<<<<<< HEAD
             <Header>
+=======
+            <Header as="h2">
+              Pressure American brands to stop using forced Uyghur labor
+>>>>>>> 6cad6c89193014041117e4faf9d008889fdef009
               <Header.Subheader>
-                Use this page to contact brands involved in the crisis.
+                Urge brands to terminate all contracts with Xinjiang manufacturers benefitting from the forced labor of Uyghurs
               </Header.Subheader>
             </Header>
             <PressureBrands />

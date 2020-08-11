@@ -1,38 +1,34 @@
 import React, { Component } from 'react';
 
-// semantic-ui
-import {
-  Accordion,
-  Header,
-  Icon,
-  Image,
-  Divider,
-} from 'semantic-ui-react';
-
 // components
-import BrandsMessage from './brands/BrandsMessage';
+import StepMessage from '../../common/StepMessage';
+import BrandsSegment from './brands/BrandsSegment';
 
+// messages
+import { brandsMess } from './messages'
 
-class PressureBrands extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeIndex: -1,
-    }
-  }
-
-  handleClick = (e, { index }) => {
-    const { activeIndex } = this.state
-    const newIndex = activeIndex === index ? -1 : index
-
-    this.setState({ activeIndex: newIndex })
-   }
+class BrandsMessage extends Component {
 
   render() {
-    const { activeIndex } = this.state;
-
+    const steps = [
+      {
+        type: 'name',
+        name: 'Step 1',
+      },
+      {
+        type: 'message',
+        name: 'Step 2',
+        message: brandsMess,
+      },
+      {
+        type: 'other',
+        name: 'Step 3',
+        subheader: 'Email all of the brands',
+        component: BrandsSegment
+      }
+    ]
     return (
+<<<<<<< HEAD
       <div >
         <Accordion fluid styled>
 
@@ -47,9 +43,15 @@ class PressureBrands extends Component {
           {/* Pressure Brands */}
           <BrandsMessage />
         </Accordion>
+=======
+      <div>
+        <StepMessage
+          steps={steps}
+        />
+>>>>>>> 6cad6c89193014041117e4faf9d008889fdef009
       </div>
     );
   }
 }
 
-export default PressureBrands;
+export default BrandsMessage;
