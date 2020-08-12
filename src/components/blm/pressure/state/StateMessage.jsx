@@ -23,7 +23,6 @@ class StateMessage extends Component {
     const { state } = this.props;
 
     const bills = isPendingBillState(state); 
-    console.log('bills', bills);
     const message = bills ? pendingBills(name, location, custom, bills) : noPendingBills(name, location, custom);
 
     return (
@@ -41,8 +40,6 @@ class StateMessage extends Component {
     if (state == '') {
       return null;
     }
-
-    console.log('state', state);
     
     const currentState = states.find(el => el.value == state)
 
