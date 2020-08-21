@@ -149,10 +149,9 @@ const congressHR910 = (name, location, custom) => (
     <p>
       Dear Representative,
     </p>
-    <br />
     { custom && <p>{custom}</p> }
     <p>
-      <b>I’m contacting you to urge you to cosponsor, vote for, and pass H.J.Res. 56: Directing the President to terminate the use of the United States Armed Forces with respect to the military intervention led by Saudi Arabia in the Republic of Yemen.</b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
+      <b>I am writing to urge you to cosponsor, vote for, and pass H.R. 910, the Yemen Refueling Prohibition Act.</b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
     </p>
     <br />
     <p>
@@ -188,7 +187,6 @@ const congressHJ56 = (name, location, custom) => (
     <p>
       Dear Representative,
     </p>
-    <br />
     { custom && <p>{custom}</p> }
     <p>
       <b>I’m contacting you to urge you to cosponsor, vote for, and pass H.J.Res. 56: Directing the President to terminate the use of the United States Armed Forces with respect to the military intervention led by Saudi Arabia in the Republic of Yemen.</b> The humanitarian crisis in Yemen, the worst crisis in the world, has been primarily and directly caused by the Saudi coalition’s airstrikes, naval blockade on Yemen, and destruction of Yemeni ports. We need to do all we can to stop US backing of the Saudi coalition in Yemen.
@@ -207,7 +205,7 @@ const congressHJ56 = (name, location, custom) => (
     </p>
     <br />
     <p>
-      <b>Please cosponsor, vote for, and pass H.R. 910, the Yemen Refueling Prohibition Act.</b>
+      <b>Please cosponsor, vote for, and pass H.J.Res. 56</b>
     </p>
     <br />
     <p>
