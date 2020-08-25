@@ -51,6 +51,29 @@ class About extends Component {
               <br />
 
               <Header as="h1">
+                Join Us
+                <Header.Subheader>
+                  Apply today and join the ActFor team!
+                </Header.Subheader>
+              </Header>
+              <Divider />
+              <Button
+                primary
+                icon
+                labelPosition='left'
+                size='big'
+                as='a'
+                target="_blank"
+                href='https://forms.gle/Fna9XRfu3HTW29BH9'
+              >
+                <Icon name="clipboard" />
+                Apply to the team!
+              </Button>
+
+              <br />
+              <br />
+
+              <Header as="h1">
                 Contact Us
                 <Header.Subheader>Would you like to contribute or ask any questions? Visit and follow our socials, or email us at info@actfor.us!</Header.Subheader>
               </Header>
