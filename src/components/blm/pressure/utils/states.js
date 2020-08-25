@@ -1,53 +1,299 @@
 const states = [
-  { key: 'al', value: 'al', text: 'Alabama' },
-  { key: 'ak', value: 'ak', text: 'Alaska' },
-  { key: 'az', value: 'az', text: 'Arizona' },
-  { key: 'ar', value: 'ar', text: 'Arkansas' },
-  { key: 'ca', value: 'ca', text: 'California' },
-  { key: 'co', value: 'co', text: 'Colorado' },
-  { key: 'ct', value: 'ct', text: 'Connecticut' },
-  { key: 'de', value: 'de', text: 'Delaware' },
-  { key: 'dc', value: 'dc', text: 'District of Columbia' },
-  { key: 'fl', value: 'fl', text: 'Florida' },
-  { key: 'ga', value: 'ga', text: 'Georgia' },
-  { key: 'id', value: 'id', text: 'Idaho' },
-  { key: 'il', value: 'il', text: 'Illinois' },
-  { key: 'ia', value: 'ia', text: 'Iowa' },
-  { key: 'ks', value: 'ks', text: 'Kansas' },
-  { key: 'ky', value: 'ky', text: 'Kentucky' },
-  { key: 'la', value: 'la', text: 'Louisiana' },
-  { key: 'me', value: 'me', text: 'Maine' },
-  { key: 'md', value: 'md', text: 'Maryland' },
-  { key: 'ma', value: 'ma', text: 'Massachusetts' },
-  { key: 'mi', value: 'mi', text: 'Michigan' },
-  { key: 'mn', value: 'mn', text: 'Minnesota' },
-  { key: 'ms', value: 'ms', text: 'Mississippi' },
-  { key: 'mo', value: 'mo', text: 'Missouri' },
-  { key: 'mt', value: 'mt', text: 'Montana' },
-  { key: 'ne', value: 'ne', text: 'Nebraska' },
-  { key: 'nv', value: 'nv', text: 'Nevada' },
-  { key: 'nh', value: 'nh', text: 'New Hampshire' },
-  { key: 'nj', value: 'nj', text: 'New Jersey' },
-  { key: 'nm', value: 'nm', text: 'New Mexico' },
-  { key: 'ny', value: 'ny', text: 'New York' },
-  { key: 'nc', value: 'nc', text: 'North Carolina' },
-  { key: 'nd', value: 'nd', text: 'North Dakota' },
-  { key: 'oh', value: 'oh', text: 'Ohio' },
-  { key: 'ok', value: 'ok', text: 'Oklahoma' },
-  { key: 'or', value: 'or', text: 'Oregon' },
-  { key: 'pa', value: 'pa', text: 'Pennsylvania' },
-  { key: 'ri', value: 'ri', text: 'Rhode Island' },
-  { key: 'sc', value: 'sc', text: 'South Carolina' },
-  { key: 'sd', value: 'sd', text: 'South Dakota' },
-  { key: 'tn', value: 'tn', text: 'Tennessee' },
-  { key: 'tx', value: 'tx', text: 'Texas' },
-  { key: 'ut', value: 'ut', text: 'Utah' },
-  { key: 'vt', value: 'vt', text: 'Vermont' },
-  { key: 'va', value: 'va', text: 'Virginia' },
-  { key: 'wa', value: 'wa', text: 'Washington' },
-  { key: 'wv', value: 'wv', text: 'West Virginia' },
-  { key: 'wi', value: 'wi', text: 'Wisconsin' },
-  { key: 'wy', value: 'wy', text: 'Wyoming' },
+  {
+    key: 'al', 
+    value: 'al',
+    text: 'Alabama',
+    contact: [
+      {
+        text: 'Contact Page State Legislature',
+        link: 'http://www.legislature.state.al.us/aliswww/ISD/ContactUs.aspx'
+      },
+      {
+        text: 'Email House Information',
+        link: 'http://www.legislature.state.al.us/aliswww/ISD/ContactPerson.aspx?NAME=House%20Information%20&EmailAdd=alis.test@alsenate.gov&OID_PERSON=0&SESSNAME=Regular%20Session%202021&imgURL=',
+      },
+      {
+        text: 'Email Senate Information',
+        link: 'http://www.legislature.state.al.us/aliswww/ISD/ContactPerson.aspx?NAME=Senate%20Information%20&EmailAdd=alis.test@alsenate.gov&OID_PERSON=0&SESSNAME=Regular%20Session%202021&imgURL=',
+      },
+      {
+        text: 'Contact Governor of Alabama',
+        link: 'https://contact.governor.alabama.gov/contact.aspx',
+      }
+    ]
+  },
+  {
+    key: 'ak',
+    value: 'ak',
+    text: 'Alaska',
+    contact: [
+      {
+        text: 'Alaska State Senate',
+        link: 'http://akleg.gov/senate.php',
+      },
+      {
+        text: 'Alaska State House',
+        link: 'http://akleg.gov/house.php',
+      },
+      {
+        text: 'Commissioner for Public Safety: dps.commissioner.office@alaska.gov',
+        link: 'mailto:dps.commissioner.office@alaska.gov',
+      },
+      {
+        text: 'Contact Governor of Alaska',
+        link: 'https://aws.state.ak.us/CrmForms/Home/Feedback',
+      }
+    ],
+  },
+  {
+    key: 'az',
+    value: 'az',
+    text: 'Arizona',
+    contact: [
+      {
+        text: 'Arizona Senate',
+        link: 'https://www.azleg.gov/MemberRoster/?body=S',
+      },
+      {
+        text: 'Arizona House',
+        link: 'https://www.azleg.gov/MemberRoster/?body=H',
+      },
+      {
+        text: 'Contact Governor of Arizona',
+        link: 'https://azgovernor.gov/engage/form/contact-governor-ducey',
+      }
+    ],
+  },
+  {
+    key: 'ar',
+    value: 'ar',
+    text: 'Arkansas'
+  },
+  {
+    key: 'ca',
+    value: 'ca',
+    text: 'California'
+  },
+  {
+    key: 'co',
+    value: 'co',
+    text: 'Colorado'
+  },
+  {
+    key: 'ct',
+    value: 'ct',
+    text: 'Connecticut'
+  },
+  {
+    key: 'de',
+    value: 'de',
+    text: 'Delaware'
+  },
+  {
+    key: 'dc',
+    value: 'dc',
+    text: 'District of Columbia'
+  },
+  {
+    key: 'fl',
+    value: 'fl',
+    text: 'Florida'
+  },
+  {
+    key: 'ga',
+    value: 'ga',
+    text: 'Georgia'
+  },
+  {
+    key: 'id',
+    value: 'id',
+    text: 'Idaho'
+  },
+  {
+    key: 'il',
+    value: 'il',
+    text: 'Illinois'
+  },
+  {
+    key: 'ia',
+    value: 'ia',
+    text: 'Iowa'
+  },
+  {
+    key: 'ks',
+    value: 'ks',
+    text: 'Kansas'
+  },
+  {
+    key: 'ky',
+    value: 'ky',
+    text: 'Kentucky'
+  },
+  {
+    key: 'la',
+    value: 'la',
+    text: 'Louisiana'
+  },
+  {
+    key: 'me',
+    value: 'me',
+    text: 'Maine'
+  },
+  {
+    key: 'md',
+    value: 'md',
+    text: 'Maryland'
+  },
+  {
+    key: 'ma',
+    value: 'ma',
+    text: 'Massachusetts'
+  },
+  {
+    key: 'mi',
+    value: 'mi',
+    text: 'Michigan'
+  },
+  {
+    key: 'mn',
+    value: 'mn',
+    text: 'Minnesota'
+  },
+  {
+    key: 'ms',
+    value: 'ms',
+    text: 'Mississippi'
+  },
+  {
+    key: 'mo',
+    value: 'mo',
+    text: 'Missouri'
+  },
+  {
+    key: 'mt',
+    value: 'mt',
+    text: 'Montana'
+  },
+  {
+    key: 'ne',
+    value: 'ne',
+    text: 'Nebraska'
+  },
+  {
+    key: 'nv',
+    value: 'nv',
+    text: 'Nevada'
+  },
+  {
+    key: 'nh',
+    value: 'nh',
+    text: 'New Hampshire'
+  },
+  {
+    key: 'nj',
+    value: 'nj',
+    text: 'New Jersey'
+  },
+  {
+    key: 'nm',
+    value: 'nm',
+    text: 'New Mexico'
+  },
+  {
+    key: 'ny',
+    value: 'ny',
+    text: 'New York'
+  },
+  {
+    key: 'nc',
+    value: 'nc',
+    text: 'North Carolina'
+  },
+  { 
+    key: 'nd', 
+    value: 'nd', 
+    text: 'North Dakota' 
+  },
+  { 
+    key: 'oh', 
+    value: 'oh', 
+    text: 'Ohio' 
+  },
+  { 
+    key: 'ok', 
+    value: 'ok', 
+    text: 'Oklahoma' 
+  },
+  { 
+    key: 'or', 
+    value: 'or', 
+    text: 'Oregon' 
+  },
+  { 
+    key: 'pa', 
+    value: 'pa', 
+    text: 'Pennsylvania' 
+  },
+  { 
+    key: 'ri', 
+    value: 'ri', 
+    text: 'Rhode Island' 
+  },
+  { 
+    key: 'sc', 
+    value: 'sc', 
+    text: 'South Carolina' 
+  },
+  { 
+    key: 'sd', 
+    value: 'sd', 
+    text: 'South Dakota' 
+  },
+  { 
+    key: 'tn', 
+    value: 'tn', 
+    text: 'Tennessee' 
+  },
+  { 
+    key: 'tx', 
+    value: 'tx', 
+    text: 'Texas' 
+  },
+  { 
+    key: 'ut', 
+    value: 'ut', 
+    text: 'Utah' 
+  },
+  { 
+    key: 'vt', 
+    value: 'vt', 
+    text: 'Vermont' 
+  },
+  { 
+    key: 'va', 
+    value: 'va', 
+    text: 'Virginia' 
+  },
+  { 
+    key: 'wa', 
+    value: 'wa', 
+    text: 'Washington' 
+  },
+  { 
+    key: 'wv', 
+    value: 'wv', 
+    text: 'West Virginia' 
+  },
+  { 
+    key: 'wi', 
+    value: 'wi', 
+    text: 'Wisconsin' 
+  },
+  { 
+    key: 'wy', 
+    value: 'wy', 
+    text: 'Wyoming' 
+  },
 ];
 
 const isPendingBillState = state => {
