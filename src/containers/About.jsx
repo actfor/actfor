@@ -64,7 +64,7 @@ class About extends Component {
                 size='big'
                 as='a'
                 target="_blank"
-                href='https://forms.gle/Fna9XRfu3HTW29BH9'
+                href='https://forms.gle/KsWeDsm78rjrgdF29'
               >
                 <Icon name="clipboard" />
                 Apply to the team!
