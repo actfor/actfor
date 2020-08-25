@@ -16,7 +16,6 @@ import PeopleCards from './../../common/PeopleCards';
 // card content
 import {
   activists,
-  stories,
 } from './cards';
 
 
@@ -28,9 +27,7 @@ class UyghurPeople extends Component {
           People of the Uyghur Movement
         </Header>
         <Divider />
-
         
-
         <Header as="h2">
           Activists
         </Header>

@@ -175,6 +175,5 @@ const stories = [
 ]
 
 export {
-  activists,
-  stories
+  activists
 };
