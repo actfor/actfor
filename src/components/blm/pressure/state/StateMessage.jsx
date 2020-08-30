@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
+  Button,
   Divider,
   Header,
   Segment,
@@ -34,6 +35,27 @@ class StateMessage extends Component {
     );
   }
 
+  renderStep3Segment = () => {
+    const stateKey = this.props.state;
+
+    const state = states.find(el => el.key == stateKey)
+
+    return (
+      <Segment placeholder>
+        <Button.Group vertical primary>
+          {state.contact.map(s => (
+            <Button
+              as="a"
+              target="_blank"
+              href={s.link}
+              content={s.text}
+            />
+          ))}
+        </Button.Group>
+      </Segment>
+    )
+  }
+
   render() {
     const { state } = this.props;
 
@@ -54,6 +76,12 @@ class StateMessage extends Component {
         subheader: 'Read our generated script for your message, and then copy it by clicking the button!',
         component: this.renderStep2Segment,
       },
+      {
+        type: 'other',
+        name: 'Step 3',
+        subheader: 'Contact the state government',
+        component: this.renderStep3Segment,
+      }
     ];
 
 

@@ -36,10 +36,6 @@ const states = [
         link: 'http://akleg.gov/house.php',
       },
       {
-        text: 'Commissioner for Public Safety: dps.commissioner.office@alaska.gov',
-        link: 'mailto:dps.commissioner.office@alaska.gov',
-      },
-      {
         text: 'Contact Governor of Alaska',
         link: 'https://aws.state.ak.us/CrmForms/Home/Feedback',
       }
