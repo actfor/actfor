@@ -400,147 +400,521 @@ const states = [
   {
     key: 'mi',
     value: 'mi',
-    text: 'Michigan'
+    text: 'Michigan',
+    contact: [
+      {
+        text: 'List of Legislators',
+        link: 'http://www.legislature.mi.gov/(S(ctgpgwalmo5vcfiihabf0kzl))/mileg.aspx?page=legislators',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://somgovweb.state.mi.us/GovRelations/ShareOpinion.aspx',
+      },
+    ],
   },
   {
     key: 'mn',
     value: 'mn',
-    text: 'Minnesota'
+    text: 'Minnesota',
+    contact: [
+      {
+        text: 'House Roster',
+        link: 'https://www.house.leg.state.mn.us/members/list',
+      },
+      {
+        text: 'Senate Roster',
+        link: 'https://www.senate.mn/members/index.html',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://mn.gov/governor/contact/',
+      },
+    ],
   },
   {
     key: 'ms',
     value: 'ms',
-    text: 'Mississippi'
+    text: 'Mississippi',
+    contact: [
+      {
+        text: 'List of House of Representatives',
+        link: 'http://www.legislature.ms.gov/legislators/representatives/',
+      },
+      {
+        text: 'List of Senators',
+        link: 'http://www.legislature.ms.gov/legislators/senators/',
+      },
+    ],
   },
   {
     key: 'mo',
     value: 'mo',
-    text: 'Missouri'
+    text: 'Missouri',
+    contact: [
+      {
+        text: 'List of House of Representatives',
+        link: 'https://house.mo.gov/MemberRoster.aspx',
+      },
+      {
+        text: 'List of Senators',
+        link: 'https://www.senate.mo.gov/2020-senator-listing-2/',
+      },
+      {
+        text: 'Governor of Missouri',
+        link: 'https://governor.mo.gov/contact-us',
+      },
+    ],
   },
   {
     key: 'mt',
     value: 'mt',
-    text: 'Montana'
+    text: 'Montana',
+    contact: [
+      {
+        text: 'List of Legislators',
+        link: 'https://leg.mt.gov/legislator-information/',
+      },
+      {
+        text: 'Contact of the Governor',
+        link: 'https://svc.mt.gov/gov/contact/shareopinion',
+      },
+    ],
   },
   {
     key: 'ne',
     value: 'ne',
-    text: 'Nebraska'
+    text: 'Nebraska',
+    contact: [
+      {
+        text: 'List of Legislators',
+        link: 'https://nebraskalegislature.gov/senators/senator_list.php',
+      },
+      {
+        text: 'Contact the Governor of Nebraska',
+        link: 'https://governor.nebraska.gov/contact-governor',
+      },
+    ],
   },
   {
     key: 'nv',
     value: 'nv',
-    text: 'Nevada'
+    text: 'Nevada',
+    contact: [
+      {
+        text: 'Assembly Roster',
+        link: 'https://www.leg.state.nv.us/App/Legislator/A/Assembly/',
+      },
+      {
+        text: 'Senate Roster',
+        link: 'https://www.leg.state.nv.us/Senate/senators.html',
+      },
+      {
+        text: 'Contact Form',
+        link: 'http://gov.nv.gov/Forms/Share/',
+      },
+    ],
   },
   {
     key: 'nh',
     value: 'nh',
-    text: 'New Hampshire'
+    text: 'New Hampshire',
+    contact: [
+      {
+        text: 'House of Representatives Roster',
+        link: 'http://gencourt.state.nh.us/house/members/default.aspx',
+      },
+      {
+        text: 'Senate Roster',
+        link: 'http://gencourt.state.nh.us/Senate/members/senate_roster.aspx',
+      },
+    ],
   },
   {
     key: 'nj',
     value: 'nj',
-    text: 'New Jersey'
+    text: 'New Jersey',
+    contact: [
+      {
+        text: 'Legislator Roster',
+        link: 'https://www.njleg.state.nj.us/members/roster.asp',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.state.nj.us/governor/contact/all/',
+      },
+    ],
   },
   {
     key: 'nm',
     value: 'nm',
-    text: 'New Mexico'
+    text: 'New Mexico',
+    contact: [
+      {
+        text: 'House Listing',
+        link: 'https://www.nmlegis.gov/Members/Legislator_List?T=R',
+      },
+      {
+        text: 'Senate Listing',
+        link: 'https://www.nmlegis.gov/Members/Legislator_List?T=S',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.governor.state.nm.us/contact-the-governor/',
+      },
+    ],
   },
   {
     key: 'ny',
     value: 'ny',
-    text: 'New York'
+    text: 'New York',
+    contact: [
+      {
+        text: 'Assembly Roster',
+        link: 'https://nyassembly.gov/mem/',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.governor.ny.gov/content/governor-contact-form',
+      },
+    ],
   },
   {
     key: 'nc',
     value: 'nc',
-    text: 'North Carolina'
+    text: 'North Carolina',
+    contact: [
+      {
+        text: 'List of House Representatives',
+        link: 'https://www.ncleg.gov/Members/MemberList/H',
+      },
+      {
+        text: 'List of Senators',
+        link: 'https://www.ncleg.gov/Members/MemberList/S/Name',
+      },
+      {
+        text: 'Contact Governor Roy Cooper',
+        link: 'https://governor.nc.gov/contact/contact-governor-cooper',
+      },
+    ],
   },
   { 
     key: 'nd', 
     value: 'nd', 
-    text: 'North Dakota' 
+    text: 'North Dakota',
+    contact: [
+      {
+        text: 'Senate Roster',
+        link: 'https://www.legis.nd.gov/files/resource/miscellaneous/senateroster.pdf',
+      },
+      {
+        text: 'House Roster',
+        link: 'https://www.legis.nd.gov/files/resource/miscellaneous/houseroster.pdf',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.governor.nd.gov/contact',
+      },
+    ], 
   },
   { 
     key: 'oh', 
     value: 'oh', 
-    text: 'Ohio' 
+    text: 'Ohio',
+    contact: [
+      {
+        text: 'House Directory',
+        link: 'https://www.legislature.ohio.gov/legislators/house-directory',
+      },
+      {
+        text: 'Senate Directory',
+        link: 'https://www.legislature.ohio.gov/legislators/senate-directory',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://governor.ohio.gov/wps/portal/gov/governor/contact',
+      },
+    ], 
   },
   { 
     key: 'ok', 
     value: 'ok', 
-    text: 'Oklahoma' 
+    text: 'Oklahoma',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://www.okhouse.gov/Members/Default.aspx',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'https://www.okhouse.gov/Members/Default.aspx',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.governor.ok.gov/contact/leave-comment',
+      },
+    ], 
   },
   { 
     key: 'or', 
     value: 'or', 
-    text: 'Oregon' 
+    text: 'Oregon',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://www.oregonlegislature.gov/senate/Pages/SenatorsAll.aspx',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'https://www.oregonlegislature.gov/house/Pages/RepresentativesAll.aspx',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.oregon.gov/gov/Pages/share-your-opinion.aspx',
+      },
+    ], 
   },
   { 
     key: 'pa', 
     value: 'pa', 
-    text: 'Pennsylvania' 
+    text: 'Pennsylvania',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=69',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.governor.pa.gov/contact/#OnlineForm',
+      },
+    ], 
   },
   { 
     key: 'ri', 
     value: 'ri', 
-    text: 'Rhode Island' 
+    text: 'Rhode Island',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'http://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://governor.ri.gov/contact/',
+      },
+    ], 
   },
   { 
     key: 'sc', 
     value: 'sc', 
-    text: 'South Carolina' 
+    text: 'South Carolina',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://www.scstatehouse.gov/member.php?chamber=S',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'https://www.scstatehouse.gov/member.php?chamber=H',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://iqconnect.lmhostediq.com/iqextranet/EForm.aspx?__cid=FSL_SC_GOV&__fid=100000',
+      },
+    ], 
   },
   { 
     key: 'sd', 
     value: 'sd', 
-    text: 'South Dakota' 
+    text: 'South Dakota',
+    contact: [
+      {
+        text: 'List of Legislators',
+        link: 'https://sdlegislature.gov/Legislators/ContactLegislator.aspx?Session=2020',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://iqconnect.lmhostediq.com/iqextranet/EForm.aspx?__cid=FSL_SD_GOV&__fid=2100060',
+      },
+    ], 
   },
   { 
     key: 'tn', 
     value: 'tn', 
-    text: 'Tennessee' 
+    text: 'Tennessee',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'http://www.capitol.tn.gov/senate/members/',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'http://www.capitol.tn.gov/house/members/',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.tn.gov/governor/contact-us.html',
+      },
+    ], 
   },
   { 
     key: 'tx', 
     value: 'tx', 
-    text: 'Texas' 
+    text: 'Texas',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://senate.texas.gov/members.php',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'https://house.texas.gov/members/',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://gov.texas.gov/apps/contact/opinion.aspx',
+      },
+    ], 
   },
   { 
     key: 'ut', 
     value: 'ut', 
-    text: 'Utah' 
+    text: 'Utah',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://senate.utah.gov/senate-roster/',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'http://house.utah.gov/house-members/',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://servicecloudtrial-155c0807bf-158b6dc6793.force.com/governor/s/comments',
+      },
+    ], 
   },
   { 
     key: 'vt', 
     value: 'vt', 
-    text: 'Vermont' 
+    text: 'Vermont',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://legislature.vermont.gov/people/all/2020/Senate',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'https://legislature.vermont.gov/people/all/2020/House',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://governor.vermont.gov/email',
+      },
+    ], 
   },
   { 
     key: 'va', 
     value: 'va', 
-    text: 'Virginia' 
+    text: 'Virginia',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://apps.senate.virginia.gov/Senator/index.php',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'https://virginiageneralassembly.gov/house/members/members.php',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.governor.virginia.gov/constituent-services/communicating-with-the-governors-office/',
+      },
+    ], 
   },
   { 
     key: 'wa', 
     value: 'wa', 
-    text: 'Washington' 
+    text: 'Washington',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'http://leg.wa.gov/Senate/Senators/Pages/default.aspx',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'http://leg.wa.gov/house/representatives/Pages/default.aspx',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://www.governor.wa.gov/contact/contact/send-gov-inslee-e-message',
+      },
+    ], 
   },
   { 
     key: 'wv', 
     value: 'wv', 
-    text: 'West Virginia' 
+    text: 'West Virginia',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'http://www.wvlegislature.gov/Senate1/roster.cfm',
+      },
+      {
+        text: 'List of House Representatives',
+        link: 'http://www.wvlegislature.gov/House/roster.cfm',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://governor.wv.gov/Pages/SubmitaCommenttotheGovernor.aspx',
+      },
+    ], 
   },
   { 
     key: 'wi', 
     value: 'wi', 
-    text: 'Wisconsin' 
+    text: 'Wisconsin',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'http://legis.wisconsin.gov/senate/',
+      },
+      {
+        text: 'List of Assembly Members',
+        link: 'http://legis.wisconsin.gov/assembly/',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://appengine.egov.com/apps/wi/governor/voice-an-opinion',
+      },
+    ], 
   },
   { 
     key: 'wy', 
     value: 'wy', 
-    text: 'Wyoming' 
+    text: 'Wyoming',
+    contact: [
+      {
+        text: 'List of Senators',
+        link: 'https://www.wyoleg.gov/Legislators/2020/S',
+      },
+      {
+        text: 'List of House of Representatives',
+        link: 'https://www.wyoleg.gov/Legislators/2020/H',
+      },
+      {
+        text: 'Contact the Governor',
+        link: 'https://governor.wyo.gov/contact',
+      },
+    ], 
   },
 ];
 
