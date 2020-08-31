@@ -24,7 +24,7 @@ class UyghurPeople extends Component {
     return (
       <div>
         <Header as="h1">
-          People of the Uyghur Movement
+          People of the Black Lives Matter Movement
         </Header>
         <Divider />
         
