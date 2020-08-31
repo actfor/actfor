@@ -15,14 +15,14 @@ class CopyMessage extends Component {
     document.execCommand("copy");
   }
   render() {
-    const { id, message } = this.props;
+    const { id, message, header } = this.props;
     const style = {
       position: 'fixed',
       left: '-10000px',
       top: '-10000px'
     }
     return (
-      <div style={{ color: '#88060d' }}>
+      <div>
         <Popup
           on="click"
           content="Copied Successfully!"
@@ -30,11 +30,12 @@ class CopyMessage extends Component {
             <Icon
               size="big"
               name="copy outline"
+              color="primary"
               onClick={this.handleCopyCitation}
             />
           }
         />
-        <h4 style={{ display: 'inline' }}>Copy Message to Clipboard</h4>
+        <h4 style={{ display: 'inline', color: '#88060d' }}>{header || "Copy Message to Clipboard"}</h4>
         <div
           id={id}
           style={style}

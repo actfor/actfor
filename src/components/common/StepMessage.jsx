@@ -108,7 +108,7 @@ class StepMessage extends Component {
               </Header>
             </Segment>
             <Segment>
-              <CopyMessage id="mediaMess60" message={message}/>
+              <CopyMessage id="message" message={message}/>
               <Divider />
               {message}
             </Segment>
@@ -167,7 +167,7 @@ class StepMessage extends Component {
                   </Header.Subheader>
                 </Header>
               </Segment>
-              {currentStep.component && <currentStep.component name={name} location={location} />}
+              {currentStep.component && <currentStep.component name={name} location={location} custom={custom} />}
               {currentStep.segment}
             </Segment.Group>
           </div>
