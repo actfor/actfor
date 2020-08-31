@@ -117,7 +117,7 @@ const congressHR6210 = (name, location, custom) => (
     <br />
     { custom && <p>{custom}</p> }
     <p>
-      I am contacting you to urge that you co-sponsor or support the H.R. 6210 Uyghur Forced Labor Prevention Act. It is imperative that we condemn the forced labor of Uyghur Muslims in Xinjiang and the cultural genocide of Uyghur Muslims. The United States must hold China accountable for the oppression of Uyghur Muslims and ensure that forced labor-sourced goods do not enter our borders.
+      <b>I am contacting you to urge that you co-sponsor or support the H.R. 6210 Uyghur Forced Labor Prevention Act.</b> It is imperative that we condemn the forced labor of Uyghur Muslims in Xinjiang and the cultural genocide of Uyghur Muslims. The United States must hold China accountable for the oppression of Uyghur Muslims and ensure that forced labor-sourced goods do not enter our borders.
     </p>
     <br />
     <p>

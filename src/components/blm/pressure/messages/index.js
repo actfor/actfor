@@ -34,7 +34,7 @@ const pendingBills = (name, location, custom, bills) => (
       Please address systemic racism in your future legislation and policies. Racism is prevalent in our healthcare, education, economic, and law enforcement systems. Redlining, the racial wealth gap, environmental racism, and mass incarceration are still huge issues for Black communities today. We need to acknowledge and address the centuries long oppression of the Black community from which our country was founded.
     </p>
     { createBillString(bills) && 
-      <p>Please <b>cosponser and pass {createBillString(bills)}.</b></p>
+      <p>Please <b>cosponsor and pass {createBillString(bills)}.</b></p>
     }
     <p>Thank you,</p>
     <p>
