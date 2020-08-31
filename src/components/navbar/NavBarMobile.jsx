@@ -175,6 +175,16 @@ class NavBarMobile extends Component {
               About Us
             </Menu.Item>
 
+            <Menu.Item
+              id="elections"
+              path="/elections"
+              as='a'
+              onClick={this.handleBtnClick}
+            >
+              <Icon name="check square outline" />
+              Elections
+            </Menu.Item>
+
             {rightMenu &&
               <Menu.Menu position="right">
                 {this.renderMenu(rightMenu)}

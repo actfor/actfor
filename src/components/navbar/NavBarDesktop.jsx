@@ -128,6 +128,17 @@ class NavBarDesktop extends Component {
             About Us
           </Menu.Item>
 
+          <Menu.Item
+            id="elections"
+            path="/elections"
+            as='a'
+            onClick={this.handleBtnClick}
+          >
+            <Icon name="check square outline" />
+            <br />
+            Elections
+          </Menu.Item>
+
           {rightMenu &&
             <Menu.Menu position="right">
               {this.renderMenu(rightMenu)}
