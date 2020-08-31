@@ -12,7 +12,7 @@ import * as king from './images/ShaunKing.png';
 import * as newsome from './images/BreeNewsome.png';
 import * as mallory from './images/TamikaMallory.png';
 import * as robinson from './images/RashadRobinson.png';
-import * as sarsou from './images/LindaSarsour.png';
+import * as sarsour from './images/LindaSarsour.png';
 import * as mccarrel from './images/MashawnMcCarrel.png';
 import * as moye from './images/MuhiyindinMoye.png';
 
@@ -131,8 +131,8 @@ const activists = [
     ),
   },
   {
-    header: 'Linda Sarsou',
-    image: sarsou,
+    header: 'Linda Sarsour',
+    image: sarsour,
     content: (
       <div>
         <p>
