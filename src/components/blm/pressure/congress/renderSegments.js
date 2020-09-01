@@ -47,7 +47,29 @@ const renderGovTrackSegment = (url) => (
   </Segment>
 )
 
+const renderOtherSegment = (url) => (
+  <Segment>
+    <iframe
+      height="400px"
+      width="100%"
+      src={url}
+    />
+    <br />
+    <br />
+    <Button
+      primary
+      as='a' target="_blank"
+      href={url}
+      content='Visit Site'
+      size='big'
+      icon='external alternate'
+      labelPosition='left'
+    />
+  </Segment>
+)
+
 export {
   renderGovTrackSegment,
   renderStep3Segment,
+  renderOtherSegment,
 };

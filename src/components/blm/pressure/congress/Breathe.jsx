@@ -8,7 +8,7 @@ import { congressBreathe } from './../messages';
 
 // segments
 import {
-  renderGovTrackSegment,
+  renderOtherSegment,
   renderStep3Segment
 } from './renderSegments';
 
@@ -18,8 +18,8 @@ class Breathe extends Component {
       {
         type: 'other',
         name: 'Track The Bill',
-        subheader: 'Follow and track this bill on the govtrack site!',
-        segment: renderGovTrackSegment("https://breatheact.org/"),
+        subheader: 'Follow and track this bill on their site!',
+        segment: renderOtherSegment("https://breatheact.org/"),
       },
       {
         type: 'name',
