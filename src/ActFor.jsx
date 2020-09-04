@@ -19,6 +19,7 @@ import BLM from './containers/BLM';
 import Home from './containers/Home';
 import Uyghur from './containers/Uyghur';
 import Yemen from './containers/Yemen';
+import Elections from './containers/Elections';
 
 class ActFor extends Component {
 
@@ -31,13 +32,17 @@ class ActFor extends Component {
             <Route exact path="/">
               <Home />
             </Route>
+            
+            <Route path="/about">
+              <About />
+            </Route>
+
+            <Route path="/elections">
+              <Elections />
+            </Route>
 
             <Route path="/blm">
               <BLM />
-            </Route>
-
-            <Route path="/about">
-              <About />
             </Route>
 
             <Route path="/yemen">
