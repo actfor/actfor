@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
-  Dropdown,
+  Container,
+  Image,
   Header,
   Select,
 } from 'semantic-ui-react';
@@ -12,6 +13,9 @@ import states from './utils/states';
 
 // components
 import StateMessage from './state/StateMessage';
+
+// images
+import * as statesImg from './state/images/states.png';
 
 class PressureState extends Component {
   constructor(props) {
@@ -41,7 +45,15 @@ class PressureState extends Component {
           onChange={this.onChange}
           options={states}
         />
-        <StateMessage state={selected} />
+        {
+          selected ?
+          <StateMessage state={selected} /> :
+          <Container>
+            <br />
+            <br />
+            <Image centered src={statesImg} size="big" />
+          </Container>
+        }
       </div>
     );
   }
