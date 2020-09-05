@@ -16,7 +16,7 @@ import {
 // pages
 import BLMDirectory from "./directory";
 import BLMDonate from "./donate";
-
+import PressureCases from './pressure/PressureCases';
 import PressureCities from './pressure/PressureCities';
 import PressureState from './pressure/PressureState';
 import PressureCongress from './pressure/PressureCongress';
@@ -49,7 +49,7 @@ class BLMPages extends Component {
           </Route>
 
           <Route path="/blm/pressure/cases">
-            BLM Public Pressure - Cases
+            <PressureCases />
           </Route>
 
           <Route path="/blm/pressure/petitions">
