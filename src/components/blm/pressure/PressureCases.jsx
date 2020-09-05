@@ -8,7 +8,13 @@ import {
 } from 'semantic-ui-react';
 
 // components
-import HR1027 from './congress/HR1027';
+import Mcatee from './case/Mcatee';
+import Mcdade from './case/Mcdade';
+import Arbery from './case/Arbery';
+import Reed from './case/Reed';
+import Blake from './case/Blake';
+import Hollowell from './case/Hollowell';
+import Taylor from './case/Taylor';
 import S3912 from './congress/S3912';
 import Breathe from './congress/Breathe';
 import HR988 from './congress/HR988';
@@ -56,7 +62,7 @@ class PressureCases extends Component {
             </Header>
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 0}>
-            <HR1027 />
+            <Mcatee />
           </Accordion.Content>
 
           {/* S3912 */}
@@ -69,54 +75,54 @@ class PressureCases extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               Tony McDade
               <Header.Subheader>
-                  Demand action from Florida officials in regard to the murder of Tony McDade
+                Demand action from Florida officials in regard to the murder of Tony McDade
               </Header.Subheader>
             </Header>
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 1}>
-            <S3912 />
+            <Mcdade />
           </Accordion.Content>
 
           {/* S3912 */}
           <Accordion.Title
-            active={activeIndex === 1}
-            index={1}
+            active={activeIndex === 2}
+            index={2}
             onClick={this.handleClick}
           >
             <Icon name="dropdown" />
             <Header style={{ display: 'inline' }} as="h2">
               George Floyd
               <Header.Subheader>
-                  As of 5/29, three officers identified as Derek Chauvin, Thomas Lane, Tou Thao, and J. Alexander Kueng were arrested. Derek Chauvin has been charged with third-degree murder, and Minnesota attorney general Keith Ellison will lead George Floyd’s case.
+                As of 5/29, three officers identified as Derek Chauvin, Thomas Lane, Tou Thao, and J. Alexander Kueng were arrested. Derek Chauvin has been charged with third-degree murder, and Minnesota attorney general Keith Ellison will lead George Floyd’s case.
 
               </Header.Subheader>
             </Header>
           </Accordion.Title>
-         
+
 
 
           {/* Breathe */}
           <Accordion.Title
-            active={activeIndex === 2}
-            index={2}
+            active={activeIndex === 3}
+            index={3}
             onClick={this.handleClick}
           >
             <Icon name="dropdown" />
             <Header style={{ display: 'inline' }} as="h2">
               Ahmaud Arbery
               <Header.Subheader>
-                Demand action from Georgia officials in regard to the murder of Ahmaud Arbery 
+                Demand action from Georgia officials in regard to the murder of Ahmaud Arbery
               </Header.Subheader>
             </Header>
           </Accordion.Title>
-          <Accordion.Content active={activeIndex === 2}>
-            <Breathe />
+          <Accordion.Content active={activeIndex === 3}>
+            <Arbery />
           </Accordion.Content>
 
           {/* Breathe */}
           <Accordion.Title
-            active={activeIndex === 2}
-            index={2}
+            active={activeIndex === 4}
+            index={4}
             onClick={this.handleClick}
           >
             <Icon name="dropdown" />
@@ -127,14 +133,14 @@ class PressureCases extends Component {
               </Header.Subheader>
             </Header>
           </Accordion.Title>
-          <Accordion.Content active={activeIndex === 2}>
-            <Breathe />
+          <Accordion.Content active={activeIndex === 4}>
+            <Reed />
           </Accordion.Content>
 
           {/* Breathe */}
           <Accordion.Title
-            active={activeIndex === 2}
-            index={2}
+            active={activeIndex === 5}
+            index={5}
             onClick={this.handleClick}
           >
             <Icon name="dropdown" />
@@ -145,14 +151,14 @@ class PressureCases extends Component {
               </Header.Subheader>
             </Header>
           </Accordion.Title>
-          <Accordion.Content active={activeIndex === 2}>
-            <Breathe />
+          <Accordion.Content active={activeIndex === 5}>
+            <Blake />
           </Accordion.Content>
 
           {/* Breathe */}
           <Accordion.Title
-            active={activeIndex === 2}
-            index={2}
+            active={activeIndex === 6}
+            index={6}
             onClick={this.handleClick}
           >
             <Icon name="dropdown" />
@@ -163,14 +169,14 @@ class PressureCases extends Component {
               </Header.Subheader>
             </Header>
           </Accordion.Title>
-          <Accordion.Content active={activeIndex === 2}>
-            <Breathe />
+          <Accordion.Content active={activeIndex === 6}>
+            <Hollowell />
           </Accordion.Content>
 
 
           <Accordion.Title
-            active={activeIndex === 3}
-            index={3}
+            active={activeIndex === 7}
+            index={7}
             onClick={this.handleClick}
           >
             <Icon name="dropdown" />
@@ -181,8 +187,8 @@ class PressureCases extends Component {
               </Header.Subheader>
             </Header>
           </Accordion.Title>
-          <Accordion.Content active={activeIndex === 3}>
-            <HR988 />
+          <Accordion.Content active={activeIndex === 7}>
+            <Taylor />
           </Accordion.Content>
 
 
