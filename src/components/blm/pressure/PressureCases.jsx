@@ -47,7 +47,7 @@ class PressureCases extends Component {
             </Header>
           </Accordion.Title>
 
-          {/* HR1027 */}
+          {/* McAtee */}
           <Accordion.Title
             active={activeIndex === 0}
             index={0}
@@ -65,7 +65,7 @@ class PressureCases extends Component {
             <Mcatee />
           </Accordion.Content>
 
-          {/* S3912 */}
+          {/* McDade */}
           <Accordion.Title
             active={activeIndex === 1}
             index={1}
@@ -83,7 +83,7 @@ class PressureCases extends Component {
             <Mcdade />
           </Accordion.Content>
 
-          {/* S3912 */}
+          {/* Floyd */}
           <Accordion.Title
             active={activeIndex === 2}
             index={2}
@@ -99,81 +99,7 @@ class PressureCases extends Component {
             </Header>
           </Accordion.Title>
 
-
-
-          {/* Breathe */}
-          <Accordion.Title
-            active={activeIndex === 3}
-            index={3}
-            onClick={this.handleClick}
-          >
-            <Icon name="dropdown" />
-            <Header style={{ display: 'inline' }} as="h2">
-              Ahmaud Arbery
-              <Header.Subheader>
-                Demand action from Georgia officials in regard to the murder of Ahmaud Arbery
-              </Header.Subheader>
-            </Header>
-          </Accordion.Title>
-          <Accordion.Content active={activeIndex === 3}>
-            <Arbery />
-          </Accordion.Content>
-
-          {/* Breathe */}
-          <Accordion.Title
-            active={activeIndex === 4}
-            index={4}
-            onClick={this.handleClick}
-          >
-            <Icon name="dropdown" />
-            <Header style={{ display: 'inline' }} as="h2">
-              Sean Reed
-              <Header.Subheader>
-                Urge Indiana officials to take action against the officers responsible for the murder of Sean Reed
-              </Header.Subheader>
-            </Header>
-          </Accordion.Title>
-          <Accordion.Content active={activeIndex === 4}>
-            <Reed />
-          </Accordion.Content>
-
-          {/* Breathe */}
-          <Accordion.Title
-            active={activeIndex === 5}
-            index={5}
-            onClick={this.handleClick}
-          >
-            <Icon name="dropdown" />
-            <Header style={{ display: 'inline' }} as="h2">
-              Jacob Blake
-              <Header.Subheader>
-                Demand justice for the police brutality against Jacob Blake in Wisconsin
-              </Header.Subheader>
-            </Header>
-          </Accordion.Title>
-          <Accordion.Content active={activeIndex === 5}>
-            <Blake />
-          </Accordion.Content>
-
-          {/* Breathe */}
-          <Accordion.Title
-            active={activeIndex === 6}
-            index={6}
-            onClick={this.handleClick}
-          >
-            <Icon name="dropdown" />
-            <Header style={{ display: 'inline' }} as="h2">
-              Justin Hollowell
-              <Header.Subheader>
-                Demand justice for the racist assault and critical injury of Justin Hollowell
-              </Header.Subheader>
-            </Header>
-          </Accordion.Title>
-          <Accordion.Content active={activeIndex === 6}>
-            <Hollowell />
-          </Accordion.Content>
-
-
+          {/* Taylor */}
           <Accordion.Title
             active={activeIndex === 7}
             index={7}
@@ -192,6 +118,78 @@ class PressureCases extends Component {
           </Accordion.Content>
 
 
+
+          {/* Arbery */}
+          <Accordion.Title
+            active={activeIndex === 3}
+            index={3}
+            onClick={this.handleClick}
+          >
+            <Icon name="dropdown" />
+            <Header style={{ display: 'inline' }} as="h2">
+              Ahmaud Arbery
+              <Header.Subheader>
+                Demand action from Georgia officials in regard to the murder of Ahmaud Arbery
+              </Header.Subheader>
+            </Header>
+          </Accordion.Title>
+          <Accordion.Content active={activeIndex === 3}>
+            <Arbery />
+          </Accordion.Content>
+
+          {/* Reed */}
+          <Accordion.Title
+            active={activeIndex === 4}
+            index={4}
+            onClick={this.handleClick}
+          >
+            <Icon name="dropdown" />
+            <Header style={{ display: 'inline' }} as="h2">
+              Sean Reed
+              <Header.Subheader>
+                Urge Indiana officials to take action against the officers responsible for the murder of Sean Reed
+              </Header.Subheader>
+            </Header>
+          </Accordion.Title>
+          <Accordion.Content active={activeIndex === 4}>
+            <Reed />
+          </Accordion.Content>
+
+          {/* Blake */}
+          <Accordion.Title
+            active={activeIndex === 5}
+            index={5}
+            onClick={this.handleClick}
+          >
+            <Icon name="dropdown" />
+            <Header style={{ display: 'inline' }} as="h2">
+              Jacob Blake
+              <Header.Subheader>
+                Demand justice for the police brutality against Jacob Blake in Wisconsin
+              </Header.Subheader>
+            </Header>
+          </Accordion.Title>
+          <Accordion.Content active={activeIndex === 5}>
+            <Blake />
+          </Accordion.Content>
+
+          {/* Hollowell */}
+          <Accordion.Title
+            active={activeIndex === 6}
+            index={6}
+            onClick={this.handleClick}
+          >
+            <Icon name="dropdown" />
+            <Header style={{ display: 'inline' }} as="h2">
+              Justin Hollowell
+              <Header.Subheader>
+                Demand justice for the racist assault and critical injury of Justin Hollowell
+              </Header.Subheader>
+            </Header>
+          </Accordion.Title>
+          <Accordion.Content active={activeIndex === 6}>
+            <Hollowell />
+          </Accordion.Content>
         </Accordion>
       </div>
     );
