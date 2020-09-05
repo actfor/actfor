@@ -51,7 +51,7 @@ class PressureCases extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               David McAtee
               <Header.Subheader>
-                Urge the House of Representatives to remedy racial inequities in the United States, especially those present in the criminal justice system, must include reforms to address concerns for Black women.
+                Urge officials in Kentucky to take action against the officers responsible for the murder of David McAtee
               </Header.Subheader>
             </Header>
           </Accordion.Title>
@@ -69,13 +69,30 @@ class PressureCases extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               Tony McDade
               <Header.Subheader>
-                Support the Justice in Policing Act of 2020
+                  Demand action from Florida officials in regard to the murder of Tony McDade
               </Header.Subheader>
             </Header>
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 1}>
             <S3912 />
           </Accordion.Content>
+
+          {/* S3912 */}
+          <Accordion.Title
+            active={activeIndex === 1}
+            index={1}
+            onClick={this.handleClick}
+          >
+            <Icon name="dropdown" />
+            <Header style={{ display: 'inline' }} as="h2">
+              George Floyd
+              <Header.Subheader>
+                  As of 5/29, three officers identified as Derek Chauvin, Thomas Lane, Tou Thao, and J. Alexander Kueng were arrested. Derek Chauvin has been charged with third-degree murder, and Minnesota attorney general Keith Ellison will lead George Floyd’s case.
+
+              </Header.Subheader>
+            </Header>
+          </Accordion.Title>
+         
 
 
           {/* Breathe */}
@@ -88,7 +105,7 @@ class PressureCases extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               Ahmaud Arbery
               <Header.Subheader>
-                Urge congress to divest our taxpayer dollars from brutal and discriminatory policing.
+                Demand action from Georgia officials in regard to the murder of Ahmaud Arbery 
               </Header.Subheader>
             </Header>
           </Accordion.Title>
@@ -106,7 +123,7 @@ class PressureCases extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               Sean Reed
               <Header.Subheader>
-                Urge congress to divest our taxpayer dollars from brutal and discriminatory policing.
+                Urge Indiana officials to take action against the officers responsible for the murder of Sean Reed
               </Header.Subheader>
             </Header>
           </Accordion.Title>
@@ -124,7 +141,7 @@ class PressureCases extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               Jacob Blake
               <Header.Subheader>
-                Urge congress to divest our taxpayer dollars from brutal and discriminatory policing.
+                Demand justice for the police brutality against Jacob Blake in Wisconsin
               </Header.Subheader>
             </Header>
           </Accordion.Title>
@@ -142,7 +159,7 @@ class PressureCases extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               Justin Hollowell
               <Header.Subheader>
-                Urge congress to divest our taxpayer dollars from brutal and discriminatory policing.
+                Demand justice for the racist assault and critical injury of Justin Hollowell
               </Header.Subheader>
             </Header>
           </Accordion.Title>
@@ -160,7 +177,7 @@ class PressureCases extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               Breonna Taylor
               <Header.Subheader>
-                Urge congress to condemn all acts of police brutality, racial profiling, and the use of excessive and militarized force throughout the country.
+                Demand justice from Kentucky officials for the murder of Breonna Taylor
               </Header.Subheader>
             </Header>
           </Accordion.Title>
