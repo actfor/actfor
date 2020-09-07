@@ -7,7 +7,6 @@ import {
   Header,
 } from 'semantic-ui-react';
 
-
 class PressurePetitions extends Component {
   render() {
     return (
@@ -16,7 +15,6 @@ class PressurePetitions extends Component {
             Petitions
         </Header>
         
-
         <Divider />
         
         <Header as="h2">
@@ -157,7 +155,6 @@ class PressurePetitions extends Component {
               <a href ="	https://www.change.org/p/police-scotland-investigate-the-death-of-sheku-bayoh-in-police-custody	">	Sheku Bayoh 	</a>
               </li>				
           </ul>
-          
 
         </Container>
         
