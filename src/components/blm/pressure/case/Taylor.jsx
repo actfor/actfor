@@ -27,7 +27,7 @@ class Taylor extends Component {
             {
                 type: 'other',
                 name: 'Step 3',
-                subheader: 'Find your congress representative, and paste your message!',
+                subheader: 'Reach out to Kentucky officials with your message',
                 segment: renderStep3Segment(),
             },
 

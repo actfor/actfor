@@ -15,9 +15,6 @@ import Reed from './case/Reed';
 import Blake from './case/Blake';
 import Hollowell from './case/Hollowell';
 import Taylor from './case/Taylor';
-import S3912 from './congress/S3912';
-import Breathe from './congress/Breathe';
-import HR988 from './congress/HR988';
 
 class PressureCases extends Component {
   constructor(props) {
@@ -40,7 +37,6 @@ class PressureCases extends Component {
     return (
       <div>
         <Accordion fluid styled>
-
           <Accordion.Title>
             <Header as="h1">
               Case Specific Demands
@@ -116,8 +112,6 @@ class PressureCases extends Component {
           <Accordion.Content active={activeIndex === 7}>
             <Taylor />
           </Accordion.Content>
-
-
 
           {/* Arbery */}
           <Accordion.Title

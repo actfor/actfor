@@ -7,10 +7,7 @@ import StepMessage from '../../../common/StepMessage';
 import { caseMcatee } from './../messages';
 
 // segments
-import {
-  renderOtherSegment,
-  renderStep3Segment
-} from '../congress/renderSegments';
+import {renderStep3Segment} from '../congress/renderSegments';
 
 class Mcatee extends Component {
   render() {
@@ -27,7 +24,7 @@ class Mcatee extends Component {
       {
         type: 'other',
         name: 'Step 3',
-        subheader: 'Find your congress representative, and paste your message!',
+        subheader: 'Reach out to Kentucky officials with your message',
         segment: renderStep3Segment(),
       },
 

@@ -27,7 +27,7 @@ class Mcdade extends Component {
             {
                 type: 'other',
                 name: 'Step 3',
-                subheader: 'Find your congress representative, and paste your message!',
+                subheader: 'Reach out to Florida officials with your message',
                 segment: renderStep3Segment(),
             },
 
