@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 
+// semantic-ui
+import {
+    Button,
+    Divider,
+    Header,
+    Segment,
+  } from 'semantic-ui-react';
+
 // components
 import StepMessage from '../../../common/StepMessage';
 
@@ -7,13 +15,32 @@ import StepMessage from '../../../common/StepMessage';
 import { caseArbery } from './../messages';
 
 // segments
-import {
-    renderOtherSegment,
-    renderStep3Segment
-} from '../congress/renderSegments';
+
+
 
 class Arbery extends Component {
+
+    renderStep3Segment = () => {
+
+        return (
+          <Segment placeholder>
+            <Button.Group vertical primary>
+              
+                <Button
+                  as="a"
+                  target="_blank"
+                  href={"mailto:cobbdistrictattorney@cobbcounty.org"}
+                  content={"Cobb County DA: Joyette Holmes"}
+                />
+              
+            </Button.Group>
+          </Segment>
+        )
+      }
     render() {
+
+
+
         const steps = [
             {
                 type: 'name',
@@ -28,7 +55,7 @@ class Arbery extends Component {
                 type: 'other',
                 name: 'Step 3',
                 subheader: 'Reach out to Georgia officials with your message',
-                segment: renderStep3Segment(),
+                component: this.renderStep3Segment,
             },
 
         ]
