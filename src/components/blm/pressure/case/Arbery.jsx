@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 // semantic-ui
 import {
-    Button,
-    Divider,
-    Header,
     Segment,
     Table
 } from 'semantic-ui-react';
@@ -14,10 +11,6 @@ import StepMessage from '../../../common/StepMessage';
 
 // messages
 import { caseArbery } from './../messages';
-
-// segments
-
-
 
 class Arbery extends Component {
 
@@ -35,24 +28,20 @@ class Arbery extends Component {
 
                     <Table.Body>
                         <Table.Row>
-                            <Table.Cell>Governor Beshear</Table.Cell>
-                            <Table.Cell>Phone: (502) 564-2611 or message online <a href="https://governor.ky.gov/contact/contact-us">here</a></Table.Cell>
+                            <Table.Cell>Cobb County DA Joyette Holmes</Table.Cell>
+                            <Table.Cell>Phone: (770) 528-3080 or email <a href="mailto:cobbdistrictattorney@cobbcounty.org">here</a></Table.Cell>
                         </Table.Row>
                         <Table.Row>
-                            <Table.Cell>Mayor Greg Fischer</Table.Cell>
-                            <Table.Cell>Phone: (502) 574-2003 or message online <a href="https://louisvilleky.gov/government/mayor-greg-fischer/contact-mayors-office">here</a> </Table.Cell>
+                            <Table.Cell>Georgia State Legislature</Table.Cell>
+                            <Table.Cell>message online <a href="http://www.house.ga.gov/Representatives/en-US/HouseMembersList.aspx">here</a> </Table.Cell>
                         </Table.Row>
                         <Table.Row>
-                            <Table.Cell>Jefferson County Attorney</Table.Cell>
-                            <Table.Cell>Phone: (502) 574-6336 or message online <a href="https://louisvilleky.wufoo.com/forms/contact-the-jefferson-county-attorney/">here</a> </Table.Cell>
+                            <Table.Cell>Georgia Governor Nathan Deal</Table.Cell>
+                            <Table.Cell>Phone: (404) 656-1776 or message online <a href="https://georgia.gov/contact-georgiagov">here</a> </Table.Cell>
                         </Table.Row>
                         <Table.Row>
-                            <Table.Cell>Attorney General Cameron</Table.Cell>
-                            <Table.Cell>Phone: (502) 429-7134 or message online <a href="https://ag.ky.gov/Contact-Us/Pages/default.aspx">here</a> </Table.Cell>
-                        </Table.Row>
-                        <Table.Row>
-                            <Table.Cell>Interim LMPD Police Chief Schroeder</Table.Cell>
-                            <Table.Cell>Email here: <a href="mailto:Robert.Schroeder@louisvilleky.gov">Robert.Schroeder@louisvilleky.gov</a></Table.Cell>
+                            <Table.Cell>Mayor of Brunswick Cornell Harvey</Table.Cell>
+                            <Table.Cell>Phone: (912) 571-2218 or email <a href="mailto:mayorcharvey@gmail.com">here</a> </Table.Cell>
                         </Table.Row>
                     </Table.Body>
                 </Table>
@@ -60,9 +49,6 @@ class Arbery extends Component {
         )
     }
     render() {
-
-
-
         const steps = [
             {
                 type: 'name',

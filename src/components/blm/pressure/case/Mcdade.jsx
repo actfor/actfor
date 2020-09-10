@@ -3,16 +3,43 @@ import React, { Component } from 'react';
 // components
 import StepMessage from '../../../common/StepMessage';
 
+// semantic-ui
+import {
+    Segment,
+    Table
+} from 'semantic-ui-react';
+
 // messages
 import { caseMcdade } from './../messages';
 
-// segments
-import {
-    renderOtherSegment,
-    renderStep3Segment
-} from '../congress/renderSegments';
-
 class Mcdade extends Component {
+
+    renderStep3Segment = () => {
+
+        return (
+            <Segment placeholder>
+                <Table celled selectable>
+                    <Table.Header>
+                        <Table.Row>
+                            <Table.HeaderCell>Official</Table.HeaderCell>
+                            <Table.HeaderCell>Contact Information</Table.HeaderCell>
+                        </Table.Row>
+                    </Table.Header>
+
+                    <Table.Body>
+                        <Table.Row>
+                            <Table.Cell>Mayor John E. Daily</Table.Cell>
+                            <Table.Cell>Phone: 850-891-2000 or message online <a href="https://www.talgov.com/main/email.aspx?emailto=mayor">here</a></Table.Cell>
+                        </Table.Row>
+                        <Table.Row>
+                            <Table.Cell>Florida AG Ashley Moody</Table.Cell>
+                            <Table.Cell>message online <a href="http://myfloridalegal.com/contact.nsf/contact?Open&Section=Attorney_General">here</a> </Table.Cell>
+                        </Table.Row>
+                    </Table.Body>
+                </Table>
+            </Segment>
+        )
+    }
     render() {
         const steps = [
             {
@@ -28,7 +55,7 @@ class Mcdade extends Component {
                 type: 'other',
                 name: 'Step 3',
                 subheader: 'Reach out to Florida officials with your message',
-                segment: renderStep3Segment(),
+                component: this.renderStep3Segment,
             },
 
         ]
