@@ -17,7 +17,16 @@ class BLM extends Component {
         id: 'education',
         content: 'Education',
         icon: 'pencil',
-        path: '/blm/education',
+        dropdown: [
+          {
+            text: 'Data for Defundng',
+            path: '/blm/education/datafordefunding',
+          },
+          {
+            text: 'Other Resources',
+            path: '/blm/education/resources',
+          }
+        ],
       },
       {
         id: 'pressure',
