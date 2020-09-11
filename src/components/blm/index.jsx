@@ -3,7 +3,6 @@ import React, { Component } from "react";
 // semantic-ui
 import {
   Container,
-  Header
 } from "semantic-ui-react";
 
 // router
@@ -38,6 +37,10 @@ class BLMPages extends Component {
 
           <Route path="/blm/education/datafordefunding">
             <DataForDefunding />
+          </Route>
+
+          <Route path="/blm/education/resources">
+            Other Resources
           </Route>
 
           <Route path="/blm/pressure/congress">

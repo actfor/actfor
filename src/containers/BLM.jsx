@@ -22,6 +22,10 @@ class BLM extends Component {
             text: 'Data for Defundng',
             path: '/blm/education/datafordefunding',
           },
+          {
+            text: 'Other Resources',
+            path: '/blm/education/resources',
+          }
         ],
       },
       {
@@ -55,7 +59,7 @@ class BLM extends Component {
         id: 'people',
         content: 'People',
         icon: 'users',
-        path: '/blm/people',
+        pathdatafordefunding: '/blm/people',
       },
       {
         id: 'donate',
