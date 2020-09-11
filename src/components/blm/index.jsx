@@ -3,7 +3,6 @@ import React, { Component } from "react";
 // semantic-ui
 import {
   Container,
-  Header
 } from "semantic-ui-react";
 
 // router
@@ -22,6 +21,8 @@ import PressureState from './pressure/PressureState';
 import PressureCongress from './pressure/PressureCongress';
 import PressurePetitions from './pressure/PressurePetitions';
 
+import DataForDefunding from './education/DataForDefunding';
+
 
 import BLMPeople from './people';
 
@@ -34,8 +35,12 @@ class BLMPages extends Component {
             <BLMDirectory />
           </Route>
 
-          <Route path="/blm/education">
-            BLM Education
+          <Route path="/blm/education/datafordefunding">
+            <DataForDefunding />
+          </Route>
+
+          <Route path="/blm/education/resources">
+            Other Resources
           </Route>
 
           <Route path="/blm/pressure/congress">
