@@ -59,7 +59,7 @@ class BLM extends Component {
         id: 'people',
         content: 'People',
         icon: 'users',
-        pathdatafordefunding: '/blm/people',
+        path: '/blm/people',
       },
       {
         id: 'donate',
