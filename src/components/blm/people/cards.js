@@ -8,7 +8,6 @@ import * as packnett from './images/BrittanyPacknett.png';
 import * as elzie from './images/JohnettaElzie.png';
 import * as sinyanwe from './images/SamuelSinyangwe.png';
 import * as johnson from './images/MarissaJohnson.png';
-import * as king from './images/ShaunKing.png';
 import * as newsome from './images/BreeNewsome.png';
 import * as mallory from './images/TamikaMallory.png';
 import * as robinson from './images/RashadRobinson.png';
@@ -86,16 +85,6 @@ const activists = [
       <div>
         <p>
             Marissa Johnson is a member of Outside Agitators 206, an advocacy organization founded in Seattle that was dissolved after she was co-chair of Black Lives Matter’s Seattle branch during September 2015. She orchestrated a die-in in November 2013 at a shopping mall in Downtown Seattle which shut down the mall on Black Friday. In January 2015 city council meeting to address the city’s police’s usage of body cameras, she prompted the meeting to be postponed and said “I don't need a home video of my oppression”. In December 2015, Seattle political analyst Maria Tomchich described Johnson as an integral part of the “biggest news story of 2015”, the extension of Black Lives Matter campaign onto the mainstream political landscape, as a consequence of the interruption of Bernie Sanders’ speech.         </p>
-      </div>
-    ),
-  },
-  {
-    header: 'Shaun King',
-    image: king,
-    content: (
-      <div>
-        <p>
-            Shaun King is an American writer, civil rights leader, and co-founder of Real Justice PAC, a political action committee to help elect state- and city-level attorneys who advocate criminal justice reform. King is widely known for utilizing social media to support movements of social change, namely Coalition for Black Lives Matter. He created Justice Together, an initiative formed to expose police abuse and advocate for reform with elected officials. King has donated funds for many issues like the death of Tamir Rice and numerous events surrounding the Black Lives Matter movement.         </p>
       </div>
     ),
   },

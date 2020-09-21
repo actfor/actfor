@@ -51,7 +51,7 @@ class PressureCongress extends Component {
             <Header style={{ display: 'inline' }} as="h2">
               H. Res. 1027
               <Header.Subheader>
-                Urge the House of Representatives to remedy racial inequities in the United States, especially those present in the criminal justice system, must include reforms to address concerns for Black women.
+                Urge that any legislation passed in the House of Representatives to remedy racial inequities in the United States, especially those present in the criminal justice system, must include reforms to address concerns for Black women.
               </Header.Subheader>
             </Header>
           </Accordion.Title>
