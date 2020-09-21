@@ -40,7 +40,7 @@ class BLMPages extends Component {
           </Route>
 
           <Route path="/blm/education/resources">
-            Other Resources
+            Coming Soon...
           </Route>
 
           <Route path="/blm/pressure/congress">
