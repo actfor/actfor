@@ -7,9 +7,6 @@ import {
   Dropdown,
 } from 'semantic-ui-react';
 
-// images
-import * as title from './../../images/title.png'
-
 class HomeDropdown extends Component {
   onChange = (e, { value }) => {
     this.props.history.push(`/${value}`)
@@ -22,6 +19,11 @@ class HomeDropdown extends Component {
         key: 'blm',
         value: 'blm',
         text: 'Black Lives Matter',
+      },
+      {
+        key: 'daca',
+        value: 'daca',
+        text: 'DACA and Abolish ICE',
       },
       {
         key: 'yemen',

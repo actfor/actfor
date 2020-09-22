@@ -16,6 +16,7 @@ import GA from './utils/GoogleAnalytics'
 // containers
 import About from './containers/About';
 import BLM from './containers/BLM';
+import DACA from './containers/DACA';
 import Home from './containers/Home';
 import Uyghur from './containers/Uyghur';
 import Yemen from './containers/Yemen';
@@ -43,6 +44,10 @@ class ActFor extends Component {
 
             <Route path="/blm">
               <BLM />
+            </Route>
+
+            <Route path="/daca">
+              <DACA />
             </Route>
 
             <Route path="/yemen">
