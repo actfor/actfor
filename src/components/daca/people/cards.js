@@ -1,25 +1,19 @@
 import React from 'react';
 
 // images
-import * as angela from './images/AngelaDavis.png';
-import * as cullors from './images/PatriseCullors.png';
-import * as garza from './images/AliciaGarza.png';
-import * as mckesson from './images/DerayMckesson.png';
-import * as packnett from './images/BrittanyPacknett.png';
-import * as elzie from './images/JohnettaElzie.png';
-import * as sinyanwe from './images/SamuelSinyangwe.png';
-import * as johnson from './images/MarissaJohnson.png';
-import * as newsome from './images/BreeNewsome.png';
-import * as mallory from './images/TamikaMallory.png';
-import * as robinson from './images/RashadRobinson.png';
-import * as sarsour from './images/LindaSarsour.png';
-import * as mccarrel from './images/MashawnMcCarrel.png';
-import * as moye from './images/MuhiyindinMoye.png';
+import * as astrom from './images/AdamStrom.png';
+import * as cvargas from './images/CesarVargas.jpg';
+import * as cjimenez from './images/CristinaJimenez.jpg';
+import * as daxt from './images/DeborahAxt.jpg';
+import * as gmartinez from './images/GreisaMartinez.jpg';
+import * as jvaldes from './images/JavierValdes.jpg';
+import * as jvargas from './images/JoseVargas.jpg';
+import * as mhincapie from './images/MarielenaHincapie.png';
 
 const activists = [
   {
     header: 'Cristina Jimenez',
-    image: cullors,
+    image: cjimenez,
     content: (
       <div>
         <p>
@@ -30,7 +24,7 @@ const activists = [
   },
   {
     header: 'Jose Vargas',
-    image: garza,
+    image: jvargas,
     content: (
       <div>
         <p>
@@ -41,7 +35,7 @@ const activists = [
   },
   {
     header: 'Cesar Vargas',
-    image: mckesson,
+    image: cvargas,
     content: (
       <div>
         <p>
@@ -52,7 +46,7 @@ const activists = [
   },
   {
     header: 'Greisa Martinez',
-    image: packnett,
+    image: gmartinez,
     content: (
       <div>
         <p>
@@ -63,7 +57,7 @@ const activists = [
   },
   {
     header: 'Javier H. Valdés',
-    image: elzie,
+    image: jvaldes,
     content: (
       <div>
         <p>
@@ -74,7 +68,7 @@ const activists = [
   },
   {
     header: 'Deborah L. Axt',
-    image: sinyanwe,
+    image: daxt,
     content: (
       <div>
         <p>
@@ -85,7 +79,7 @@ const activists = [
   },
   {
     header: 'Marielena Hincapié',
-    image: johnson,
+    image: mhincapie,
     content: (
       <div>
         <p>
@@ -96,7 +90,7 @@ const activists = [
   },
   {
     header: 'Adam Strom',
-    image: newsome,
+    image: astrom,
     content: (
       <div>
         <p>
