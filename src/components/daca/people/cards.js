@@ -28,7 +28,7 @@ const activists = [
     content: (
       <div>
         <p>
-          Jose Antonio Vargas is a Pulitzer Prize-winning journalist, Emmy-nominated filmmaker, and Tony-nominated producer. A leading voice for the human rights of immigrants, he founded the non-profit media and culture organization Define American, named one of the World’s Most Innovative Companies by Fast Company. His best-selling memoir, Dear America: Notes of an Undocumented Citizen, was published by HarperCollins in 2018
+          Jose Antonio Vargas is a Pulitzer Prize-winning journalist, Emmy-nominated filmmaker, and Tony-nominated producer. A leading voice for the human rights of immigrants, he founded the non-profit media and culture organization Define American, named one of the World’s Most Innovative Companies by Fast Company. His best-selling memoir, Dear America: Notes of an Undocumented Citizen, was published by HarperCollins in 2018. 
         </p>
       </div>
     ),
