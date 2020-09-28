@@ -17,7 +17,12 @@ class DACA extends Component {
         id: 'education',
         content: 'Education',
         icon: 'pencil',
-        path: '/daca/education'
+        dropdown: [
+          {
+            text: 'Resources',
+            path: '/daca/education/resources',
+          },
+        ],
       },
       {
         id: 'pressure',

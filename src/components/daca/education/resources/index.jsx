@@ -15,7 +15,7 @@ import * as landgraves from './images/graves.jpg';
 import * as define from './images/define.png';
 import * as abolish from './images/abolish.png';
 
-class DacaResources extends Component {
+class DACAResources extends Component {
   renderCards = (cards) => (
     <Card.Group stackable itemsPerRow={3} doubling>
       {
@@ -106,4 +106,4 @@ class DacaResources extends Component {
   }
 }
 
-export default DacaResources;
+export default DACAResources;
