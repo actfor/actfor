@@ -15,6 +15,7 @@ import {
 // pages
 import DACADirectory from "./directory";
 import PressureCongress from './pressure/PressureCongress';
+import DACAPeople from "./people";
 
 class DACAPages extends Component {
   render() {
@@ -34,7 +35,7 @@ class DACAPages extends Component {
           </Route>
 
           <Route path="/daca/people">
-            DACA People
+            <DACAPeople />
           </Route>
 
           <Route path="/daca/donate">
