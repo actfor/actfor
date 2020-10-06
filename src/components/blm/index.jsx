@@ -22,7 +22,7 @@ import PressureCongress from './pressure/PressureCongress';
 import PressurePetitions from './pressure/PressurePetitions';
 
 import DataForDefunding from './education/DataForDefunding';
-
+import OtherResources from './education/OtherResources';
 
 import BLMPeople from './people';
 
@@ -40,7 +40,7 @@ class BLMPages extends Component {
           </Route>
 
           <Route path="/blm/education/resources">
-            Coming Soon...
+            <OtherResources />
           </Route>
 
           <Route path="/blm/pressure/congress">

@@ -1,4 +1,4 @@
-[
+export default [
   {
     "title": "“The Pitfalls of Liberalism,” by Stokely Carmichael",
     "link": "https://unableunwilling.wordpress.com/2016/06/03/the-pitfalls-of-liberalism-by-stokely-carmichael-kwame-ture/",
