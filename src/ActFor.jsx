@@ -7,10 +7,8 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import { createBrowserHistory } from 'history';
 
 // Google Analytics
-import ReactGA from 'react-ga';
 import GA from './utils/GoogleAnalytics'
 
 // containers
