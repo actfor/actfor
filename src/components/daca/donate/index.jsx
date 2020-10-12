@@ -6,20 +6,14 @@ import DonatePage from "./../../common/DonatePage";
 // images
 import AfscLogo from "./images/AfscLogo.jpg";
 import FbtLogo from "./images/FbtLogo.png";
-
 import RaicesLogo from "./images/RaicesLogo.jpg";
-
 import youngCenterLogo from "./images/youngCenterLogo.jpg";
-
 import KindLogo from "./images/KindLogo.jpg";
 import NaaLogo from "./images/NaaLogo.jpg";
 import AcluLogo from "./images/AcluLogo.jpg";
 import AsapLogo from "./images/AsapLogo.png";
-
 import NijcLogo from "./images/NijcLogo.jpg";
-
 import IjcLogo from "./images/IjcLogo.jpg";
-
 
 class DACADonate extends Component {
   render() {
