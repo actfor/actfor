@@ -14,6 +14,7 @@ import {
 
 // pages
 import DACADirectory from "./directory";
+import DACAResources from './education/resources';
 import PressureCongress from './pressure/PressureCongress';
 import DACAPeople from "./people";
 import DACADonate from "./donate";
@@ -27,8 +28,8 @@ class DACAPages extends Component {
             <DACADirectory />
           </Route>
 
-          <Route path="/daca/education">
-            DACA Education
+          <Route path="/daca/education/resources">
+            <DACAResources />
           </Route>
 
           <Route path="/daca/pressure/congress">
