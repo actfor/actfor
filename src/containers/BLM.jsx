@@ -19,7 +19,7 @@ class BLM extends Component {
         icon: 'pencil',
         dropdown: [
           {
-            text: 'Data for Defundng',
+            text: 'Data for Defunding',
             path: '/blm/education/datafordefunding',
           },
           {
