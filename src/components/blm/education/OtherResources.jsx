@@ -5,7 +5,8 @@ import {
   Button,
   Card,
   Divider,
-  Dropdown
+  Dropdown,
+  Icon
 } from 'semantic-ui-react';
 
 import resources from './resources';
@@ -35,6 +36,13 @@ class OtherResources extends Component {
     })
   }
 
+  handleClear = () => {
+    this.setState({
+      resourcesShown: resources,
+      filterSelected: '',
+    })
+  }
+
   render() {
     const { resourcesShown, filterSelected } = this.state;
 
@@ -50,6 +58,7 @@ class OtherResources extends Component {
           floating
           labeled
           button
+          primary
         >
           <Dropdown.Menu>
             <Dropdown.Header icon='tags' content='Filter by genre' />
@@ -64,6 +73,16 @@ class OtherResources extends Component {
             }
           </Dropdown.Menu>
         </Dropdown>
+        <Button.Group floated="right">
+          <Button
+            icon
+            labelPosition="left"
+            onClick={this.handleClear}
+          >
+            <Icon name="window close" />
+            Clear Filters
+          </Button>
+        </Button.Group>
         <br />
         <br />
         <Card.Group doubling itemsPerRow={3} stackable>
